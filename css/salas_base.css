@@ -1,0 +1,123 @@
+/*
+  Estils base comuns per a totes les sales d'Astro-Síntesi.
+  Aquí definim el layout general de les sales, la capçalera de sala (hero)
+  i les caixes de contingut principals, perquè cada sala només hagi
+  de definir els seus colors i petites variacions.
+*/
+
+/********************** HEAD de sala (hero) compartida */
+.hero.hero-sala {
+  /* A diferència del hero de portada (grid), el de sala és una caixa única */
+  display: block;
+}
+
+.hero-sala {
+  position: relative;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+  padding: 1.8rem 1.6rem;
+  overflow: hidden;
+  /* El color de fons i el color de text es defineixen a cada sala */
+}
+
+.hero-text-sala {
+  max-width: 40rem;
+  /* Reservem espai a la dreta per al slot d’imatge del hero */
+  margin-right: 9rem;
+}
+
+.hero-image-slot {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+/*********************** Layout de seccions de sala (context + contingut) */
+.sala-layout {
+  margin-top: 2.5rem;
+}
+
+.sala-header {
+  margin-bottom: 1.2rem;
+}
+
+.sala-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sala-header h1,
+.sala-header h2 {
+  margin: 0.3rem 0 0.7rem;
+  font-size: 1.4rem;
+}
+
+.sala-intro {
+  margin: 0;
+  max-width: 40rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.sala-main {
+  margin-top: 1.5rem;
+}
+
+/* Contingut generatiu (per a infografies, gràfics, etc.) */
+.sala-highlight {
+  min-height: 180px;
+  border-radius: 14px;
+  border: 1px dashed var(--border-soft);
+  position: relative;
+  padding: 1.2rem 1rem;
+  padding-right: 160px; /* espai reservat per a una imatge genèrica a la dreta */
+  background: radial-gradient(circle at top, #eef2ff, #ffffff);
+}
+
+.sala-image-slot {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.sala-placeholder {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: left;
+  max-width: 100%;
+}
+
+/********************* Navegació inferior */
+.sala-nav {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.sala-nav-btn {
+  /* Utilitza la base de .btn; aquí podem afegir ajustos específics si cal */
+}
+
+@media (max-width: 768px) {
+  .sala-nav {
+    justify-content: center;
+  }
+}

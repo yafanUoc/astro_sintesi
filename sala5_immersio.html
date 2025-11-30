@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astro-Síntesi | Sala 5 – Immersió</title>
+    <meta
+            name="description"
+            content="Sala 5 de l'exposició Astro-Síntesi: experiència immersiva basada en dades reals del Sistema Solar."
+    />
+    <!-- ESTILS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/salas_base.css" />
+
+    <script defer src="js/main.js"></script>
+</head>
+
+<body class="body-sala5">
+    <!-- NAV -->
+    <header class="site-header">
+        <div class="logo-block">
+            <span class="logo-mark">A⋅S</span>
+            <div class="logo-text">
+                <span class="logo-title">Astro-Síntesi</span>
+                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Inici</a>
+            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+            <a href="sala5_immersio.html" class="nav-link nav-link--active">Sala 5</a>
+            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+        </nav>
+    </header>
+
+    <!-- MAIN sala 5 -->
+    <main class="page">
+        <!-- HEAD -->
+        <section class="hero hero-sala">
+            <div class="hero-image-slot"></div>
+
+            <div class="hero-text hero-text-sala">
+                <p class="hero-kicker">Sala 5 · Experiència sensorial</p>
+                <h1>Immersió</h1>
+                <p class="hero-lead">
+                    Després de conèixer els mons, els factors d’habitabilitat i les dades,
+                    aquesta sala proposa una experiència més emocional: entrar en paisatges
+                    lluminosos i sonors inspirats en condicions reals del Sistema Solar.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTEXT -->
+        <section class="section sala-layout sala-context">
+            <header class="sala-header">
+                <p class="sala-kicker">Sala 5 · Context</p>
+                <h2>De les dades a l’experiència</h2>
+                <p class="sala-intro">
+                    La immersió no busca reproduir amb exactitud cap paisatge concret, sinó
+                    traduir dades físiques en llum, color i so. Canvis de temperatura,
+                    variacions de camp magnètic o composicions atmosfèriques poden
+                    convertir-se en patrons visuals i sonors que el públic pot percebre
+                    d’una manera més intuïtiva.
+                </p>
+            </header>
+        </section>
+
+        <!-- CONTINGUT -->
+        <section class="section sala-layout sala-content">
+            <header class="sala-header">
+                <p class="sala-kicker">Sala 5 · Continguts principals</p>
+                <h2>Viure els entorns del Sistema Solar</h2>
+                <p>
+                    Aquest espai es reserva per a una previsualització de la sala immersiva:
+                    una imatge panoràmica o un breu fragment sonor que representi, per exemple,
+                    la sonificació del vent solar o de les partícules carregades al voltant
+                    d’un planeta gegant.
+                </p>
+            </header>
+
+            <div class="sala-main">
+                <div class="sala-highlight">
+                    <p class="sala-placeholder">
+                        CONTINGUT GENERATIU
+                    </p>
+                </div>
+
+                <!-- NAVEGACIÓ INFERIOR -->
+                <div class="sala-nav">
+                    <a href="sala4_laboratori_dades.html" class="btn btn-primary sala-nav-btn">
+                        ← Sala 4 · Laboratori de dades
+                    </a>
+                    <a href="index.html" class="btn btn-outline sala-nav-btn">
+                        Tornar a la pàgina inicial
+                    </a>
+                    <a href="sala6_reflexions.html" class="btn btn-primary sala-nav-btn">
+                        Sala 6 · Reflexions →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            Astro-Síntesi · Projecte de divulgació científica ·
+            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+        </p>
+        <p>
+            Yolanda Afán Asencio · UOC
+        </p>
+
+    </footer>
+</body>
+
+</html>
+
+<style>
+    .body-sala5 {
+        background: radial-gradient(circle at top, #0b1120 0, #020617 40%, #020617 100%);
+    }
+
+    /* Hero de la Sala 5: degradat profund amb blau intens */
+
+    .hero-sala {
+        background: radial-gradient(circle at top left, #1d4ed8, #0f172a 55%, #020617);
+        color: #e5e7eb;
+    }
+
+    .hero-sala .hero-lead {
+        color: #e5e7eb;
+    }
+
+    .sala-highlight {
+        background: radial-gradient(circle at top, #020617, #0b1120);
+    }
+
+    /* Text més clar per contrastar amb el fons fosc */
+
+    .sala-placeholder {
+        color: #e5e7eb;
+    }
+</style>

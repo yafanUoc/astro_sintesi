@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astro-Síntesi | Senyals de vida al Sistema Solar</title>
+    <meta
+            name="description"
+            content="Presentació de l'exposició Astro-Síntesi.
+            Recorregut divulgatiu previ per les salas y una primera visió del context."
+    />
+    <!-- ESTILS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JS -->
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- NAVEGACIÓ -->
+    <header class="site-header">
+        <div class="logo-block">
+            <span class="logo-mark">A⋅S</span>
+            <div class="logo-text">
+                <span class="logo-title">Astro-Síntesi</span>
+                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link nav-link--active">Inicio</a>
+            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+        </nav>
+    </header>
+
+    <!-- CONTINGUT -->
+    <main class="page">
+        <!-- HEAD -->
+        <section class="hero">
+
+                <div>
+                <p class="hero-kicker">Exposició temporal · Museu de la ciència</p>
+                <h1>Probabilitats de vida al sistema solar</h1>
+                </div>
+            <div class="hero-text">
+                <p class="hero-lead">
+                    Astro-Síntesi explora, a partir de datos científicos reales,
+                    las condiciones que podrían permitir la vida en distintos rincones
+                    de nuestro Sistema Solar.
+                </p>
+                <!-- Buttons -->
+                <div class="hero-actions">
+                    <a href="sala1_estem_sols.html" class="btn btn-primary">
+                        Inicia el recorregut
+                    </a>
+                    <a href="#recorrido" class="btn btn-outline">
+                        Veure les salas
+                    </a>
+                </div>
+            </div>
+            <!-- Imatge orbites -->
+
+        </section>
+
+        <!-- CONTEXT -->
+        <section class="section section-context" id="contexto">
+            <div class="section-header">
+                <h2>Context científic</h2>
+                <p>
+                    La exposición se basa en resultados de misiones espaciales como
+                    <strong>Cassini</strong>, <strong>Galileo</strong>,
+                    <strong>Mars Science Laboratory</strong> o
+                    <strong>Europa Clipper</strong>, así como en estudios recientes de
+                    astrobiología y geoquímica planetaria.
+                </p>
+            </div>
+            <div class="context-grid">
+                <article class="card">
+                    <h3>Astrobiología en el Sistema Solar</h3>
+                    <p>
+                        En astrobiología no buscamos “marcianitos”, sino señales de
+                        <strong>habitabilidad</strong>: agua líquida, fuentes de energía,
+                        moléculas orgánicas y condiciones estables durante largos periodos.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>De los datos a las probabilidades</h3>
+                    <p>
+                        No tenemos porcentajes exactos de “probabilidad de vida” para cada
+                        planeta o luna, pero sí indicadores que nos ayudan a estimar
+                        qué mundos son más interesantes para investigar.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>Océanos ocultos</h3>
+                    <p>
+                        Lunas heladas como <strong>Enceladus</strong> o
+                        <strong>Europa</strong> esconden océanos bajo su superficie.
+                        En ellos podrían darse reacciones químicas similares a las que
+                        favorecieron el origen de la vida en la Tierra.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- RECORREGUT -->
+        <section class="section section-route" id="recorrido">
+            <div class="section-header">
+                <h2>Recorregut de l'exposició</h2>
+                <p>
+                    Esta web resume los puntos clave de cada sala. En el museo, estos
+                    contenidos se amplían con instalaciones audiovisuales, infografías
+                    interactivas y experiencias sensoriales.
+                </p><br>
+                <img src="images/pla_general.png" width="820"/>
+            </div>
+
+            <ol class="route-list">
+                <li class="route-item">
+                    <span class="route-label">Sala 1</span>
+                    <h3>Estem sols?</h3>
+                    <p>
+                        Introducción a la gran pregunta de la astrobiología y al contexto
+                        de la exploración del Sistema Solar en busca de condiciones de vida.
+                    </p>
+                    <a href="sala1_estem_sols.html" class="route-link">
+                        Ir a la Sala 1
+                    </a>
+                </li>
+
+                <li class="route-item">
+                    <span class="route-label">Sala 2</span>
+                    <h3>Factors d’habitabilitat</h3>
+                    <p>
+                        Temperatura, agua líquida, energía, atmósfera, campos magnéticos
+                        y moléculas orgánicas: qué entendemos por “condiciones habitables”.
+                    </p>
+                    <a href="sala2_factors_habitabilitat.html" class="route-link">
+                        Ir a la Sala 2
+                    </a>
+                </li>
+
+                <li class="route-item">
+                    <span class="route-label">Sala 3</span>
+                    <h3>Galeria de mons</h3>
+                    <p>
+                        Comparativa de algunos planetas y lunas clave del Sistema Solar
+                        en relación con su posible habitabilitat.
+                    </p>
+                    <a href="sala3_galeria_mons.html" class="route-link">
+                        Ir a la Sala 3
+                    </a>
+                </li>
+
+                <li class="route-item">
+                    <span class="route-label">Sala 4</span>
+                    <h3>Laboratori de dades</h3>
+                    <p>
+                        Cómo obtenemos y analizamos los datos de las misiones espaciales
+                        y cómo se transforman en gráficos o sonido.
+                    </p>
+                    <a href="sala4_laboratori_dades.html" class="route-link">
+                        Ir a la Sala 4
+                    </a>
+                </li>
+
+                <li class="route-item">
+                    <span class="route-label">Sala 5</span>
+                    <h3>Immersió</h3>
+                    <p>
+                        Una experiencia envolvente inspirada en datos reales del Sistema
+                        Solar: luz, sonido y visualizaciones panorámicas.
+                    </p>
+                    <a href="sala5_immersio.html" class="route-link">
+                        Ir a la Sala 5
+                    </a>
+                </li>
+
+                <li class="route-item">
+                    <span class="route-label">Sala 6</span>
+                    <h3>Reflexions</h3>
+                    <p>
+                        Recapitulación, preguntas abiertas y futuro de la exploración
+                        en busca de vida más allá de la Tierra.
+                    </p>
+                    <a href="sala6_reflexions.html" class="route-link">
+                        Ir a la Sala 6
+                    </a>
+                </li>
+            </ol>
+        </section>
+
+        <!-- PROJECTE -->
+        <section class="section section-credits">
+            <div class="section-header">
+                <h2>Projecte</h2>
+            </div>
+            <p class="credits-text">
+                Astro-Síntesi combina investigació científica, diseny visual amb IA generativa
+                para traduïr dades complexes en contingut accessible. Esta web funciona
+                com a presentació de l'exposició y como invitació a explorar l'astrobiología.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            Astro-Síntesi · Projecte de divulgació científica ·
+            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+        </p>
+        <p>
+            Yolanda Afán Asencio · UOC
+        </p>
+
+    </footer>
+</body>
+</html>

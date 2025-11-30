@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Astro-Síntesi | Sala 1 – Estem sols?</title>
+    <meta
+            name="description"
+            content="Sala 2 de l'exposició Astro-Síntesi:
+            introducció a la recerca de vida en el Sistema Solar."
+    />
+    <!-- ESTILS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/salas_base.css" />
+
+    <!-- JS -->
+    <script defer src="js/main.js"></script>
+</head>
+
+<body class="body-sala1">
+    <!-- NAV -->
+    <header class="site-header">
+        <div class="logo-block">
+            <span class="logo-mark">A⋅S</span>
+            <div class="logo-text">
+                <span class="logo-title">Astro-Síntesi</span>
+                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="sala1_estem_sols.html" class="nav-link nav-link--active">Sala 1</a>
+            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+        </nav>
+    </header>
+
+    <!-- MAIN sala 1-->
+    <main class="page">
+        <!-- HEAD -->
+        <section class="hero hero-sala">
+            <!-- Slot per a una imatge genèrica de la sala -->
+            <div class="hero-image-slot"></div>
+
+            <div class="hero-text hero-text-sala">
+                <p class="hero-kicker">Sala 1 · Introducció</p>
+                <h1>Estem sols?</h1>
+                <p class="hero-lead">
+                    En aquesta sala plantegem la gran pregunta de l’astrobiologia:
+                    si la vida pot existir més enllà de la Terra. Partim de l’exploració
+                    del sistema solar i de com les missions espacials han transformat
+                    la nostra visió de l’univers.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTEXT -->
+        <section class="section sala-layout sala-context">
+            <header class="sala-header">
+                <p class="sala-kicker">Sala 1 · Context</p>
+                <h2>La pregunta de la vida al cosmos</h2>
+                <p class="sala-intro">
+                    La idea que podria existir vida fora de la Terra ha passat de ser
+                    ciència-ficció a ser un camp científic seriós. L’astrobiologia estudia
+                    quines condicions fan possible la vida i on podríem trobar-les al
+                    nostre sistema solar. Aquesta sala presenta el marc general del projecte
+                    Astro-Síntesi i prepara el recorregut per la resta de sales.
+                </p>
+            </header>
+        </section>
+
+        <!-- CONTINGUT -->
+        <section class="section sala-layout sala-content">
+            <header class="sala-header">
+                <p class="sala-kicker">Sala 1 · Contingut</p>
+                <h2>Inici del recorregut</h2>
+                <p>
+                    En l’exposició física, aquest espai es correspon amb una peça
+                    audiovisual de benvinguda, projectada a les parets de la sala,
+                    que combina imatges reals del sistema solar amb missatges breus
+                    que presenten la pregunta central: “Estem sols?” i introdueixen
+                    el viatge d’Astro-Síntesi.
+                </p>
+            </header>
+
+            <div class="sala-main">
+                <div class="sala-highlight">
+                    <p class="sala-placeholder">
+                        CONTINGUT GENERATIU
+                    </p>
+
+
+                </div>
+
+                <!-- NAVEGACIÓ INFERIOR -->
+                <div class="sala-nav">
+                    <a href="index.html" class="btn btn-outline sala-nav-btn">
+                        ← Tornar a la pàgina inicial
+                    </a>
+                    <a href="sala2_factors_habitabilitat.html" class="btn btn-primary sala-nav-btn">
+                        Sala 2 · Factors d’habitabilitat →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            Astro-Síntesi · Projecte de divulgació científica ·
+            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+        </p>
+        <p>
+            Yolanda Afán Asencio · UOC
+        </p>
+
+    </footer>
+</body>
+</html>
+
+<style>
+    .body-sala1 {
+        background: radial-gradient(circle at top, #e0ecff 0, #f5f6fa 45%, #f9fafb 100%);
+    }
+
+    .hero-sala {
+        background: linear-gradient(90deg, #020617, #0b1120 55%, #111827);
+        color: #e5e7eb;
+    }
+
+    .hero-sala .hero-lead {
+        color: #e5e7eb;
+    }
+</style>
