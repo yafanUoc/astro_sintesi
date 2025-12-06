@@ -42,6 +42,20 @@ body {
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    /*max-width: 50rem;*/
+    text-align: justify;
+}
+
+
 /************************************* Head i navegació */
 .site-header {
     position: sticky;
@@ -142,7 +156,7 @@ body {
 .section-header p {
     margin: 0;
     color: var(--text-muted);
-    max-width: 40rem;
+    max-width: 100%;
 }
 
 /***************************************** Hero genèric (portada) */
@@ -171,6 +185,30 @@ body {
     font-size: 1rem;
     color: var(--text-muted);
     max-width: 36rem;
+    text-align: justify;
+}
+
+/* Texto extra oculto por defecto */
+.paragraph--collapsible .more-text {
+    display: none;
+}
+
+/* Cuando el párrafo está expandido, mostramos el texto extra */
+.paragraph--collapsible.is-expanded .more-text {
+    display: inline;
+}
+
+.btn.read-more-toggle {
+    margin-left: 0.3rem;
+    padding: 0 0.2rem;
+    border: none;
+    color: var(--accent);
+    font: inherit;
+    border-radius: 10px;
+}
+
+.read-more-toggle:hover {
+    text-decoration: none;
 }
 
 .hero-actions {
