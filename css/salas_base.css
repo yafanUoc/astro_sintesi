@@ -41,6 +41,7 @@
 /*********************** Layout de seccions de sala (context + contingut) */
 .sala-layout {
   margin-top: 2.5rem;
+    padding: 2rem;
 }
 
 .sala-header {

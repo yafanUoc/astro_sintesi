@@ -133,7 +133,7 @@ p {
 /****************************************** Layout general de página */
 .page {
     padding: 2rem 5vw 4rem 5vw;
-    max-width: 1120px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -289,6 +289,16 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 1rem;
 }
+
+.section-route-sala .route-list {
+    list-style: none;
+    margin: 1.5rem 0 0 0;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
 
 .route-item {
     position: relative;
