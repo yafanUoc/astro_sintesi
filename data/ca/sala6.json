@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Sala 6 – Reflexions | Astro-Síntesi",
+    "description": "Sala 6 de l'exposició Astro-Síntesi: reflexions finals sobre la recerca de vida al Sistema Solar i el futur de l'exploració."
+  },
+  "hero": {
+    "kicker": "Sala 6 · Tancament",
+    "title": "Reflexions",
+    "lead": "Què sabem realment sobre la vida al cosmos? Quines incógnites ens trobarem i quin serà el futur de l'exploració espacial?"
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "Incògnites i futurs possibles",
+      "content": [
+        "Després d'explorar mons oceànics, atmosferes extremes i dades procedents de missions espacials, aquesta sala convida a pensar què sabem realment sobre la possibilitat de vida més enllà de la Terra. Tot i els avenços tecnològics i la precisió creixent de les nostres observacions, l'existència de vida fora del nostre planeta continua sent una incògnita.",
+        "Les evidències actuals apunten a entorns potencialment habitables, però no a proves directes de biologia. Aquesta distància entre el que intuïm i el que podem demostrar és un dels motors principals de l'astrobiologia contemporània."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Continguts principals",
+      "title": "El paper del públic i de la recerca futura",
+      "content": [
+        "Al final del recorregut, aquesta sala proposa una mirada crítica sobre el coneixement que hem construït a partir de l'exploració del Sistema Solar. Les dades recollides per missions espacials ens mostren entorns diversos que desafien les nostres expectatives sobre on podria existir vida i quines formes podria adoptar.",
+        "Amb aquesta perspectiva, el públic és convidat a valorar fins a quin punt les evidències actuals permeten parlar d'habitabilitat, quines limitacions té la nostra capacitat d'interpretar senyals químics o geològics, i quines preguntes continuen obertes en la recerca astrobiològica.",
+        "Aquest exercici reflexiu és també una invitació a participar activament en la construcció del coneixement científic, posant en diàleg la intuïció, la dada i les futures missions que ampliaran el mapa dels possibles escenaris de vida."
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Espai de reflexió i participació del públic sobre el futur de l'astrobiologia"
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "url": "sala5_immersio.html",
+      "label": "← Sala 5: Immersió"
+    },
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    }
+  }
+}

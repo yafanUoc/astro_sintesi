@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/salas_base.css" />
 
     <!-- JavaScript -->
+    <script defer src="js/content-loader.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 
@@ -51,62 +52,51 @@
         <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 6"></div>
 
         <div class="hero-text hero-text-sala">
-            <p class="hero-kicker">Sala 6 · Tancament</p>
-            <h1>Reflexions</h1>
-            <p class="hero-lead">
+            <p class="hero-kicker" data-content="hero-kicker">Sala 6 · Tancament</p>
+            <h1 data-content="hero-title">Reflexions</h1>
+            <p class="hero-lead" data-content="hero-lead">
                 Què sabem realment sobre la vida al cosmos? Quines incógnites ens trobarem i quin serà el futur de l'exploració espacial?
             </p>
         </div>
     </section>
 
     <!-- Context -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="context">
         <header class="sala-header">
-            <p class="sala-kicker">Context</p>
-            <h2>Incògnites i futurs possibles</h2>
+            <p class="sala-kicker" data-content="kicker">Context</p>
+            <h2 data-content="title">Incògnites i futurs possibles</h2>
         </header>
 
-        <div class="sala-intro">
-            <p>
-                Després d'explorar mons oceànics, atmosferes extremes i dades procedents de missions espacials, aquesta sala convida a pensar què sabem realment sobre la possibilitat de vida més enllà de la Terra. Tot i els avenços tecnològics i la precisió creixent de les nostres observacions, l'existència de vida fora del nostre planeta continua sent una incògnita.
-            </p>
-            <p>
-                Les evidències actuals apunten a entorns potencialment habitables, però no a proves directes de biologia. Aquesta distància entre el que intuïm i el que podem demostrar és un dels motors principals de l'astrobiologia contemporània.
-            </p>
+        <div class="sala-intro" data-content="paragraphs">
+            <!-- Los párrafos se cargarán dinámicamente desde el JSON -->
+            <p>Carregant contingut...</p>
         </div>
     </section>
 
     <!-- Contingut principal -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="main-content">
         <header class="sala-header">
-            <p class="sala-kicker">Continguts principals</p>
-            <h2>El paper del públic i de la recerca futura</h2>
+            <p class="sala-kicker" data-content="kicker">Continguts principals</p>
+            <h2 data-content="title">El paper del públic i de la recerca futura</h2>
         </header>
 
-        <div class="sala-intro">
-            <p>
-                Al final del recorregut, aquesta sala proposa una mirada crítica sobre el coneixement que hem construït a partir de l'exploració del Sistema Solar. Les dades recollides per missions espacials ens mostren entorns diversos que desafien les nostres expectatives sobre on podria existir vida i quines formes podria adoptar.
-            </p>
-            <p>
-                Amb aquesta perspectiva, el públic és convidat a valorar fins a quin punt les evidències actuals permeten parlar d'habitabilitat, quines limitacions té la nostra capacitat d'interpretar senyals químics o geològics, i quines preguntes continuen obertes en la recerca astrobiològica.
-            </p>
-            <p>
-                Aquest exercici reflexiu és també una invitació a participar activament en la construcció del coneixement científic, posant en diàleg la intuïció, la dada i les futures missions que ampliaran el mapa dels possibles escenaris de vida.
-            </p>
+        <div class="sala-intro" data-content="paragraphs">
+            <!-- Los párrafos se cargarán dinámicamente desde el JSON -->
+            <p>Carregant contingut...</p>
         </div>
     </section>
 
     <!-- Contingut interactiu / generatiu -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="explore">
         <header class="sala-header">
-            <p class="sala-kicker">Explora</p>
+            <p class="sala-kicker" data-content="kicker">Explora</p>
         </header>
 
         <div class="sala-main">
             <div class="sala-highlight">
                 <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut interactiu de reflexió"></div>
-                <p class="sala-placeholder">
-                    Espai de reflexió i participació del públic sobre el futur de l'astrobiologia
+                <p class="sala-placeholder" data-content="placeholder">
+                    Carregant contingut...
                 </p>
             </div>
         </div>
@@ -114,10 +104,10 @@
 
     <!-- Navegació entre salas -->
     <nav class="sala-nav" aria-label="Navegació entre sales">
-        <a href="sala5_immersio.html" class="btn btn-primary sala-nav-btn">
+        <a href="sala5_immersio.html" class="btn btn-primary sala-nav-btn" data-nav="previous">
             ← Sala 5: Immersió
         </a>
-        <a href="index.html" class="btn btn-outline sala-nav-btn">
+        <a href="index.html" class="btn btn-outline sala-nav-btn" data-nav="home">
             Tornar a l'inici
         </a>
     </nav>
@@ -135,5 +125,16 @@
         Yolanda Afán Asencio · UOC
     </p>
 </footer>
+
+<!-- ============================================
+     INICIALIZACIÓN DEL CONTENIDO
+     ============================================ -->
+<script>
+    // Inicializar el cargador de contenido cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+        const loader = new ContentLoader();
+        loader.init('sala6');
+    });
+</script>
 </body>
 </html>

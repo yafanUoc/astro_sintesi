@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Sala 4 – Laboratori de dades | Astro-Síntesi",
+    "description": "Sala 4 de l'exposició Astro-Síntesi: com recollim i interpretem les dades de les missions espacials."
+  },
+  "hero": {
+    "kicker": "Sala 4 · Dades i instruments",
+    "title": "Laboratori de dades",
+    "lead": "Les missions espacials recullen partícules, mesuren camps magnètics i analitzen la llum que reflecteixen i emeten els planetes i les seves llunes. Aquestes dades revelen la composició, l'activitat i el potencial d'habitabilitat dels mons del Sistema Solar."
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "Dades i indicadors",
+      "content": [
+        "L'estudi de l'habitabilitat planetària depèn de dades recollides per instruments altament especialitzats que operen en entorns extrems. Espectròmetres, magnetòmetres, detectors de partícules i càmeres d'alta sensibilitat analitzen la llum, el material ejectat, el camp magnètic o la superfície dels planetes i llunes.",
+        "Aquestes mesures, transmeses com a valors numèrics, s'integren i interpreten mitjançant models físics i químics per reconstruir processos ambientals que no podem observar directament. És en aquesta interacció entre instrumentació i coneixement on neix la ciència que permet identificar indicadors d'habitabilitat."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Continguts principals",
+      "title": "Missions i recollida de dades",
+      "intro": "Les dades que obtenim de l'exploració planetària són el resultat d'instruments que mesuren llum, partícules, camps magnètics i composició química. Aquestes mesures, convertides en valors numèrics, permeten reconstruir processos geològics, químics i ambientals en mons que no podem estudiar directament. Les missions espacials actuen així com laboratoris en moviment, revelant condicions que poden afavorir o excloure l'habitabilitat.",
+      "missions": [
+        {
+          "label": "Cassini",
+          "title": "Descobrint oceans oceànics",
+          "content": "La missió Cassini va transformar la nostra comprensió dels mons oceànics. El seu espectròmetre de masses va detectar en els plomalls d'Enceladus hidrogen molecular, sals i molècules orgàniques complexes, indicis clars de reaccions hidrotermals al fons de l'oceà interior. Aquestes dades van demostrar que processos energètics similars als de les fonts hidrotermals terrestres existeixen fora de la Terra.",
+          "resources": [
+            {
+              "text": "ESA – Cassini-Huygens",
+              "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens"
+            },
+            {
+              "text": "NASA: Organics 'Fresh' From Ocean of Enceladus",
+              "url": "https://www.nasa.gov/missions/cassini/nasa-cassini-study-finds-organics-fresh-from-ocean-of-enceladus/"
+            },
+            {
+              "text": "Article: New molecules in Enceladus water jets",
+              "url": "https://www.nasaspaceflight.com/2025/10/cassini-new-molecules-enceladus"
+            }
+          ]
+        },
+        {
+          "label": "Curiosity",
+          "title": "Laboratori geològic a Mart",
+          "content": "El ròver Curiosity treballa com un laboratori geològic autònom. Els seus instruments (SAM, ChemCam) escanegen roques i sediments per identificar minerals hidratats, compostos orgànics i patrons químics que indiquen la presència passada d'aigua estable. Els resultats apunten que Mart va reunir condicions potencialment habitables fa milers de milions d'anys.",
+          "resources": [
+            {
+              "text": "Article: Mission Overview and Scientific Contributions from Curiosity Rover",
+              "url": "https://link.springer.com/article/10.1007/s11214-022-00882-7"
+            }
+          ]
+        },
+        {
+          "label": "Juno",
+          "title": "Analitzant el gegant Júpiter",
+          "content": "La sonda Juno analitza el camp magnètic, la gravetat i l'atmosfera profunda de Júpiter. Aquestes dades permeten entendre com un entorn tan extrem afecta les llunes pròximes, especialment les oceàniques. Les mesures revelen pressions, turbulències i composicions químiques que descarten l'habitabilitat directa però aporten informació essencial sobre la formació i l'evolució dels sistemes planetaris.",
+          "resources": [
+            {
+              "text": "Article: Jupiter's atmospheric jet streams extend thousands of kilometres deep",
+              "url": "https://www.nature.com/articles/nature25793"
+            }
+          ]
+        },
+        {
+          "label": "Europa Clipper",
+          "title": "Explorant l'oceà d'Europa",
+          "content": "Europa Clipper, encara en fase de preparació científica, estudiarà l'estructura del gel d'Europa, la seva composició química i possibles plomalls de l'oceà subsuperficial. El seu objectiu és determinar si aquest oceà podria sostenir processos biològics, combinant dades de radar de penetració, espectrometria i detecció de molècules volàtils. Proporcionarà la visió més completa fins ara d'un dels mons més prometedors per a l'habitabilitat.",
+          "resources": [
+            {
+              "text": "Article: Investigating Europa's Habitability with the Europa Clipper",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687213/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Contingut generatiu sobre missions i dades espacials"
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "url": "sala3_galeria_mons.html",
+      "label": "← Sala 3: Galeria de mons"
+    },
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    },
+    "next": {
+      "url": "sala5_immersio.html",
+      "label": "Sala 5: Immersió →"
+    }
+  }
+}

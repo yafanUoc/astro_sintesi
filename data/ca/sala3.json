@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "title": "Sala 3 – Galeria de mons | Astro-Síntesi",
+    "description": "Sala 3 de l'exposició Astro-Síntesi: comparativa de diferents mons del Sistema Solar i la seva possible habitabilitat."
+  },
+  "hero": {
+    "kicker": "Sala 3 · Comparativa de mons",
+    "title": "Galeria de mons",
+    "lead": "El Sistema Solar està format per mons diversos, amb atmosferes, superfícies i processos interns que revelen escenaris molt diferents d'habitabilitat. Aquesta sala compara alguns dels objectes més estudiats per comprendre quin paper hi juga la geologia, la química i l'energia en la possibilitat de vida."
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "Una \"galeria\" basada en dades reals",
+      "content": [
+        "L'estudi comparatiu de planetes i llunes permet identificar patrons d'habitabilitat i entendre per què alguns mons presenten condicions favorables a processos biològics mentre que d'altres són entorns extremadament hostils.",
+        "Les dades recollides per missions com Cassini, Galileo, Mars Science Laboratory, Juno o Huygens han revelat oceans subterranis, atmosferes complexes, superfícies actives i camps magnètics intensos. Aquesta diversitat ens ofereix una visió més precisa de com poden evolucionar els ambients planetaris i quines característiques poden conduir, o impedir, l'aparició de vida."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Continguts principals",
+      "title": "Enceladus, Marte, Europa, Tità, Venus, Io i Júpiter",
+      "intro": "Els planetes i les llunes del Sistema Solar mostren una gran varietat de condicions ambientals. Comparar-los ens ajuda a reconèixer quins factors poden afavorir l'habitabilitat i quins generen entorns extremadament adversos.",
+      "worlds": [
+        {
+          "label": "Enceladus",
+          "title": "Oceà actiu sota el gel",
+          "content": "Enceladus, lluna de Saturn, conté un oceà global sota la seva capa de gel. Les dades de Cassini van confirmar plomalls actius rics en aigua líquida, sals, hidrogen molecular i molècules orgàniques complexes, indicadors d'activitat hidrotermal al fons oceànic. Aquestes condicions són sorprenentment similars a ecosistemes terrestres basats en fonts hidrotermals, considerats entorns candidats per a l'origen de la vida.",
+          "resources": [
+            {
+              "text": "Detection of organic compounds in freshly ejected ice grains from Enceladus's ocean",
+              "url": "https://www.nature.com/articles/s41550-025-02655-y"
+            },
+            {
+              "text": "Seafloor hydrothermal control over ocean dynamics in Enceladus",
+              "url": "https://www.nature.com/articles/s41550-025-02490-1"
+            }
+          ]
+        },
+        {
+          "label": "Europa",
+          "title": "Oceans sota el gel de Júpiter",
+          "content": "Europa, lluna de Júpiter, alberga un oceà d'aigua líquida sota una capa de gel d'entre 10 i 30 km de gruix. El contacte entre l'oceà i el nucli rocós podria generar reaccions hidrotermals, una font d'energia clau per mantenir processos biològics. Les mesures de Galileo i les futures observacions de Europa Clipper busquen determinar la composició del gel, la possible presència de molècules orgàniques i l'estructura interna del satèl·lit.",
+          "resources": [
+            {
+              "text": "Origin and Evolution of Prebiotic Organic Matter As Inferred from the Tagish Lake Meteorite",
+              "url": "https://www.science.org/doi/10.1126/science.1203290"
+            },
+            {
+              "text": "Mapping the surface composition of Europa with SUDA",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0032063323000028"
+            }
+          ]
+        },
+        {
+          "label": "Marte",
+          "title": "Un passat habitable",
+          "content": "El planeta Mart presenta indicis clars d'haver tingut aigua líquida en el passat: deltes, xarxes fluvials i minerals hidratats. Les missions Curiosity i Perseverance han trobat compostos orgànics i variacions estacionals de metà, un gas que pot tenir origen geològic o biològic. Actualment, la seva atmosfera és prima i freda, però el seu passat suggereix que podria haver estat habitable fa milers de milions d'anys.",
+          "resources": [
+            {
+              "text": "NASA – Mars Curiosity",
+              "url": "https://science.nasa.gov/mission/msl-curiosity/"
+            },
+            {
+              "text": "Article: Organic matter preserved in 3-billion-year-old mudstones at Gale crater, Mars",
+              "url": "https://www.science.org/doi/10.1126/science.aas9185"
+            }
+          ]
+        },
+        {
+          "label": "Tità",
+          "title": "Atmosfera densa i química orgànica",
+          "content": "Tità, lluna de Saturn, és l'únic objecte del Sistema Solar (a banda de la Terra) amb rius, llacs i pluges, tot i que formats per metà i età líquids. La missió Huygens i l'òrbita de Cassini van revelar una atmosfera densa rica en hidrocarburs i processos fotoquímics complexos. Tot i les baixes temperatures, Tità és un laboratori natural de química orgànica primitiva que podria ajudar a comprendre escenaris prebiòtics.",
+          "resources": [
+            {
+              "text": "NASA – Titan",
+              "url": "https://solarsystem.nasa.gov/moons/saturn-moons/titan/overview/"
+            },
+            {
+              "text": "Article: Sulfidic Anion Concentrations on Early Earth",
+              "url": "https://www.liebertpub.com/doi/10.1089/ast.2017.1770"
+            },
+            {
+              "text": "Article: Organic chemistry in Titan's upper atmosphere",
+              "url": "https://www.sciencedirect.com/science/article/abs/pii/S0032063315000161"
+            }
+          ]
+        },
+        {
+          "label": "Venus",
+          "title": "Descontrol de l'efecte hivernacle",
+          "content": "Tot i tenir una mida similar a la Terra, Venus és un exemple extrem d'efecte hivernacle: temperatures de més de 460 °C, atmosfera densa de CO₂ i núvols d'àcid sulfúric. Aquests factors impedeixen l'existència d'aigua líquida i creen un ambient químic incompatible amb processos biològics coneguts.",
+          "resources": [
+            {
+              "text": "NASA – Venus",
+              "url": "https://science.nasa.gov/venus/"
+            },
+            {
+              "text": "ESA – Venus Express: Studying Venus's atmosphere",
+              "url": "https://www.esa.int/Science_Exploration/Space_Science/Venus_Express"
+            },
+            {
+              "text": "Article: The Habitability of Venus",
+              "url": "https://link.springer.com/article/10.1007/s11214-023-00960-4"
+            }
+          ]
+        },
+        {
+          "label": "Io",
+          "title": "Volcans extrems",
+          "content": "Io, lluna de Júpiter, és el cos més volcànicament actiu del Sistema Solar. La fricció mareal generada per Júpiter i altres llunes crea un interior constantment fos i una superfície coberta de sulfur i lava. Aquestes condicions extremes eliminen la possibilitat d'aigua estable i fan inviable qualsevol escenari d'habitabilitat.",
+          "resources": [
+            {
+              "text": "NASA – Io",
+              "url": "https://science.nasa.gov/jupiter/jupiter-moons/io/"
+            },
+            {
+              "text": "NASA – Juno Mission",
+              "url": "https://science.nasa.gov/mission/juno/"
+            },
+            {
+              "text": "Article: Io's polar volcanic thermal emission",
+              "url": "https://www.nature.com/articles/s41550-023-02123-5.pdf"
+            }
+          ]
+        },
+        {
+          "label": "Júpiter",
+          "title": "Gegant gasós",
+          "content": "Júpiter és un planeta gasós sense superfície sòlida i amb una atmosfera composta principalment d'hidrogen i heli. Les condicions extremes de pressió, temperatura i radiació provenen del seu potent camp magnètic, fent-lo inviable com a entorn biològic.",
+          "resources": [
+            {
+              "text": "NASA – Jupiter",
+              "url": "https://science.nasa.gov/jupiter/"
+            },
+            {
+              "text": "NASA – Juno Mission",
+              "url": "https://science.nasa.gov/mission/juno/"
+            },
+            {
+              "text": "Article: The Deep Atmospheric Composition of Jupiter",
+              "url": "https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/26890/Rensen_2023_RS_Deep_atmospheric_CC.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Contingut generatiu sobre la galeria de mons"
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "url": "sala2_factors_habitabilitat.html",
+      "label": "← Sala 2: Factors d'habitabilitat"
+    },
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    },
+    "next": {
+      "url": "sala4_laboratori_dades.html",
+      "label": "Sala 4: Laboratori de dades →"
+    }
+  }
+}

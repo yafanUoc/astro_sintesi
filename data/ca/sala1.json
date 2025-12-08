@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Sala 1 – Estem sols? | Astro-Síntesi",
+    "description": "Sala 1 de l'exposició Astro-Síntesi: introducció a la recerca de vida en el Sistema Solar."
+  },
+  "hero": {
+    "kicker": "Sala 1 · Introducció",
+    "title": "Estem sols?",
+    "lead": "Pot existir la vida més enllà de la Terra? L'exploració del sistema solar ens ofereix una visió de l'Univers activa i plena d'històries planetàries que ens canviarà la idea d'on som."
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "La vida al cosmos",
+      "content": [
+        "La possibilitat que la vida pugui existir en altres indrets del sistema solar ha esdevingut una de les preguntes centrals de l'astrobiologia contemporània. Comprendre l'origen, l'evolució i la persistència de la vida implica examinar quins processos físics i químics poden generar entorns favorables en altres mons.",
+        "Planetes rocosos, llunes gelades i mons amb atmosferes extremes canviants revelen un ventall de condicions que ens permeten explorar com podria aparèixer o transformar-se la vida."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Contingut",
+      "title": "Inici de l'exploració",
+      "content": [
+        "El sistema solar és un arxiu natural de processos que modelen la matèria i l'energia. Cada planeta i cada lluna conserva senyals del seu passat: oceans antics, atmosferes erosionades, superfícies actives o fonts d'energia internes que configuren escenaris diversos. Aquests indicis no revelen vida directament, però sí les condicions que podrien fer-la possible.",
+        "La recerca científica actual combina observacions remotes, missions espacials i models teòrics per interpretar aquestes condicions. Els patrons de llum que reflecteixen les superfícies, la composició de les atmosferes o la presència de gel i d'aigua líquida ens permeten imaginar com podrien ser altres ecosistemes potencials dins del nostre propi veïnat còsmic.",
+        "Així com la Terra va reunir els ingredients necessaris per al desenvolupament de la vida, el sistema solar ofereix múltiples escenaris on aquests components poden haver coincidit. Aquest punt de partida obre la porta a un viatge per comprendre com els científics interpreten senyals, pistes i indicis que permeten imaginar escenaris de vida més enllà del nostre planeta."
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Petit vídeo d'animació del recorregut pel sistema solar"
+    }
+  ],
+  "navigation": {
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    },
+    "next": {
+      "url": "sala2_factors_habitabilitat.html",
+      "label": "Sala 2: Factors d'habitabilitat →"
+    }
+  }
+}

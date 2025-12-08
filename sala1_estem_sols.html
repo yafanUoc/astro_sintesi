@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/salas_base.css" />
 
     <!-- JavaScript -->
+    <script defer src="js/content-loader.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 
@@ -51,62 +52,49 @@
         <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 1"></div>
 
         <div class="hero-text hero-text-sala">
-            <p class="hero-kicker">Sala 1 · Introducció</p>
-            <h1>Estem sols?</h1>
-            <p class="hero-lead">
-                Pot existir la vida més enllà de la Terra? L'exploració del sistema solar ens ofereix una visió de l'Univers activa i plena d'històries planetàries que ens canviarà la idea d'on som.
+            <p class="hero-kicker" data-content="hero-kicker">Carregant...</p>
+            <h1 data-content="hero-title">Carregant...</h1>
+            <p class="hero-lead" data-content="hero-lead">
+                Carregant...
             </p>
         </div>
     </section>
 
     <!-- Context -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="context">
         <header class="sala-header">
-            <p class="sala-kicker">Context</p>
-            <h2>La vida al cosmos</h2>
+            <p class="sala-kicker" data-content="kicker">Context</p>
+            <h2 data-content="title">Carregant...</h2>
         </header>
 
-        <div class="sala-intro">
-            <p>
-                La possibilitat que la vida pugui existir en altres indrets del sistema solar ha esdevingut una de les preguntes centrals de l'astrobiologia contemporània. Comprendre l'origen, l'evolució i la persistència de la vida implica examinar quins processos físics i químics poden generar entorns favorables en altres mons.
-            </p>
-            <p>
-                Planetes rocosos, llunes gelades i mons amb atmosferes extremes canviants revelen un ventall de condicions que ens permeten explorar com podria aparèixer o transformar-se la vida.
-            </p>
+        <div class="sala-intro" data-content="paragraphs">
+            <p>Carregant contingut...</p>
         </div>
     </section>
 
     <!-- Contingut principal -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="main-content">
         <header class="sala-header">
-            <p class="sala-kicker">Contingut</p>
-            <h2>Inici de l'exploració</h2>
+            <p class="sala-kicker" data-content="kicker">Contingut</p>
+            <h2 data-content="title">Carregant...</h2>
         </header>
 
-        <div class="sala-intro">
-            <p>
-                El sistema solar és un arxiu natural de processos que modelen la matèria i l'energia. Cada planeta i cada lluna conserva senyals del seu passat: oceans antics, atmosferes erosionades, superfícies actives o fonts d'energia internes que configuren escenaris diversos. Aquests indicis no revelen vida directament, però sí les condicions que podrien fer-la possible.
-            </p>
-            <p>
-                La recerca científica actual combina observacions remotes, missions espacials i models teòrics per interpretar aquestes condicions. Els patrons de llum que reflecteixen les superfícies, la composició de les atmosferes o la presència de gel i d'aigua líquida ens permeten imaginar com podrien ser altres ecosistemes potencials dins del nostre propi veïnat còsmic.
-            </p>
-            <p>
-                Així com la Terra va reunir els ingredients necessaris per al desenvolupament de la vida, el sistema solar ofereix múltiples escenaris on aquests components poden haver coincidit. Aquest punt de partida obre la porta a un viatge per comprendre com els científics interpreten senyals, pistes i indicis que permeten imaginar escenaris de vida més enllà del nostre planeta.
-            </p>
+        <div class="sala-intro" data-content="paragraphs">
+            <p>Carregant contingut...</p>
         </div>
     </section>
 
     <!-- Contingut interactiu / generatiu -->
-    <section class="section sala-layout">
+    <section class="section sala-layout" data-section="explore">
         <header class="sala-header">
-            <p class="sala-kicker">Explora</p>
+            <p class="sala-kicker" data-content="kicker">Explora</p>
         </header>
 
         <div class="sala-main">
             <div class="sala-highlight">
                 <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia"></div>
-                <p class="sala-placeholder">
-                    Petit vídeo d'animació del recorregut pel sistema solar
+                <p class="sala-placeholder" data-content="placeholder">
+                    Carregant...
                 </p>
             </div>
         </div>
@@ -114,11 +102,11 @@
 
     <!-- Navegació entre salas -->
     <nav class="sala-nav" aria-label="Navegació entre sales">
-        <a href="index.html" class="btn btn-outline sala-nav-btn">
-            ← Tornar a l'inici
+        <a href="index.html" class="btn btn-outline sala-nav-btn" data-nav="home">
+            Tornar a l'inici
         </a>
-        <a href="sala2_factors_habitabilitat.html" class="btn btn-primary sala-nav-btn">
-            Sala 2: Factors d'habitabilitat →
+        <a href="sala2_factors_habitabilitat.html" class="btn btn-primary sala-nav-btn" data-nav="next">
+            Següent →
         </a>
     </nav>
 
@@ -135,5 +123,15 @@
         Yolanda Afán Asencio · UOC
     </p>
 </footer>
+
+<!-- ============================================
+     INICIALIZACIÓN DEL CONTENIDO
+     ============================================ -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const loader = new ContentLoader();
+        loader.init('sala1');
+    });
+</script>
 </body>
 </html>

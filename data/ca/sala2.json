@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Sala 2 – Factors d'habitabilitat | Astro-Síntesi",
+    "description": "Sala 2 de l'exposició Astro-Síntesi: factors físics i químics que fan possible un entorn habitable."
+  },
+  "hero": {
+    "kicker": "Sala 2 · Conceptes clau",
+    "title": "Factors d'habitabilitat",
+    "lead": "La recerca de vida en altres mons comença identificant les condicions físiques i químiques que poden sostenir processos biològics. Aquesta sala presenta els elements essencials que defineixen un entorn potencialment habitable."
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "Què vol dir que un món sigui habitable?",
+      "content": [
+        "Comprendre l'habitabilitat d'un món implica analitzar com interactuen el seu clima, la seva geologia i la seva química. Els científics consideren especialment la presència d'aigua líquida, la disponibilitat d'una font d'energia, la composició atmosfèrica, l'estabilitat ambiental i la presència d'elements químics essencials com el carboni, l'hidrogen, el nitrogen, l'oxigen, el sofre i el fòsfor.",
+        "Aquests criteris, utilitzats en estudis planetaris i en missions com Cassini, Mars Science Laboratory o Europa Clipper, permeten identificar entorns on podrien donar-se reaccions prebiòtiques o metabòliques, fins i tot en absència de proves directes de vida."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Continguts principals",
+      "title": "Temperatura, aigua, energia i atmosfera",
+      "intro": "La idea d'\"entorn habitable\" no implica l'existència de vida, sinó la possibilitat que un conjunt de processos físics i químics puguin sostenir-la.",
+      "factors": [
+        {
+          "label": "Temperatura",
+          "title": "Zona habitable",
+          "content": "La temperatura determina si l'aigua pot existir en estat líquid, una condició indispensable per al metabolisme i la química de la vida tal com la coneixem. Els planetes i llunes que es troben dins o prop de la zona habitable d'una estrella poden mantenir rangs tèrmics compatibles amb aquest estat, tot i que factors addicionals —com atmosferes denses o fonts d'energia interna— poden ampliar aquest marge.",
+          "resources": [
+            {
+              "text": "NASA – Habitable Zone",
+              "url": "https://science.nasa.gov/exoplanets/habitable-zone/"
+            },
+            {
+              "text": "Article: Analysis of Habitability and Stellar Habitable Zones",
+              "url": "https://arxiv.org/pdf/2408.09296.pdf"
+            }
+          ]
+        },
+        {
+          "label": "Aigua",
+          "title": "Dissolvent universal",
+          "content": "L'aigua és el dissolvent universal de la bioquímica terrestre, perquè afavoreix la mobilitat i reactivitat de les molècules. Al sistema solar, l'aigua líquida pot aparèixer en superfícies transitòries (Mart), sota capes gruixudes de gel (Europa, Enceladus) o en aqüífers profunds. Les observacions d'Enceladus, realitzades per la missió Cassini, han confirmat plomalls rics en molècules orgàniques procedents d'un oceà interior, reforçant la idea que l'aigua subterrània pot mantenir-se fins i tot sense una superfície càlida.",
+          "resources": [
+            {
+              "text": "Science – Exoplanet Habitability",
+              "url": "https://www.science.org/doi/pdf/10.1126/science.1232226"
+            },
+            {
+              "text": "Article: Water vapour in K2-18 b",
+              "url": "https://arxiv.org/abs/1909.05218"
+            }
+          ]
+        },
+        {
+          "label": "Energia",
+          "title": "Fonts energètiques",
+          "content": "Perquè la vida pugui iniciar-se i sostenir-se, necessita una font d'energia capaç d'impulsar reaccions químiques. L'energia pot provenir de la llum del Sol —com succeeix a la Terra— però també de fonts internes com la calor geotèrmica, la fricció mareal o les reaccions hidrotermals. A Europa i Enceladus, la interacció entre l'aigua i el nucli rocós genera processos energètics similars als que, als fons oceànics terrestres, mantenen ecosistemes independents de la llum solar.",
+          "resources": [
+            {
+              "text": "NASA: A Limited Habitable Zone for Complex Life",
+              "url": "https://ntrs.nasa.gov/api/citations/20190026728/downloads/20190026728.pdf"
+            },
+            {
+              "text": "PDF: Analysis of Exoplanet Habitability",
+              "url": "https://zenodo.org/records/15309145/files/Exoplanet_Habitability.pdf"
+            }
+          ]
+        },
+        {
+          "label": "Atmosfera",
+          "title": "Protecció i regulació",
+          "content": "Una atmosfera pot moderar la temperatura, protegir la superfície de la radiació i estabilitzar preses d'aigua líquida. Planetes com Venus, Mart o la Terra mostren com la composició atmosfèrica —pressió, gasos d'efecte hivernacle, densitat— modifica radicalment la seva habitabilitat potencial. Les atmosferes també poden conservar senyals químics d'interès astrobiològic, com el metà o l'oxigen, encara que la seva detecció requereix una interpretació estricta per evitar falsos positius.",
+          "resources": [
+            {
+              "text": "Article: Quantitative study of habitability of exoplanets",
+              "url": "https://www.sciencedirect.com/science/article/abs/pii/S0273117725004776"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Contingut generatiu sobre factors d'habitabilitat"
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "url": "sala1_estem_sols.html",
+      "label": "← Sala 1: Estem sols?"
+    },
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    },
+    "next": {
+      "url": "sala3_galeria_mons.html",
+      "label": "Sala 3: Galeria de mons →"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Sala 5 – Immersió | Astro-Síntesi",
+    "description": "Sala 5 de l'exposició Astro-Síntesi: experiència immersiva basada en dades reals del Sistema Solar."
+  },
+  "hero": {
+    "kicker": "Sala 5 · Experiència sensorial",
+    "title": "Immersió",
+    "lead": "La ciència es transforma en llum i so per explorar el Sistema Solar a través dels seus patrons físics i ambientals."
+  },
+  "sections": [
+    {
+      "id": "context",
+      "kicker": "Context",
+      "title": "De les dades a l'experiència",
+      "content": [
+        "Aproximació sensorial a l'astrobiologia amb dades reals — camps magnètics, variacions de llum, fluxos de partícules o intensitats atmosfèriques— es converteixen en textures visuals i paisatges sonors.",
+        "Aquest procés, conegut com sonificació i visualització de dades, permet percebre fenòmens del cosmos que normalment són invisibles, mostrant ritmes, freqüències i dinàmiques que defineixen l'activitat dels mons del Sistema Solar."
+      ]
+    },
+    {
+      "id": "main-content",
+      "kicker": "Continguts principals",
+      "title": "Viure els entorns del Sistema Solar",
+      "content": [
+        "L'experiència immersiva utilitza dades recollides per les missions espacials anomenades a la sala anterior per generar entorns audiovisuals que reflecteixen fenòmens reals: variacions magnètiques convertides en vibracions sonores, intensitats lumíniques transformades en gradients de color o perfils atmosfèrics que esdevenen moviments fluids. Cada patró prové d'un procés físic interpretat per instruments científics i traduït a formes perceptibles.",
+        "Representació del comportament intern a través de llenguatges sensorials. Les oscil·lacions d'un camp magnètic, l'energia d'una tempesta o la densitat d'un plomall oceànic es converteixen en un paisatge immersiu que combina art i ciència, oferint una nova manera d'apropar-se a l'habitabilitat i a la dinàmica del Sistema Solar."
+      ]
+    },
+    {
+      "id": "explore",
+      "kicker": "Explora",
+      "placeholder": "Experiència audiovisual immersiva basada en dades del Sistema Solar"
+    }
+  ],
+  "navigation": {
+    "previous": {
+      "url": "sala4_laboratori_dades.html",
+      "label": "← Sala 4: Laboratori de dades"
+    },
+    "home": {
+      "url": "index.html",
+      "label": "Tornar a l'inici"
+    },
+    "next": {
+      "url": "sala6_reflexions.html",
+      "label": "Sala 6: Reflexions →"
+    }
+  }
+}

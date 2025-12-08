@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Astro-Síntesi | Senyals de vida al Sistema Solar",
+    "description": "Presentació de l'exposició Astro-Síntesi. Recorregut divulgatiu previ per les salas y una primera visió del context."
+  },
+  "hero": {
+    "kicker": "Exposició temporal · Museu de la ciència",
+    "title": "Probabilitats de vida al sistema solar",
+    "lead": "Astro-Síntesi ens ofereix un recorregut per l'astrobiologia, explorant les probabilitats de vida fora de la Terra. A partir d'investigacions científiques i dades reals podrem conèixer les condicions que es podrien donar per permetre la vida a diferents racons del sistema solar.",
+    "cta": {
+      "primary": {
+        "text": "Inicia el recorregut",
+        "url": "sala1_estem_sols.html"
+      },
+      "secondary": {
+        "text": "Veure les salas",
+        "url": "#recorrido"
+      }
+    }
+  },
+  "sections": {
+    "contextActual": {
+      "title": "Context actual",
+      "content": [
+        "Durant les darreres dècades, l'astrobiologia ha evolucionat fins a convertir-se en un camp científic sòlid que combina química, física, biologia i geologia planetària per identificar indicadors d'habitabilitat fora de la Terra, que puguin acabar en processos biològics.",
+        "Un dels descobriments recents més rellevants prové d'<strong>Enceladus</strong>, lluna de Saturn, on la missió Cassini va analitzar plomalls d'aigua i gel procedents del seu oceà subterrani. L'estudi publicat el 2025 per <a href=\"https://www.nature.com/articles/s41550-025-02655-y\" target=\"_blank\" rel=\"noopener\">Khawaja et al.</a> revela la presència d'una varietat ampliada de molècules orgàniques complexes generades en sistemes hidrotermals actius. Aquest tipus d'entorns, que combinen aigua líquida, energia i química rica en carboni, són coherents amb escenaris prebiòtics similars als que, a la Terra, van precedir l'origen de la vida.",
+        "Aquest descobriment s'afegeix a desenes d'estudis i missions —com Galileo, Mars Science Laboratory o la recent Europa Clipper— que analitzen atmosferes, superfícies gelades, camps magnètics i molècules presents a altres mons. Encara que no disposem de dades que permetin assignar \"probabilitats de vida\" numèriques, sí que coneixem factors d'habitabilitat que apunten cap a entorns potencialment habitables."
+      ]
+    },
+    "contextCientific": {
+      "title": "Context científic",
+      "cards": [
+        {
+          "title": "Astrobiologia",
+          "content": "L'astrobiologia estudia les diferents condicions que poden permetre l'existència de vida, centrant-se en <strong>indicadors d'habitabilitat</strong>, com l'aigua líquida, fonts d'energia i presència de molècules orgàniques. Les missions espacials proporcionen dades essencials que permeten investigar i identificar quins mons del sistema podrien ser potencialment habitables."
+        },
+        {
+          "title": "Interpretació científica",
+          "content": "Les sondes espacials utilitzen instruments com <strong>espectròmetres de masses, magnetòmetres, sistemes d'anàlisi lumínica</strong> o mesures ambientals per inferir composicions químiques i processos geològics. Aquestes dades permeten reconstruir escenaris ambientals sense necessitat d'observar vida de manera directa."
+        },
+        {
+          "title": "Oceans ocults",
+          "content": "Diverses llunes del sistema solar, especialment <strong>Europa i Enceladus</strong>, amaguen oceans sota capes gruixudes de gel. El contacte entre aigua, roques i fonts d'energia interna podria generar reaccions similars a les que van donar origen a la vida al nostre planeta, convertint aquests mons en objectius prioritaris de la recerca astrobiològica."
+        }
+      ]
+    },
+    "recorregut": {
+      "title": "Recorregut de l'exposició",
+      "intro": "Aquesta web resumeix els continguts principals de cadascuna de les sis sales de l'exposició. Al museu, aquests materials s'amplien amb instal·lacions immersives, panells interactius, recursos audiovisuals i experiències sensorials.",
+      "salas": [
+        {
+          "number": "1",
+          "title": "Estem sols?",
+          "description": "Introducció a l'exploració del sistema solar i a la recerca de condicions de vida fora de la terra.",
+          "url": "sala1_estem_sols.html"
+        },
+        {
+          "number": "2",
+          "title": "Factors d'habitabilitat",
+          "description": "Elements físics i químics que determinen si un entorn pot ser habitable: temperatura, aigua, energia, atmòsfera, molècules orgàniques i camps magnètics.",
+          "url": "sala2_factors_habitabilitat.html"
+        },
+        {
+          "number": "3",
+          "title": "Galeria de mons",
+          "description": "Comparativa de llunes i planetes potencialment habitables i no habitables, i les seves condicions ambientals.",
+          "url": "sala3_galeria_mons.html"
+        },
+        {
+          "number": "4",
+          "title": "Laboratori de dades",
+          "description": "Com les missions espacials registren, processen i interpreten dades reals.",
+          "url": "sala4_laboratori_dades.html"
+        },
+        {
+          "number": "5",
+          "title": "Immersió",
+          "description": "Experiència immersiva basada en la traducció de dades reals del sistema solar.",
+          "url": "sala5_immersio.html"
+        },
+        {
+          "number": "6",
+          "title": "Reflexions",
+          "description": "Espai per a la síntesi, participació del públic i qüestions obertes sobre el futur de l'exploració.",
+          "url": "sala6_reflexions.html"
+        }
+      ]
+    },
+    "projecte": {
+      "title": "Projecte",
+      "content": "Astro-Síntesi combina investigació científica i disseny audiovisual generat amb el suport d'IA per traduir dades complexes en continguts accessibles. Aquesta web actua com a introducció al recorregut expositiu i com una invitació a explorar l'astrobiologia des d'una perspectiva crítica i informada."
+    }
+  },
+  "footer": {
+    "line1": "Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.",
+    "line2": "Yolanda Afán Asencio · UOC"
+  }
+}
