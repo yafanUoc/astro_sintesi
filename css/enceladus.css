@@ -1,0 +1,373 @@
+/* ============================================================================
+   INFOGRAFIA INTERACTIVA D'ENCELADUS - Sala 3
+   ============================================================================ */
+
+.enceladus-container {
+    position: relative;
+    max-width: 100%;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    /*background: linear-gradient(135deg, #f8fafc, #e0e7ff);*/
+    /*border: 1px solid var(--border-soft);*/
+}
+
+.enceladus-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+}
+
+.enceladus-base-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* SVG per les línies de connexió */
+.connection-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.connection-line {
+    stroke: #3b82f6;
+    stroke-width: 2;
+    fill: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.connection-line.active {
+    opacity: 0.6;
+}
+
+/* Punts interactius amb animació de cercles */
+.enceladus-hotspot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #3b82f6;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+.enceladus-hotspot:hover {
+    background: #60a5fa;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.6);
+}
+
+.enceladus-hotspot:hover .hotspot-inner {
+    opacity: 1;
+}
+
+.enceladus-hotspot:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.enceladus-hotspot:active {
+    transform: scale(1.1);
+}
+
+/* Cercle interior que apareix en hover */
+.hotspot-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Animació de pols - cercles que es van escalant */
+.hotspot-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #60a5fa;
+    opacity: 0.8;
+    animation: pulse-scale 1.5s ease-out infinite;
+}
+
+.hotspot-pulse:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.hotspot-pulse:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+@keyframes pulse-scale {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+/* Targetes d'informació posicionades al costat */
+.layer-info-panel {
+    position: absolute;
+    width: 320px;
+    max-height: 400px;
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    border: 2px solid #3b82f6;
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.2);
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 50;
+}
+
+.layer-info-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Posicionament dinàmic de les targetes */
+.layer-info-panel.position-right {
+    left: calc(100% + 30px);
+}
+
+.layer-info-panel.position-left {
+    right: calc(100% + 30px);
+}
+
+.layer-info-panel.position-top {
+    top: 0;
+}
+
+.layer-info-panel.position-bottom {
+    bottom: 0;
+}
+
+.layer-info-panel.position-middle {
+    top: 50%;
+    transform: translateY(-50%) scale(0.9);
+}
+
+.layer-info-panel.position-middle.active {
+    transform: translateY(-50%) scale(1);
+}
+
+.close-panel {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.close-panel:hover {
+    background: #3b82f6;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.layer-info-content h3 {
+    margin: 0 0 var(--spacing-md);
+    color: #3b82f6;
+    font-size: 1.3rem;
+    padding-right: var(--spacing-lg);
+}
+
+.layer-info-content p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+    font-size: var(--font-size-base);
+    text-align: left;
+    color: var(--text-main);
+}
+
+.layer-info-content strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.layer-info-content ul {
+    margin: var(--spacing-md) 0;
+    padding-left: var(--spacing-lg);
+}
+
+.layer-info-content li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+/* Scrollbar personalitzada per les targetes */
+.layer-info-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.layer-info-panel::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.layer-info-panel::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 3px;
+}
+
+.layer-info-panel::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .enceladus-container {
+        padding: var(--spacing-md);
+    }
+
+    /* En pantalles petites, mostrar les targetes com a modal centrat */
+    .layer-info-panel {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%) scale(0.9);
+        width: 90%;
+        max-width: 500px;
+        max-height: 70vh;
+    }
+
+    .layer-info-panel.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    /* Amagar línies de connexió en mòbil */
+    .connection-lines {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .enceladus-hotspot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .layer-info-panel {
+        width: 95%;
+        max-height: 75vh;
+        padding: var(--spacing-md);
+    }
+
+    .layer-info-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animació d'entrada per les targetes */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.layer-info-content > * {
+    animation: slideIn 0.4s ease-out backwards;
+}
+
+.layer-info-content > *:nth-child(1) { animation-delay: 0.1s; }
+.layer-info-content > *:nth-child(2) { animation-delay: 0.2s; }
+.layer-info-content > *:nth-child(3) { animation-delay: 0.3s; }
+.layer-info-content > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* Tooltips informatius */
+.enceladus-hotspot {
+    position: relative; /* Afegeix això si no hi és */
+}
+
+.hotspot-tooltip {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.95);
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hotspot-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(15, 23, 42, 0.95);
+}
+
+.enceladus-hotspot:hover .hotspot-tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: calc(100% + 16px);
+}
+
+/* Responsive tooltips */
+@media (max-width: 768px) {
+    .hotspot-tooltip {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+}

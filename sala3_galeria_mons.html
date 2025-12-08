@@ -12,15 +12,17 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
+    <link rel="stylesheet" href="css/enceladus.css" />
 
     <!-- JavaScript -->
     <script defer src="js/content-loader.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/enceladus-interactive.js"></script>
 </head>
 
 <body class="body-sala3">
 <!-- ============================================
-     HEADER - Navegación principal
+     HEADER - Navegació principal
      ============================================ -->
 <header class="site-header">
     <div class="logo-block">
@@ -70,7 +72,7 @@
         <div class="sala-intro" data-content="paragraphs">
             <p>Carregant contingut...</p>
         </div>
-        <a href="https://science.nasa.gov/photojournal/galleries/">
+        <a href="https://science.nasa.gov/photojournal/galleries/" target="_blank" rel="noopener">
             Nasa - Photojournal Gallery
         </a>
     </section>
@@ -93,14 +95,34 @@
         </div>
     </section>
 
-    <!-- Contingut interactiu / generatiu -->
+    <!-- Contingut interactiu / generatiu - INFOGRAFIA ENCELADUS -->
     <section class="section sala-layout" data-section="explore">
         <header class="sala-header">
             <p class="sala-kicker" data-content="kicker">Explora</p>
+            <h2>Model interactiu d'Enceladus</h2>
         </header>
 
-        <div class="sala-intro" data-content="paragraphs">
-            <p>Carregant contingut...</p>
+        <div class="sala-intro">
+            <p>Explora les capes d'Enceladus, una de les llunes més prometedores per a la recerca de vida. Passa el cursor sobre els punts blaus per descobrir les característiques de cada capa.</p>
+        </div>
+
+        <!-- Infografia interactiva d'Enceladus -->
+        <div id="enceladus-interactive" class="enceladus-container">
+            <div class="enceladus-image-wrapper">
+                <img src="images/encelado_sora.png" alt="Capes internes d'Enceladus" class="enceladus-base-image">
+
+                <!-- Els punts interactius es generen dinàmicament amb JavaScript -->
+                <!-- Ja no cal definir-los aquí! -->
+
+                <!-- Panell d'informació (es posicionarà dinàmicament) -->
+                <div id="layer-info-panel" class="layer-info-panel" aria-live="polite">
+                    <button class="close-panel" aria-label="Tancar informació">✕</button>
+                    <div class="layer-info-content">
+                        <h3 id="layer-title"></h3>
+                        <div id="layer-description"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -132,7 +154,7 @@
 </footer>
 
 <!-- ============================================
-     INICIALIZACIÓN DEL CONTENIDO
+     INICIALITZACIÓ DEL CONTINGUT
      ============================================ -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
