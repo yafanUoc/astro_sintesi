@@ -12,9 +12,11 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
 
     <!-- JavaScript -->
     <script defer src="js/content-loader.js"></script>
+    <script defer src="js/quiz.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 
@@ -87,18 +89,15 @@
     </section>
 
     <!-- Contingut interactiu / generatiu -->
-    <section class="section sala-layout" data-section="explore">
+    <!-- ✅ AHORA (con quiz) -->
+    <section class="section sala-layout">
         <header class="sala-header">
-            <p class="sala-kicker" data-content="kicker">Explora</p>
+            <p class="sala-kicker">Explora</p>
+            <h2>Possa a prova els teus coneixements</h2>
         </header>
 
-        <div class="sala-main">
-            <div class="sala-highlight">
-                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut interactiu de reflexió"></div>
-                <p class="sala-placeholder" data-content="placeholder">
-                    Carregant contingut...
-                </p>
-            </div>
+        <div id="quiz-container">
+            <!-- El quiz se carga aquí -->
         </div>
     </section>
 

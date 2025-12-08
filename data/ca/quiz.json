@@ -1,0 +1,162 @@
+{
+  "title": "Quiz: Probabilitats de vida al Sistema Solar",
+  "subtitle": "",
+  "questions": [
+    {
+      "id": 1,
+      "difficulty": "easy",
+      "question": "Quin és el principal objectiu de l'astrobiologia?",
+      "options": [
+        "Estudiar només la vida a la Terra",
+        "Identificar indicadors d'habitabilitat fora de la Terra",
+        "Crear vida artificial en laboratoris",
+        "Explorar només planetes rocosos"
+      ],
+      "correct": 1,
+      "explanation": "L'astrobiologia es centra en identificar condicions físiques i químiques que poden sostenir processos biològics fora de la Terra."
+    },
+    {
+      "id": 2,
+      "difficulty": "easy",
+      "question": "Quin dels següents factors NO és essencial per a l'habitabilitat?",
+      "options": [
+        "Aigua líquida",
+        "Font d'energia",
+        "Atmosfera d'oxigen",
+        "Elements químics essencials"
+      ],
+      "correct": 2,
+      "explanation": "Tot i que l'oxigen és important per a la vida terrestre, no és indispensable per a totes les formes de vida. Organismes extremòfils poden viure sense oxigen."
+    },
+    {
+      "id": 3,
+      "difficulty": "easy",
+      "question": "Quina lluna de Saturn va confirmar la presència de molècules orgàniques complexes en els seus plomalls?",
+      "options": [
+        "Tità",
+        "Enceladus",
+        "Rea",
+        "Jàpet"
+      ],
+      "correct": 1,
+      "explanation": "La missió Cassini va detectar en els plomalls d'Enceladus hidrogen molecular, sals i molècules orgàniques complexes, indicadors d'activitat hidrotermal."
+    },
+    {
+      "id": 4,
+      "difficulty": "medium",
+      "question": "Quin rang de temperatura permet l'existència d'aigua líquida a pressió atmosfèrica estàndard?",
+      "options": [
+        "Entre -50°C i 50°C",
+        "Entre 0°C i 100°C",
+        "Entre 10°C i 80°C",
+        "Entre -20°C i 120°C"
+      ],
+      "correct": 1,
+      "explanation": "L'aigua es manté líquida entre 0°C i 100°C a pressió atmosfèrica estàndard, tot i que factors com atmosferes denses poden ampliar aquest marge."
+    },
+    {
+      "id": 5,
+      "difficulty": "medium",
+      "question": "Quina missió espacial va trobar compostos orgànics en sediments marcians de fa 3.000 milions d'anys?",
+      "options": [
+        "Viking",
+        "Opportunity",
+        "Curiosity",
+        "InSight"
+      ],
+      "correct": 2,
+      "explanation": "El ròver Curiosity va identificar minerals hidratats i compostos orgànics en roques antigues del cràter Gale, indicant condicions potencialment habitables al passat."
+    },
+    {
+      "id": 6,
+      "difficulty": "medium",
+      "question": "Per què Europa és considerada un objectiu prioritari per a la recerca astrobiològica?",
+      "options": [
+        "Té atmosfera rica en oxigen",
+        "Conté un oceà subsuperficial amb possible activitat hidrotermal",
+        "La seva superfície rep molta llum solar",
+        "Té volcans actius a la superfície"
+      ],
+      "correct": 1,
+      "explanation": "Europa alberga un oceà d'aigua líquida sota el gel. El contacte entre l'oceà i el nucli rocós podria generar reaccions hidrotermals similars a les fonts terrestres."
+    },
+    {
+      "id": 7,
+      "difficulty": "hard",
+      "question": "Quin instrument científic utilitza la missió Cassini per detectar la composició química dels plomalls d'Enceladus?",
+      "options": [
+        "Càmera d'alta resolució",
+        "Espectròmetre de masses",
+        "Radar de penetració",
+        "Magnetòmetre"
+      ],
+      "correct": 1,
+      "explanation": "L'espectròmetre de masses analitza la composició molecular de partícules, permetent identificar elements i compostos orgànics en els plomalls."
+    },
+    {
+      "id": 8,
+      "difficulty": "hard",
+      "question": "Quin procés permet que Tità mantingui una atmosfera densa malgrat les baixes temperatures?",
+      "options": [
+        "Volcans actius que alliberen gasos",
+        "Processos fotoquímics impulsats per radiació ultraviolada",
+        "Camp magnètic intens",
+        "Efecte hivernacle extrem"
+      ],
+      "correct": 1,
+      "explanation": "La radiació solar i de Saturn descompon metà i nitrogen a l'alta atmosfera de Tità, generant hidrocarburs complexos mitjançant processos fotoquímics."
+    },
+    {
+      "id": 9,
+      "difficulty": "hard",
+      "question": "Per què Venus, malgrat estar a la zona habitable, és inhabitable?",
+      "options": [
+        "No té aigua en cap forma",
+        "L'efecte hivernacle descontrolat ha elevat la temperatura a més de 460°C",
+        "La seva rotació és massa lenta",
+        "No té camp magnètic"
+      ],
+      "correct": 1,
+      "explanation": "Venus pateix un efecte hivernacle extrem amb una atmosfera densa de CO₂ que crea temperatures superiors a 460°C i núvols d'àcid sulfúric."
+    },
+    {
+      "id": 10,
+      "difficulty": "hard",
+      "question": "Quina limitació fonamental té la detecció de biosenyals amb la tecnologia actual?",
+      "options": [
+        "No podem arribar a altres planetes",
+        "Els instruments no són prou sensibles",
+        "Podem detectar indicadors d'habitabilitat però no proves directes de vida",
+        "Les missions espacials són massa cares"
+      ],
+      "correct": 2,
+      "explanation": "Les dades actuals revelen entorns potencialment habitables, però la distància entre indicadors químics/geològics i proves directes de biologia continua sent el gran repte de l'astrobiologia."
+    }
+  ],
+  "scoringMessages": [
+    {
+      "min": 0,
+      "max": 3,
+      "title": "Segueix explorant!",
+      "message": "L'astrobiologia és un camp fascinant. Revisa els continguts de l'exposició per aprofundir en els conceptes clau."
+    },
+    {
+      "min": 4,
+      "max": 6,
+      "title": "Bon coneixement!",
+      "message": "Tens una base sòlida sobre habitabilitat i exploració espacial. Continua aprenent sobre les missions i descobriments recents."
+    },
+    {
+      "min": 7,
+      "max": 8,
+      "title": "Excel·lent!",
+      "message": "Demostres un coneixement avançat d'astrobiologia. Estàs preparat per aprofundir en la literatura científica especialitzada."
+    },
+    {
+      "min": 9,
+      "max": 10,
+      "title": "Expert en astrobiologia!",
+      "message": "Has dominat els conceptes clau de l'exposició. El teu coneixement reflecteix una comprensió profunda de la recerca de vida al Sistema Solar."
+    }
+  ]
+}
