@@ -27,6 +27,7 @@
         {
           "label": "Enceladus",
           "title": "Oceà actiu sota el gel",
+          "image": "images/encelado_nasa.png",
           "content": "Enceladus, lluna de Saturn, conté un oceà global sota la seva capa de gel. Les dades de Cassini van confirmar plomalls actius rics en aigua líquida, sals, hidrogen molecular i molècules orgàniques complexes, indicadors d'activitat hidrotermal al fons oceànic. Aquestes condicions són sorprenentment similars a ecosistemes terrestres basats en fonts hidrotermals, considerats entorns candidats per a l'origen de la vida.",
           "resources": [
             {
@@ -42,6 +43,7 @@
         {
           "label": "Europa",
           "title": "Oceans sota el gel de Júpiter",
+          "image": "images/europa_nasa.png",
           "content": "Europa, lluna de Júpiter, alberga un oceà d'aigua líquida sota una capa de gel d'entre 10 i 30 km de gruix. El contacte entre l'oceà i el nucli rocós podria generar reaccions hidrotermals, una font d'energia clau per mantenir processos biològics. Les mesures de Galileo i les futures observacions de Europa Clipper busquen determinar la composició del gel, la possible presència de molècules orgàniques i l'estructura interna del satèl·lit.",
           "resources": [
             {
@@ -57,6 +59,7 @@
         {
           "label": "Marte",
           "title": "Un passat habitable",
+          "image": "images/marte_nasa.png",
           "content": "El planeta Mart presenta indicis clars d'haver tingut aigua líquida en el passat: deltes, xarxes fluvials i minerals hidratats. Les missions Curiosity i Perseverance han trobat compostos orgànics i variacions estacionals de metà, un gas que pot tenir origen geològic o biològic. Actualment, la seva atmosfera és prima i freda, però el seu passat suggereix que podria haver estat habitable fa milers de milions d'anys.",
           "resources": [
             {
@@ -72,6 +75,7 @@
         {
           "label": "Tità",
           "title": "Atmosfera densa i química orgànica",
+          "image": "images/titan_nasa.png",
           "content": "Tità, lluna de Saturn, és l'únic objecte del Sistema Solar (a banda de la Terra) amb rius, llacs i pluges, tot i que formats per metà i età líquids. La missió Huygens i l'òrbita de Cassini van revelar una atmosfera densa rica en hidrocarburs i processos fotoquímics complexos. Tot i les baixes temperatures, Tità és un laboratori natural de química orgànica primitiva que podria ajudar a comprendre escenaris prebiòtics.",
           "resources": [
             {
@@ -91,6 +95,7 @@
         {
           "label": "Venus",
           "title": "Descontrol de l'efecte hivernacle",
+          "image": "images/venus_nasa.png",
           "content": "Tot i tenir una mida similar a la Terra, Venus és un exemple extrem d'efecte hivernacle: temperatures de més de 460 °C, atmosfera densa de CO₂ i núvols d'àcid sulfúric. Aquests factors impedeixen l'existència d'aigua líquida i creen un ambient químic incompatible amb processos biològics coneguts.",
           "resources": [
             {
@@ -110,6 +115,7 @@
         {
           "label": "Io",
           "title": "Volcans extrems",
+          "image": "images/io_nasa.png",
           "content": "Io, lluna de Júpiter, és el cos més volcànicament actiu del Sistema Solar. La fricció mareal generada per Júpiter i altres llunes crea un interior constantment fos i una superfície coberta de sulfur i lava. Aquestes condicions extremes eliminen la possibilitat d'aigua estable i fan inviable qualsevol escenari d'habitabilitat.",
           "resources": [
             {
@@ -129,6 +135,7 @@
         {
           "label": "Júpiter",
           "title": "Gegant gasós",
+          "image": "images/jupiter_nasa.png",
           "content": "Júpiter és un planeta gasós sense superfície sòlida i amb una atmosfera composta principalment d'hidrogen i heli. Les condicions extremes de pressió, temperatura i radiació provenen del seu potent camp magnètic, fent-lo inviable com a entorn biològic.",
           "resources": [
             {
@@ -150,7 +157,10 @@
     {
       "id": "explore",
       "kicker": "Explora",
-      "placeholder": "Contingut generatiu sobre la galeria de mons"
+      "content": [
+        "Aquesta galeria ofereix una visió comparativa dels diferents entorns que trobem al Sistema Solar. Des d'oceans ocults sota capes de gel fins a atmosferes extremadament hostils, cada món ens ensenya aspectes únics sobre les condicions necessàries per a la vida.",
+        "Les imatges procedeixen de missions espacials reals com Cassini, Galileo, Mars Reconnaissance Orbiter i Juno, proporcionant una representació fidedigna d'aquests mons distants."
+      ]
     }
   ],
   "navigation": {

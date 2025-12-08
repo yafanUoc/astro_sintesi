@@ -273,6 +273,11 @@ class ContentLoader {
                 resourcesHTML += '</p>';
             }
 
+            // Renderizar con imagen real si existe, o placeholder si no
+            const imageHTML = world.image
+                ? `<div class="world-image"><img src="${world.image}" alt="${world.label}" /></div>`
+                : `<div class="world-image" role="img" aria-label="Imatge de ${world.label}"></div>`;
+
             article.innerHTML = `
                 <div class="world-content">
                     <span class="route-label">${world.label}</span>
@@ -280,7 +285,7 @@ class ContentLoader {
                     <p>${world.content}</p>
                     ${resourcesHTML}
                 </div>
-                <div class="world-image" role="img" aria-label="Imatge de ${world.label}"></div>
+                ${imageHTML}
             `;
             container.appendChild(article);
         });
