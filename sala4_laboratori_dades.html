@@ -1,193 +1,190 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="ca">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Astro-Síntesi | Sala 4 – Laboratori de dades</title>
+    <title>Sala 4 – Laboratori de dades | Astro-Síntesi</title>
     <meta
             name="description"
             content="Sala 4 de l'exposició Astro-Síntesi: com recollim i interpretem les dades de les missions espacials."
     />
-    <!-- ESTILS -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </head>
 
 <body class="body-sala4">
-    <!-- NAV -->
-    <header class="site-header">
-        <div class="logo-block">
-            <span class="logo-mark">A⋅S</span>
-            <div class="logo-text">
-                <span class="logo-title">Astro-Síntesi</span>
-                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
-            </div>
+<!-- ============================================
+     HEADER - Navegación principal
+     ============================================ -->
+<header class="site-header">
+    <div class="logo-block">
+        <span class="logo-mark">A⋅S</span>
+        <div class="logo-text">
+            <span class="logo-title">Astro-Síntesi</span>
+            <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link">Inici</a>
-            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
-            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
-            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
-            <a href="sala4_laboratori_dades.html" class="nav-link nav-link--active">Sala 4</a>
-            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
-            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
-        </nav>
-    </header>
+    </div>
 
-    <!-- MAIN sala 4 -->
-    <main class="page">
-        <!-- HEAD -->
-        <section class="hero hero-sala">
-            <div class="hero-image-slot"></div>
+    <nav class="main-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-link">Inici</a>
+        <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+        <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+        <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+        <a href="sala4_laboratori_dades.html" class="nav-link nav-link--active">Sala 4</a>
+        <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+        <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+    </nav>
+</header>
 
-            <div class="hero-text hero-text-sala">
-                <p class="hero-kicker">Sala 4 · Dades i instruments</p>
-                <h1>Laboratori de dades</h1>
-                <p class="hero-lead">
-                    Les missions espacials recullen partícules, mesuren camps magnètics i analitzen la llum que
-                    reflecteixen i emeten els planetes i les seves llunes. Aquestes dades revelen la composició,
-                    l’activitat i el potencial d’habitabilitat dels mons del Sistema Solar.
-                </p>
-            </div>
-        </section>
+<!-- ============================================
+     CONTENIDO PRINCIPAL - SALA 4
+     ============================================ -->
+<main class="page">
 
-        <!-- CONTEXT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 4 · Context</p>
-                <h2>Dades i indicadors</h2>
-                <p>
-                    L’estudi de l’habitabilitat planetària depèn de dades recollides per instruments altament
-                    especialitzats que operen en entorns extrems. Espectròmetres, magnetòmetres, detectors de partícules
-                    i càmeres d’alta sensibilitat analitzen la llum, el material ejectat, el camp magnètic o
-                    la superfície dels planetes i llunes. Aquestes mesures, transmeses com a valors numèrics,
-                    s’integren i interpreten mitjançant models físics i químics per reconstruir processos ambientals
-                    que no podem observar directament. És en aquesta interacció entre instrumentació i coneixement on
-                    neix la ciència que permet identificar indicadors d’habitabilitat.
-                </p>
-            </header>
-        </section>
+    <!-- Hero de sala -->
+    <section class="hero hero-sala">
+        <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 4"></div>
 
-        <!-- CONTINGUT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 4 · Continguts principals</p>
-                <h2>Missions i recollida de dades</h2>
-                <p>
-                    Les dades que obtenim de l’exploració planetària són el resultat d’instruments que mesuren llum,
-                    partícules, camps magnètics i composició química. Aquestes mesures, convertides en valors numèrics,
-                    permeten reconstruir processos geològics, químics i ambientals en mons que no podem estudiar
-                    directament. Les missions espacials actuen així com laboratoris en moviment, revelant condicions
-                    que poden afavorir o excloure l’habitabilitat.
-                </p>
-
-                <section class="section-route-sala">
-                    <ol class="route-list">
-                        <li class="route-item">
-                            <span class="route-label">Cassini</span>
-                            <p>
-                                La missió Cassini va transformar la nostra comprensió dels mons oceànics.
-                                El seu espectròmetre de masses va detectar en els plomalls d’Enceladus hidrogen molecular,
-                                sals i molècules orgàniques complexes, indicis clars de reaccions hidrotermals al fons
-                                de l’oceà interior. Aquestes dades van demostrar que processos energètics similars als
-                                de les fonts hidrotermals terrestres existeixen fora de la Terra.
-                                <br><br>
-                                <a href="https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens" target="_blank">
-                                    Cassini-Huygens</a>
-                                <br><br> Articles recomanats:
-                                <a href="https://www.nasa.gov/missions/cassini/nasa-cassini-study-finds-organics-fresh-from-ocean-of-enceladus/" target="_blank">
-                                    NASA Cassini Study Finds Organics ‘Fresh’ From Ocean of Enceladus</a>
-                                <a href="https://www.nasaspaceflight.com/2025/10/cassini-new-molecules-enceladus" target="_blank">
-                                    Scientists use Cassini data to discover new molecules in Enceladus water jets</a>
-                            </p>
-                        </li>
-                        <li class="route-item">
-                            <span class="route-label">Curiosity</span>
-                            <p>
-                                El ròver Curiosity treballa com un laboratori geològic autònom. Els seus instruments
-                                (SAM, ChemCam) escanegen roques i sediments per identificar minerals hidratats,
-                                compostos orgànics i patrons químics que indiquen la presència passada d’aigua estable.
-                                Els resultats apunten que Mart va reunir condicions potencialment habitables fa milers
-                                de milions d’anys.
-                                <br><br> Article recomanat:
-                                <a href="https://link.springer.com/article/10.1007/s11214-022-00882-7" target="_blank">
-                                    Mission Overview and Scientific Contributions from the Mars Science Laboratory Curiosity Rover After Eight Years of Surface Operations</a>
-                            </p>
-                        </li>
-                        <li class="route-item">
-                            <span class="route-label">Juno</span>
-                            <p>
-                                La sonda Juno analitza el camp magnètic, la gravetat i l’atmosfera profunda de Júpiter.
-                                Aquestes dades permeten entendre com un entorn tan extrem afecta les llunes pròximes,
-                                especialment les oceàniques. Les mesures revelen pressions, turbulències i composicions
-                                químiques que descarten l’habitabilitat directa però aporten informació essencial sobre
-                                la formació i l’evolució dels sistemes planetaris.
-                                <br><br> Article recomanat:
-                                <a href="https://www.nature.com/articles/nature25793" target="_blank">
-                                    Jupiter’s atmospheric jet streams extend thousands of kilometres deep</a>
-                            </p>
-                        </li>
-                        <li class="route-item">
-                            <span class="route-label">Europa Clipper</span>
-                            <p>
-                                Europa Clipper, encara en fase de preparació científica, estudiarà l’estructura del gel
-                                d’Europa, la seva composició química i possibles plomalls de l’oceà subsuperficial.
-                                El seu objectiu és determinar si aquest oceà podria sostenir processos biològics,
-                                combinant dades de radar de penetració, espectrometria i detecció de molècules volàtils.
-                                Proporcionarà la visió més completa fins ara d’un dels mons més prometedors per a l’habitabilitat.
-                                <br><br> Article recomanat:
-                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10687213/" target="_blank">
-                                    Investigating Europa’s Habitability with the Europa Clipper</a>
-                            </p>
-                        </li>
-                    </ol>
-                </section>
-
-            </header>
-        </section>
-
-        <!-- CONTINGUT GENERATIU-->
-        <section class="section sala-layout">
-            <p class="sala-header sala-kicker">Sala 4 · Explora</p>
-
-            <div class="sala-main">
-                <div class="sala-highlight">
-                    <p class="sala-placeholder">
-                        CONTINGUT GENERATIU
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- NAVEGACIÓ INFERIOR -->
-        <div class="sala-nav">
-            <a href="sala3_galeria_mons.html" class="btn btn-primary sala-nav-btn">
-                ← Sala 3 · Galería de mons
-            </a>
-            <a href="index.html" class="btn btn-outline sala-nav-btn">
-                Tornar a la pàgina inicial
-            </a>
-            <a href="sala5_immersio.html" class="btn btn-primary sala-nav-btn">
-                Sala 5 · Immersió →
-            </a>
+        <div class="hero-text hero-text-sala">
+            <p class="hero-kicker">Sala 4 · Dades i instruments</p>
+            <h1>Laboratori de dades</h1>
+            <p class="hero-lead">
+                Les missions espacials recullen partícules, mesuren camps magnètics i analitzen la llum que reflecteixen i emeten els planetes i les seves llunes. Aquestes dades revelen la composició, l'activitat i el potencial d'habitabilitat dels mons del Sistema Solar.
+            </p>
         </div>
+    </section>
 
-    </main>
+    <!-- Context -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Context</p>
+            <h2>Dades i indicadors</h2>
+        </header>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>
-            Astro-Síntesi · Projecte de divulgació científica ·
-            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
-        </p>
-        <p>
-            Yolanda Afán Asencio · UOC
+        <div class="sala-intro">
+            <p>
+                L'estudi de l'habitabilitat planetària depèn de dades recollides per instruments altament especialitzats que operen en entorns extrems. Espectròmetres, magnetòmetres, detectors de partícules i càmeres d'alta sensibilitat analitzen la llum, el material ejectat, el camp magnètic o la superfície dels planetes i llunes.
+            </p>
+            <p>
+                Aquestes mesures, transmeses com a valors numèrics, s'integren i interpreten mitjançant models físics i químics per reconstruir processos ambientals que no podem observar directament. És en aquesta interacció entre instrumentació i coneixement on neix la ciència que permet identificar indicadors d'habitabilitat.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contingut principal: Missions -->
+    <section class="section section-route-sala sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Continguts principals</p>
+            <h2>Missions i recollida de dades</h2>
+        </header>
+
+        <p class="sala-intro">
+            Les dades que obtenim de l'exploració planetària són el resultat d'instruments que mesuren llum, partícules, camps magnètics i composició química. Aquestes mesures, convertides en valors numèrics, permeten reconstruir processos geològics, químics i ambientals en mons que no podem estudiar directament. Les missions espacials actuen així com laboratoris en moviment, revelant condicions que poden afavorir o excloure l'habitabilitat.
         </p>
 
-    </footer>
+        <ol class="route-list">
+            <!-- Missió 1: Cassini -->
+            <li class="route-item">
+                <span class="route-label">Cassini</span>
+                <h3>Descobrint oceans oceànics</h3>
+                <p>
+                    La missió Cassini va transformar la nostra comprensió dels mons oceànics. El seu espectròmetre de masses va detectar en els plomalls d'Enceladus hidrogen molecular, sals i molècules orgàniques complexes, indicis clars de reaccions hidrotermals al fons de l'oceà interior. Aquestes dades van demostrar que processos energètics similars als de les fonts hidrotermals terrestres existeixen fora de la Terra.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens" target="_blank" rel="noopener">ESA – Cassini-Huygens</a><br>
+                    <a href="https://www.nasa.gov/missions/cassini/nasa-cassini-study-finds-organics-fresh-from-ocean-of-enceladus/" target="_blank" rel="noopener">NASA: Organics 'Fresh' From Ocean of Enceladus</a><br>
+                    <a href="https://www.nasaspaceflight.com/2025/10/cassini-new-molecules-enceladus" target="_blank" rel="noopener">Article: New molecules in Enceladus water jets</a>
+                </p>
+            </li>
+
+            <!-- Missió 2: Curiosity -->
+            <li class="route-item">
+                <span class="route-label">Curiosity</span>
+                <h3>Laboratori geològic a Mart</h3>
+                <p>
+                    El ròver Curiosity treballa com un laboratori geològic autònom. Els seus instruments (SAM, ChemCam) escanegen roques i sediments per identificar minerals hidratats, compostos orgànics i patrons químics que indiquen la presència passada d'aigua estable. Els resultats apunten que Mart va reunir condicions potencialment habitables fa milers de milions d'anys.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://link.springer.com/article/10.1007/s11214-022-00882-7" target="_blank" rel="noopener">Article: Mission Overview and Scientific Contributions from Curiosity Rover</a>
+                </p>
+            </li>
+
+            <!-- Missió 3: Juno -->
+            <li class="route-item">
+                <span class="route-label">Juno</span>
+                <h3>Analitzant el gegant Júpiter</h3>
+                <p>
+                    La sonda Juno analitza el camp magnètic, la gravetat i l'atmosfera profunda de Júpiter. Aquestes dades permeten entendre com un entorn tan extrem afecta les llunes pròximes, especialment les oceàniques. Les mesures revelen pressions, turbulències i composicions químiques que descarten l'habitabilitat directa però aporten informació essencial sobre la formació i l'evolució dels sistemes planetaris.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://www.nature.com/articles/nature25793" target="_blank" rel="noopener">Article: Jupiter's atmospheric jet streams extend thousands of kilometres deep</a>
+                </p>
+            </li>
+
+            <!-- Missió 4: Europa Clipper -->
+            <li class="route-item">
+                <span class="route-label">Europa Clipper</span>
+                <h3>Explorant l'oceà d'Europa</h3>
+                <p>
+                    Europa Clipper, encara en fase de preparació científica, estudiarà l'estructura del gel d'Europa, la seva composició química i possibles plomalls de l'oceà subsuperficial. El seu objectiu és determinar si aquest oceà podria sostenir processos biològics, combinant dades de radar de penetració, espectrometria i detecció de molècules volàtils. Proporcionarà la visió més completa fins ara d'un dels mons més prometedors per a l'habitabilitat.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10687213/" target="_blank" rel="noopener">Article: Investigating Europa's Habitability with the Europa Clipper</a>
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Contingut interactiu / generatiu -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Explora</p>
+        </header>
+
+        <div class="sala-main">
+            <div class="sala-highlight">
+                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia"></div>
+                <p class="sala-placeholder">
+                    Contingut generatiu sobre missions i dades espacials
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegació entre salas -->
+    <nav class="sala-nav" aria-label="Navegació entre sales">
+        <a href="sala3_galeria_mons.html" class="btn btn-primary sala-nav-btn">
+            ← Sala 3: Galeria de mons
+        </a>
+        <a href="index.html" class="btn btn-outline sala-nav-btn">
+            Tornar a l'inici
+        </a>
+        <a href="sala5_immersio.html" class="btn btn-primary sala-nav-btn">
+            Sala 5: Immersió →
+        </a>
+    </nav>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+    <p>
+        Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+    </p>
+    <p>
+        Yolanda Afán Asencio · UOC
+    </p>
+</footer>
 </body>
 </html>
-

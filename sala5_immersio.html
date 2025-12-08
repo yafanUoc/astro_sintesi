@@ -1,133 +1,139 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="ca">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Astro-Síntesi | Sala 5 – Immersió</title>
+    <title>Sala 5 – Immersió | Astro-Síntesi</title>
     <meta
             name="description"
             content="Sala 5 de l'exposició Astro-Síntesi: experiència immersiva basada en dades reals del Sistema Solar."
     />
-    <!-- ESTILS -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </head>
 
 <body class="body-sala5">
-    <!-- NAV -->
-    <header class="site-header">
-        <div class="logo-block">
-            <span class="logo-mark">A⋅S</span>
-            <div class="logo-text">
-                <span class="logo-title">Astro-Síntesi</span>
-                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+<!-- ============================================
+     HEADER - Navegación principal
+     ============================================ -->
+<header class="site-header">
+    <div class="logo-block">
+        <span class="logo-mark">A⋅S</span>
+        <div class="logo-text">
+            <span class="logo-title">Astro-Síntesi</span>
+            <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+        </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-link">Inici</a>
+        <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+        <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+        <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+        <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+        <a href="sala5_immersio.html" class="nav-link nav-link--active">Sala 5</a>
+        <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+    </nav>
+</header>
+
+<!-- ============================================
+     CONTENIDO PRINCIPAL - SALA 5
+     ============================================ -->
+<main class="page">
+
+    <!-- Hero de sala -->
+    <section class="hero hero-sala">
+        <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 5"></div>
+
+        <div class="hero-text hero-text-sala">
+            <p class="hero-kicker">Sala 5 · Experiència sensorial</p>
+            <h1>Immersió</h1>
+            <p class="hero-lead">
+                La ciència es transforma en llum i so per explorar el Sistema Solar a través dels seus patrons físics i ambientals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Context -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Context</p>
+            <h2>De les dades a l'experiència</h2>
+        </header>
+
+        <div class="sala-intro">
+            <p>
+                Aproximació sensorial a l'astrobiologia amb dades reals — camps magnètics, variacions de llum, fluxos de partícules o intensitats atmosfèriques— es converteixen en textures visuals i paisatges sonors.
+            </p>
+            <p>
+                Aquest procés, conegut com sonificació i visualització de dades, permet percebre fenòmens del cosmos que normalment són invisibles, mostrant ritmes, freqüències i dinàmiques que defineixen l'activitat dels mons del Sistema Solar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contingut principal -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Continguts principals</p>
+            <h2>Viure els entorns del Sistema Solar</h2>
+        </header>
+
+        <div class="sala-intro">
+            <p>
+                L'experiència immersiva utilitza dades recollides per les missions espacials anomenades a la sala anterior per generar entorns audiovisuals que reflecteixen fenòmens reals: variacions magnètiques convertides en vibracions sonores, intensitats lumíniques transformades en gradients de color o perfils atmosfèrics que esdevenen moviments fluids. Cada patró prové d'un procés físic interpretat per instruments científics i traduït a formes perceptibles.
+            </p>
+            <p>
+                Representació del comportament intern a través de llenguatges sensorials. Les oscil·lacions d'un camp magnètic, l'energia d'una tempesta o la densitat d'un plomall oceànic es converteixen en un paisatge immersiu que combina art i ciència, oferint una nova manera d'apropar-se a l'habitabilitat i a la dinàmica del Sistema Solar.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contingut interactiu / generatiu -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Explora</p>
+        </header>
+
+        <div class="sala-main">
+            <div class="sala-highlight">
+                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia immersiu"></div>
+                <p class="sala-placeholder">
+                    Experiència audiovisual immersiva basada en dades del Sistema Solar
+                </p>
             </div>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link">Inici</a>
-            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
-            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
-            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
-            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
-            <a href="sala5_immersio.html" class="nav-link nav-link--active">Sala 5</a>
-            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
-        </nav>
-    </header>
+    </section>
 
-    <!-- MAIN sala 5 -->
-    <main class="page">
-        <!-- HEAD -->
-        <section class="hero hero-sala">
-            <div class="hero-image-slot"></div>
+    <!-- Navegació entre salas -->
+    <nav class="sala-nav" aria-label="Navegació entre sales">
+        <a href="sala4_laboratori_dades.html" class="btn btn-primary sala-nav-btn">
+            ← Sala 4: Laboratori de dades
+        </a>
+        <a href="index.html" class="btn btn-outline sala-nav-btn">
+            Tornar a l'inici
+        </a>
+        <a href="sala6_reflexions.html" class="btn btn-primary sala-nav-btn">
+            Sala 6: Reflexions →
+        </a>
+    </nav>
 
-            <div class="hero-text hero-text-sala">
-                <p class="hero-kicker">Sala 5 · Experiència sensorial</p>
-                <h1>Immersió</h1>
-                <p class="hero-lead">
-                    La ciència es transforma en llum i so per explorar el Sistema Solar a través dels seus patrons
-                    físics i ambientals.
-                </p>
-            </div>
-        </section>
+</main>
 
-        <!-- CONTEXT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 5 · Context</p>
-                <h2>De les dades a l’experiència</h2>
-                <p class="sala-intro">
-                    Aproximació sensorial a l'astrobiologia amb dades reals
-                    — camps magnètics, variacions de llum, fluxos de partícules o intensitats atmosfèriques— es
-                    converteixen en textures visuals i paisatges sonors. Aquest procés, conegut com sonificació i
-                    visualització de dades, permet percebre fenòmens del cosmos que normalment són invisibles, mostrant
-                    ritmes, freqüències i dinàmiques que defineixen l’activitat dels mons del Sistema Solar.
-                </p>
-            </header>
-        </section>
-
-        <!-- CONTINGUT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 5 · Continguts principals</p>
-                <h2>Viure els entorns del Sistema Solar</h2>
-                <p>
-                    L’experiència immersiva utilitza dades recollides per les missions espacials anomenades a la sala
-                    anterior per generar entorns audiovisuals que reflecteixen fenòmens reals: variacions magnètiques
-                    convertides en vibracions sonores, intensitats lumíniques transformades en gradients de color o
-                    perfils atmosfèrics que esdevenen moviments fluids. Cada patró prové d’un procés físic
-                    interpretat per instruments científics i traduït a formes perceptibles.
-
-                    Representació del comportament intern a través de llenguatges sensorials. Les oscil·lacions d’un camp magnètic,
-                    l’energia d’una tempesta o la densitat d’un plomall oceànic es converteixen en un paisatge immersiu
-                    que combina art i ciència, oferint una nova manera d’apropar-se a l’habitabilitat i a la dinàmica
-                    del Sistema Solar.
-                </p>
-            </header>
-        </section>
-
-        <!-- CONTINGUT GENERATIU-->
-        <section class="section sala-layout">
-            <p class="sala-header sala-kicker">Sala 5 · Explora</p>
-
-            <div class="sala-main">
-                <div class="sala-highlight">
-                    <p class="sala-placeholder">
-                        CONTINGUT GENERATIU
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- NAVEGACIÓ INFERIOR -->
-        <div class="sala-nav">
-            <a href="sala4_laboratori_dades.html" class="btn btn-primary sala-nav-btn">
-                ← Sala 4 · Laboratori de dades
-            </a>
-            <a href="index.html" class="btn btn-outline sala-nav-btn">
-                Tornar a la pàgina inicial
-            </a>
-            <a href="sala6_reflexions.html" class="btn btn-primary sala-nav-btn">
-                Sala 6 · Reflexions →
-            </a>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>
-            Astro-Síntesi · Projecte de divulgació científica ·
-            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
-        </p>
-        <p>
-            Yolanda Afán Asencio · UOC
-        </p>
-
-    </footer>
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+    <p>
+        Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+    </p>
+    <p>
+        Yolanda Afán Asencio · UOC
+    </p>
+</footer>
 </body>
-
 </html>
-
-

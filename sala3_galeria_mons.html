@@ -1,260 +1,266 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="ca">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Astro-Síntesi | Sala 3 – Galeria de mons</title>
+    <title>Sala 3 – Galeria de mons | Astro-Síntesi</title>
     <meta
             name="description"
             content="Sala 3 de l'exposició Astro-Síntesi: comparativa de diferents mons del Sistema Solar i la seva possible habitabilitat."
     />
-    <!-- ESTILS -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </head>
 
 <body class="body-sala3">
-    <!-- NAV -->
-    <header class="site-header">
-        <div class="logo-block">
-            <span class="logo-mark">A⋅S</span>
-            <div class="logo-text">
-                <span class="logo-title">Astro-Síntesi</span>
-                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
-            </div>
+<!-- ============================================
+     HEADER - Navegación principal
+     ============================================ -->
+<header class="site-header">
+    <div class="logo-block">
+        <span class="logo-mark">A⋅S</span>
+        <div class="logo-text">
+            <span class="logo-title">Astro-Síntesi</span>
+            <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link">Inici</a>
-            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
-            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
-            <a href="sala3_galeria_mons.html" class="nav-link nav-link--active">Sala 3</a>
-            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
-            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
-            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
-        </nav>
-    </header>
+    </div>
 
-    <!-- MAIN sala 3 -->
-    <main class="page">
-        <!-- HEAD -->
-        <section class="hero hero-sala">
-            <div class="hero-image-slot"></div>
+    <nav class="main-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-link">Inici</a>
+        <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+        <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+        <a href="sala3_galeria_mons.html" class="nav-link nav-link--active">Sala 3</a>
+        <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+        <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+        <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+    </nav>
+</header>
 
-            <div class="hero-text hero-text-sala">
-                <p class="hero-kicker">Sala 3 · Comparativa de mons</p>
-                <h1>Galeria de mons</h1>
-                <p class="hero-lead">
-                    El Sistema Solar està format per mons diversos, amb atmosferes, superfícies i processos interns que
-                    revelen escenaris molt diferents d’habitabilitat. Aquesta sala compara alguns dels objectes més
-                    estudiats per comprendre quin paper hi juga la geologia, la química i l’energia en la possibilitat
-                    de vida.
-                </p>
-            </div>
-        </section>
+<!-- ============================================
+     CONTENIDO PRINCIPAL - SALA 3
+     ============================================ -->
+<main class="page">
 
-        <!-- CONTEXT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 3 · Context</p>
-                <h2>Una "galeria" basada en dades reals</h2>
-                <p>
-                    L’estudi comparatiu de planetes i llunes permet identificar patrons d’habitabilitat i entendre per
-                    què alguns mons presenten condicions favorables a processos biològics mentre que d’altres són
-                    entorns extremadament hostils. Les dades recollides per missions com Cassini, Galileo, Mars Science
-                    Laboratory, Juno o Huygens han revelat oceans subterranis, atmosferes complexes, superfícies actives
-                    i camps magnètics intensos. Aquesta diversitat ens ofereix una visió més precisa de com poden
-                    evolucionar els ambients planetaris i quines característiques poden conduir, o impedir,
-                    l’aparició de vida.
-                </p>
-            </header>
-        </section>
+    <!-- Hero de sala -->
+    <section class="hero hero-sala">
+        <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 3"></div>
 
-        <!-- CONTINGUT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 3 · Continguts principals</p>
-                <h2>Enceladus, Marte, Europa, Tità, Venus, Io i Júpiter</h2>
-                <p>
-                    Els planetes i les llunes del Sistema Solar mostren una gran varietat de condicions ambientals.
-                    Comparar-los ens ajuda a reconèixer quins factors poden afavorir l’habitabilitat i quins generen
-                    entorns extremadament adversos.
-                </p>
+        <div class="hero-text hero-text-sala">
+            <p class="hero-kicker">Sala 3 · Comparativa de mons</p>
+            <h1>Galeria de mons</h1>
+            <p class="hero-lead">
+                El Sistema Solar està format per mons diversos, amb atmosferes, superfícies i processos interns que revelen escenaris molt diferents d'habitabilitat. Aquesta sala compara alguns dels objectes més estudiats per comprendre quin paper hi juga la geologia, la química i l'energia en la possibilitat de vida.
+            </p>
+        </div>
+    </section>
 
-                <section class="section-route-sala">
-                    <ol class="route-list">
-                        <li class="route-item">
-                            <span class="route-label">Enceladus</span>
-                            <p>
-                                Enceladus, lluna de Saturn, conté un oceà global sota la seva capa de gel. Les dades de
-                                Cassini van confirmar plomalls actius rics en aigua líquida, sals, hidrogen molecular i
-                                molècules orgàniques complexes, indicadors d’activitat hidrotermal al fons oceànic.
-                                Aquestes condicions són sorprenentment similars a ecosistemes terrestres basats en fonts
-                                hidrotermals, considerats entorns candidats per a l’origen de la vida.
-                                <br><br> Articles recomanats:
-                                <a href="https://www.nature.com/articles/s41550-025-02655-y" target="_blank">
-                                    Detection of organic compounds in freshly ejected ice grains from Enceladus’s ocean</a>
-                                <a href="https://www.nature.com/articles/s41550-025-02490-1" target="_blank">
-                                    Seafloor hydrothermal control over ocean dynamics in Enceladus</a>
-                            </p>
-                        </li>
-                    </ol>
-                </section>
+    <!-- Context -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Context</p>
+            <h2>Una "galeria" basada en dades reals</h2>
+        </header>
 
-                <section class="section-route-sala-comb">
-                    <ol class="route-list">
-                        <li class="route-item">
-                            <span class="route-label">Europa - Oceans</span>
-                            <p>
-                                Europa, lluna de Júpiter, alberga un oceà d’aigua líquida sota una capa de gel d’entre 10 i
-                                30 km de gruix. El contacte entre l’oceà i el nucli rocós podria generar reaccions
-                                hidrotermals, una font d’energia clau per mantenir processos biològics. Les mesures de
-                                Galileo i les futures observacions de Europa Clipper busquen determinar la composició del
-                                gel, la possible presència de molècules orgàniques i l’estructura interna del satèl·lit.
-                                <br><br> Articles recomanats:
-                                <a href="https://www.science.org/doi/10.1126/science.1203290" target="_blank">Origin and
-                                    Evolution of Prebiotic Organic Matter As Inferred from the Tagish Lake Meteorite</a>
-                                <a href="https://www.sciencedirect.com/science/article/pii/S0032063323000028" target="_blank">Origin and
-                                    Mapping the surface composition of Europa with SUDA</a>
-                            </p>
-                        </li>
-                        <li class="route-item">
-                            <span class="route-label">Marte - Un passat habitable</span>
-                            <p>
-                                El planeta Mart presenta indicis clars d’haver tingut aigua líquida en el passat: deltes,
-                                xarxes fluvials i minerals hidratats. Les missions Curiosity i Perseverance han trobat
-                                compostos orgànics i variacions estacionals de metà, un gas que pot tenir origen geològic o
-                                biològic. Actualment, la seva atmosfera és prima i freda, però el seu passat suggereix que
-                                podria haver estat habitable fa milers de milions d’anys.
-                                <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank">
-                                    Nasa - Mars curiosity</a>
-                                <br><br> Article recomanat:
-                                <a href="https://www.science.org/doi/10.1126/science.aas9185" target="_blank">
-                                    Organic matter preserved in 3-billion-year-old mudstones at Gale crater, Mars</a>
-                            </p>
-                        </li>
+        <div class="sala-intro">
+            <p>
+                L'estudi comparatiu de planetes i llunes permet identificar patrons d'habitabilitat i entendre per què alguns mons presenten condicions favorables a processos biològics mentre que d'altres són entorns extremadament hostils.
+            </p>
+            <p>
+                Les dades recollides per missions com Cassini, Galileo, Mars Science Laboratory, Juno o Huygens han revelat oceans subterranis, atmosferes complexes, superfícies actives i camps magnètics intensos. Aquesta diversitat ens ofereix una visió més precisa de com poden evolucionar els ambients planetaris i quines característiques poden conduir, o impedir, l'aparició de vida.
+            </p>
+        </div>
+    </section>
 
-                        <li class="route-item">
-                            <span class="route-label">Titan - Atmòsfera</span>
-                            <p>
-                                Tità, lluna de Saturn, és l’únic objecte del Sistema Solar (a banda de la Terra) amb rius,
-                                llacs i pluges, tot i que formats per metà i età líquids. La missió Huygens i l’òrbita de
-                                Cassini van revelar una atmosfera densa rica en hidrocarburs i processos fotoquímics
-                                complexos. Tot i les baixes temperatures, Tità és un laboratori natural de química orgànica
-                                primitiva que podria ajudar a comprendre escenaris prebiòtics.
-                                <a href="https://solarsystem.nasa.gov/moons/saturn-moons/titan/overview/" target="_blank">
-                                    Nasa - Titan</a>
-                                <br><br> Articles recomanats:
-                                <a href="https://www.liebertpub.com/doi/10.1089/ast.2017.1770" target="_blank">Sulfidic
-                                    Anion Concentrations on Early Earth for Surficial Origins-of-Life Chemistry
-                                </a>
-                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0032063315000161" target="_blank">Sulfidic
-                                    Organic chemistry in Titan׳s upper atmosphere and its astrobiological consequences:
-                                    I. Views towards Cassini plasma spectrometer (CAPS) and ion neutral mass
-                                    spectrometer (INMS) experiments in space
-                                </a>
-                            </p>
-                        </li>
-                        <li class="route-item">
-                            <span class="route-label">Venus - Descontrol</span>
-                            <p>
-                                Tot i tenir una mida similar a la Terra, Venus és un exemple extrem d’efecte hivernacle:
-                                temperatures de més de 460 °C, atmosfera densa de CO₂ i núvols d’àcid sulfúric. Aquests
-                                factors impedeixen l’existència d’aigua líquida i creen un ambient químic incompatible amb
-                                processos biològics coneguts.
-                                <a href="https://science.nasa.gov/venus/" target="_blank">
-                                    Nasa - Venus</a>
-                                <br>
-                                <a href="https://www.esa.int/Science_Exploration/Space_Science/Venus_Express" target="_blank">
-                                    Nasa - Venus express. Studyting Venus's atmosphere</a>
-                                <br><br> Article recomanat:
-                                <a href="https://link.springer.com/article/10.1007/s11214-023-00960-4" target="_blank">
-                                    The Habitability of Venus</a>
-                            </p>
-                        </li>
+    <!-- Contingut principal: Galeria de mons -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Continguts principals</p>
+            <h2>Enceladus, Marte, Europa, Tità, Venus, Io i Júpiter</h2>
+        </header>
 
-                        <li class="route-item">
-                            <span class="route-label">IO - volcans</span>
-                            <p>
-                                Io, lluna de Júpiter, és el cos més volcànicament actiu del Sistema Solar. La fricció mareal
-                                generada per Júpiter i altres llunes crea un interior constantment fos i una superfície
-                                coberta de sulfur i lava. Aquestes condicions extremes eliminen la possibilitat d’aigua
-                                estable i fan inviable qualsevol escenari d’habitabilitat.
-                                <br><a href="https://science.nasa.gov/jupiter/jupiter-moons/io/" target="_blank">
-                                Nasa - Io</a>
-                                <br><a href="https://science.nasa.gov/mission/juno/" target="_blank">
-                                Nasa - Juno</a>
-                                <br><br> Article recomanat:
-                                <a href="https://www.nature.com/articles/s41550-023-02123-5.pdf" target="_blank">
-                                    Io’s polar volcanic thermal emission indicative of magma ocean and shallow
-                                    tidal heating models</a>
-                            </p>
-                        </li>
+        <p class="sala-intro">
+            Els planetes i les llunes del Sistema Solar mostren una gran varietat de condicions ambientals. Comparar-los ens ajuda a reconèixer quins factors poden afavorir l'habitabilitat i quins generen entorns extremadament adversos.
+        </p>
 
-                        <li class="route-item">
-                            <span class="route-label">Jupiter - Gas</span>
-                            <p>
-                                Júpiter és un planeta gasós sense superfície sòlida i amb una atmosfera composta
-                                principalment d’hidrogen i heli. Les condicions extremes de pressió, temperatura i radiació
-                                provenen del seu potent camp magnètic, fent-lo inviable com a entorn biològic.
-                                <br><a href="https://science.nasa.gov/jupiter/" target="_blank">
-                                    Nasa - Jupiter</a>
-                                <br><a href="https://science.nasa.gov/mission/juno/" target="_blank">
-                                    Nasa - Juno</a>
-                                <br><br> Article recomanat:
-                                <a href="https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/26890/Rensen_2023_RS_Deep_atmospheric_CC.pdf" target="_blank">
-                                    The Deep Atmospheric Composition of Jupiter</a>
-                            </p>
-                        </li>
+        <!-- Lista de mundos con layout especial -->
+        <div class="world-gallery">
 
-                    </ol>
-                </section>
-            </header>
-        </section>
-
-
-        <!-- CONTINGUT GENERATIU-->
-        <section class="section sala-layout">
-            <p class="sala-header sala-kicker">Sala 3 · Explora</p>
-
-            <div class="sala-main">
-                <div class="sala-highlight">
-                    <p class="sala-placeholder">
-                        CONTINGUT GENERATIU
+            <!-- Mundo 1: Enceladus -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Enceladus</span>
+                    <h3>Oceà actiu sota el gel</h3>
+                    <p>
+                        Enceladus, lluna de Saturn, conté un oceà global sota la seva capa de gel. Les dades de Cassini van confirmar plomalls actius rics en aigua líquida, sals, hidrogen molecular i molècules orgàniques complexes, indicadors d'activitat hidrotermal al fons oceànic. Aquestes condicions són sorprenentment similars a ecosistemes terrestres basats en fonts hidrotermals, considerats entorns candidats per a l'origen de la vida.
+                    </p>
+                    <p>
+                        <strong>Articles recomanats:</strong><br>
+                        <a href="https://www.nature.com/articles/s41550-025-02655-y" target="_blank" rel="noopener">Detection of organic compounds in freshly ejected ice grains from Enceladus's ocean</a><br>
+                        <a href="https://www.nature.com/articles/s41550-025-02490-1" target="_blank" rel="noopener">Seafloor hydrothermal control over ocean dynamics in Enceladus</a>
                     </p>
                 </div>
-            </div>
-        </section>
+                <div class="world-image" role="img" aria-label="Imatge d'Enceladus"></div>
+            </article>
 
-        <!-- NAVEGACIÓ INFERIOR -->
-        <div class="sala-nav">
-            <a href="sala2_factors_habitabilitat.html" class="btn btn-primary sala-nav-btn">
-                ← Sala 2 · Factors d'habitabilitat
-            </a>
-            <a href="index.html" class="btn btn-outline sala-nav-btn">
-                Tornar a la pàgina inicial
-            </a>
-            <a href="sala4_laboratori_dades.html" class="btn btn-primary sala-nav-btn">
-                Sala 4 · Laboratori de dades →
-            </a>
+            <!-- Mundo 2: Europa -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Europa</span>
+                    <h3>Oceans sota el gel de Júpiter</h3>
+                    <p>
+                        Europa, lluna de Júpiter, alberga un oceà d'aigua líquida sota una capa de gel d'entre 10 i 30 km de gruix. El contacte entre l'oceà i el nucli rocós podria generar reaccions hidrotermals, una font d'energia clau per mantenir processos biològics. Les mesures de Galileo i les futures observacions de Europa Clipper busquen determinar la composició del gel, la possible presència de molècules orgàniques i l'estructura interna del satèl·lit.
+                    </p>
+                    <p>
+                        <strong>Articles recomanats:</strong><br>
+                        <a href="https://www.science.org/doi/10.1126/science.1203290" target="_blank" rel="noopener">Origin and Evolution of Prebiotic Organic Matter As Inferred from the Tagish Lake Meteorite</a><br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0032063323000028" target="_blank" rel="noopener">Mapping the surface composition of Europa with SUDA</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge d'Europa"></div>
+            </article>
+
+            <!-- Mundo 3: Marte -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Marte</span>
+                    <h3>Un passat habitable</h3>
+                    <p>
+                        El planeta Mart presenta indicis clars d'haver tingut aigua líquida en el passat: deltes, xarxes fluvials i minerals hidratats. Les missions Curiosity i Perseverance han trobat compostos orgànics i variacions estacionals de metà, un gas que pot tenir origen geològic o biològic. Actualment, la seva atmosfera és prima i freda, però el seu passat suggereix que podria haver estat habitable fa milers de milions d'anys.
+                    </p>
+                    <p>
+                        <strong>Recursos:</strong><br>
+                        <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank" rel="noopener">NASA – Mars Curiosity</a><br>
+                        <a href="https://www.science.org/doi/10.1126/science.aas9185" target="_blank" rel="noopener">Article: Organic matter preserved in 3-billion-year-old mudstones at Gale crater, Mars</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge de Marte"></div>
+            </article>
+
+            <!-- Mundo 4: Tità -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Tità</span>
+                    <h3>Atmosfera densa i química orgànica</h3>
+                    <p>
+                        Tità, lluna de Saturn, és l'únic objecte del Sistema Solar (a banda de la Terra) amb rius, llacs i pluges, tot i que formats per metà i età líquids. La missió Huygens i l'òrbita de Cassini van revelar una atmosfera densa rica en hidrocarburs i processos fotoquímics complexos. Tot i les baixes temperatures, Tità és un laboratori natural de química orgànica primitiva que podria ajudar a comprendre escenaris prebiòtics.
+                    </p>
+                    <p>
+                        <strong>Recursos:</strong><br>
+                        <a href="https://solarsystem.nasa.gov/moons/saturn-moons/titan/overview/" target="_blank" rel="noopener">NASA – Titan</a><br>
+                        <a href="https://www.liebertpub.com/doi/10.1089/ast.2017.1770" target="_blank" rel="noopener">Article: Sulfidic Anion Concentrations on Early Earth</a><br>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0032063315000161" target="_blank" rel="noopener">Article: Organic chemistry in Titan's upper atmosphere</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge de Tità"></div>
+            </article>
+
+            <!-- Mundo 5: Venus -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Venus</span>
+                    <h3>Descontrol de l'efecte hivernacle</h3>
+                    <p>
+                        Tot i tenir una mida similar a la Terra, Venus és un exemple extrem d'efecte hivernacle: temperatures de més de 460 °C, atmosfera densa de CO₂ i núvols d'àcid sulfúric. Aquests factors impedeixen l'existència d'aigua líquida i creen un ambient químic incompatible amb processos biològics coneguts.
+                    </p>
+                    <p>
+                        <strong>Recursos:</strong><br>
+                        <a href="https://science.nasa.gov/venus/" target="_blank" rel="noopener">NASA – Venus</a><br>
+                        <a href="https://www.esa.int/Science_Exploration/Space_Science/Venus_Express" target="_blank" rel="noopener">ESA – Venus Express: Studying Venus's atmosphere</a><br>
+                        <a href="https://link.springer.com/article/10.1007/s11214-023-00960-4" target="_blank" rel="noopener">Article: The Habitability of Venus</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge de Venus"></div>
+            </article>
+
+            <!-- Mundo 6: Io -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Io</span>
+                    <h3>Volcans extrems</h3>
+                    <p>
+                        Io, lluna de Júpiter, és el cos més volcànicament actiu del Sistema Solar. La fricció mareal generada per Júpiter i altres llunes crea un interior constantment fos i una superfície coberta de sulfur i lava. Aquestes condicions extremes eliminen la possibilitat d'aigua estable i fan inviable qualsevol escenari d'habitabilitat.
+                    </p>
+                    <p>
+                        <strong>Recursos:</strong><br>
+                        <a href="https://science.nasa.gov/jupiter/jupiter-moons/io/" target="_blank" rel="noopener">NASA – Io</a><br>
+                        <a href="https://science.nasa.gov/mission/juno/" target="_blank" rel="noopener">NASA – Juno Mission</a><br>
+                        <a href="https://www.nature.com/articles/s41550-023-02123-5.pdf" target="_blank" rel="noopener">Article: Io's polar volcanic thermal emission</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge de Io"></div>
+            </article>
+
+            <!-- Mundo 7: Júpiter -->
+            <article class="world-item">
+                <div class="world-content">
+                    <span class="route-label">Júpiter</span>
+                    <h3>Gegant gasós</h3>
+                    <p>
+                        Júpiter és un planeta gasós sense superfície sòlida i amb una atmosfera composta principalment d'hidrogen i heli. Les condicions extremes de pressió, temperatura i radiació provenen del seu potent camp magnètic, fent-lo inviable com a entorn biològic.
+                    </p>
+                    <p>
+                        <strong>Recursos:</strong><br>
+                        <a href="https://science.nasa.gov/jupiter/" target="_blank" rel="noopener">NASA – Jupiter</a><br>
+                        <a href="https://science.nasa.gov/mission/juno/" target="_blank" rel="noopener">NASA – Juno Mission</a><br>
+                        <a href="https://research-repository.st-andrews.ac.uk/bitstream/handle/10023/26890/Rensen_2023_RS_Deep_atmospheric_CC.pdf" target="_blank" rel="noopener">Article: The Deep Atmospheric Composition of Jupiter</a>
+                    </p>
+                </div>
+                <div class="world-image" role="img" aria-label="Imatge de Júpiter"></div>
+                <!-- Codigo de ejemplo para añadir imagen:
+                <div class="world-image">
+                    <img src="images/enceladus.jpg" alt="Enceladus, lluna de Saturn">
+                </div>-->
+            </article>
+
         </div>
+    </section>
 
-    </main>
+    <!-- Contingut interactiu / generatiu -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Explora</p>
+        </header>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>
-            Astro-Síntesi · Projecte de divulgació científica ·
-            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
-        </p>
-        <p>
-            Yolanda Afán Asencio · UOC
-        </p>
+        <div class="sala-main">
+            <div class="sala-highlight">
+                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia"></div>
+                <p class="sala-placeholder">
+                    Contingut generatiu sobre la galeria de mons
+                </p>
+            </div>
+        </div>
+    </section>
 
-    </footer>
+    <!-- Navegació entre salas -->
+    <nav class="sala-nav" aria-label="Navegació entre sales">
+        <a href="sala2_factors_habitabilitat.html" class="btn btn-primary sala-nav-btn">
+            ← Sala 2: Factors d'habitabilitat
+        </a>
+        <a href="index.html" class="btn btn-outline sala-nav-btn">
+            Tornar a l'inici
+        </a>
+        <a href="sala4_laboratori_dades.html" class="btn btn-primary sala-nav-btn">
+            Sala 4: Laboratori de dades →
+        </a>
+    </nav>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+    <p>
+        Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+    </p>
+    <p>
+        Yolanda Afán Asencio · UOC
+    </p>
+</footer>
 </body>
 </html>
-
-

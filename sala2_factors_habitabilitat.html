@@ -1,199 +1,200 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Astro-Síntesi | Sala 2 – Factors d’habitabilitat</title>
+    <title>Sala 2 – Factors d'habitabilitat | Astro-Síntesi</title>
     <meta
             name="description"
-            content="Sala 2 de l'exposició Astro-Síntesi:
-            factors físics i químics que fan possible un entorn habitable."
+            content="Sala 2 de l'exposició Astro-Síntesi: factors físics i químics que fan possible un entorn habitable."
     />
-    <!-- ESTILS -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
 
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </head>
 
 <body class="body-sala2">
-    <!-- NAV -->
-    <header class="site-header">
-        <div class="logo-block">
-            <span class="logo-mark">A⋅S</span>
-            <div class="logo-text">
-                <span class="logo-title">Astro-Síntesi</span>
-                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
-            </div>
+<!-- ============================================
+     HEADER - Navegación principal
+     ============================================ -->
+<header class="site-header">
+    <div class="logo-block">
+        <span class="logo-mark">A⋅S</span>
+        <div class="logo-text">
+            <span class="logo-title">Astro-Síntesi</span>
+            <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link">Inici</a>
-            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
-            <a href="sala2_factors_habitabilitat.html" class="nav-link nav-link--active">Sala 2</a>
-            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
-            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
-            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
-            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
-        </nav>
-    </header>
+    </div>
 
-    <!-- MAIN sala 2-->
-    <main class="page">
-        <!-- HEAD -->
-        <section class="hero hero-sala">
-            <!-- Slot per a una imatge genèrica de la sala -->
-            <div class="hero-image-slot"></div>
+    <nav class="main-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-link">Inici</a>
+        <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+        <a href="sala2_factors_habitabilitat.html" class="nav-link nav-link--active">Sala 2</a>
+        <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+        <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+        <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+        <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+    </nav>
+</header>
 
-            <div class="hero-text hero-text-sala">
-                <p class="hero-kicker">Sala 2 · Conceptes clau</p>
-                <h1>Factors d’habitabilitat</h1>
-                <p class="hero-lead">
-                    La recerca de vida en altres mons comença identificant les condicions físiques i químiques que poden
-                    sostenir processos biològics. Aquesta sala presenta els elements essencials que defineixen un entorn
-                    potencialment habitable.
-                </p>
-            </div>
-        </section>
+<!-- ============================================
+     CONTENIDO PRINCIPAL - SALA 2
+     ============================================ -->
+<main class="page">
 
-        <!-- CONTEXT -->
-        <section class="section sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 2 · Context</p>
-                <h2>Què vol dir que un món sigui habitable?</h2>
-                <p>
-                    Comprendre l’habitabilitat d’un món implica analitzar com interactuen el seu clima, la seva geologia
-                    i la seva química. Els científics consideren especialment la presència d’aigua líquida, la
-                    disponibilitat d’una font d’energia, la composició atmosfèrica, l’estabilitat ambiental i la
-                    presència d’elements químics essencials com el carboni, l’hidrogen, el nitrogen, l’oxigen, el sofre
-                    i el fòsfor. Aquests criteris, utilitzats en estudis planetaris i en missions com Cassini,
-                    Mars Science Laboratory o Europa Clipper, permeten identificar entorns on podrien donar-se reaccions
-                    prebiòtiques o metabòliques, fins i tot en absència de proves directes de vida.
-                </p>
-            </header>
-        </section>
+    <!-- Hero de sala -->
+    <section class="hero hero-sala">
+        <div class="hero-image-slot" role="img" aria-label="Imatge representativa de la Sala 2"></div>
 
-        <!-- CONTINGUT -->
-        <section class="section section-route-sala sala-layout">
-            <header class="sala-header">
-                <p class="sala-kicker">Sala 2 · Continguts principals</p>
-                <h2>Temperatura, aigua, energia i atmosfera</h2>
-                <p>
-                    La idea d’“entorn habitable” no implica l’existència de vida, sinó la possibilitat que un conjunt
-                    de processos físics i químics puguin sostenir-la.<br>
-                </p>
-                <ol class="route-list">
-                    <li class="route-item">
-                        <span class="route-label">Temperatura</span>
-                        <p>
-                            La temperatura determina si l’aigua pot existir en estat líquid, una condició indispensable
-                            per al metabolisme i la química de la vida tal com la coneixem. Els planetes i llunes que es
-                            troben dins o prop de la zona habitable d’una estrella poden mantenir rangs tèrmics
-                            compatibles amb aquest estat, tot i que factors addicionals —com atmosferes denses o fonts
-                            d’energia interna— poden ampliar aquest marge. La definició de zona habitable està recollida
-                            en estudis clàssics i actuals sobre climatologia planetària.
-                            <a href="https://science.nasa.gov/exoplanets/habitable-zone/" target="_blank">
-                                Nasa-exoplanets</a>.
-                            <br><br><br> Article recomanat:
-                            <a href="https://arxiv.org/pdf/2408.09296.pdf" target="_blank">
-                                Analysis of Habitability and Stellar Habitable Zones from
-                                Observed Exoplanets</a>
-                        </p>
-                    </li>
-                    <li class="route-item">
-                        <span class="route-label">Aigua</span>
-                        <p>
-                            L’aigua és el dissolvent universal de la bioquímica terrestre, perquè afavoreix la mobilitat
-                            i reactivitat de les molècules. Al sistema solar, l’aigua líquida pot aparèixer en
-                            superfícies transitòries (Mart), sota capes gruixudes de gel (Europa, Enceladus) o en
-                            aqüífers profunds. Les observacions d’Enceladus, realitzades per la missió Cassini, han
-                            confirmat plomalls rics en molècules orgàniques procedents d’un oceà interior,
-                            <a href="https://www.science.org/doi/pdf/10.1126/science.1232226?" target="_blank">
-                                Science - Exoplanet Habitability</a>,
-                            reforçant la idea que l’aigua subterrània pot mantenir-se fins i tot sense una superfície càlida.
-                            <br><br> Article recomanat:
-                            <a href="https://arxiv.org/abs/1909.05218?" target="_blank">
-                                Water vapour in the atmosphere of the habitable-zone eight Earth-mass planet K2-18 b</a>
-                        </p>
-                    </li>
-                    <li class="route-item">
-                        <span class="route-label">Energia</span>
-                        <p>
-                            Perquè la vida pugui iniciar-se i sostenir-se, necessita una font d’energia capaç d’impulsar
-                            reaccions químiques. L’energia pot provenir de la llum del Sol —com succeeix a la Terra—
-                            però també de fonts internes com la calor geotèrmica, la fricció mareal o les reaccions
-                            hidrotermals. A Europa i Enceladus, la interacció entre l’aigua i el nucli rocós genera
-                            processos energètics similars als que, als fons oceànics terrestres, mantenen ecosistemes
-                            independents de la llum solar.
-                            <br><br> Article recomanat:
-                            <a href="https://ntrs.nasa.gov/api/citations/20190026728/downloads/20190026728.pdf"
-                               target="_blank"> A Limited Habitable Zone for Complex Life</a>.
-                            <br><br>Descarrega el pdf:
-                            <a href="https://zenodo.org/records/15309145/files/Exoplanet_Habitability.pdf"
-                               target="_blank"> Analysis of Exoplanet Habitability: Investigating Key
-                                Parameters and Environmental Influences</a>.
-                        </p>
-                    </li>
-                    <li class="route-item">
-                        <span class="route-label">Atmósfera</span>
-                        <p>
-                            Una atmosfera pot moderar la temperatura, protegir la superfície de la radiació i
-                            estabilitzar preses d’aigua líquida. Planetes com Venus, Mart o la Terra mostren com la
-                            composició atmosfèrica —pressió, gasos d’efecte hivernacle, densitat— modifica radicalment
-                            la seva habitabilitat potencial. Les atmosferes també poden conservar senyals químics
-                            d’interès astrobiològic, com el metà o l’oxigen, encara que la seva detecció requereix una
-                            interpretació estricta per evitar falsos positius.
-                            <br><br><br> Article recomanat:
-                            <a href=https://www.sciencedirect.com/science/article/abs/pii/S0273117725004776"
-                               target="_blank"> Quantitative study of habitability of various classes of exoplanets</a>.
-                        </p>
-                    </li>
-                </ol>
-            </header>
-        </section>
-
-        <!-- CONTINGUT GENERATIU-->
-        <section class="section sala-layout">
-            <p class="sala-header sala-kicker">Sala 2 · Explora</p>
-
-            <div class="sala-main">
-                <div class="sala-highlight">
-                    <p class="sala-placeholder">
-                        CONTINGUT GENERATIU
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- NAVEGACIÓ INFERIOR -->
-        <div class="sala-nav">
-            <a href="sala1_estem_sols.html" class="btn btn-primary sala-nav-btn">
-                ← Sala 1 · Estem sols
-            </a>
-            <a href="index.html" class="btn btn-outline sala-nav-btn">
-                Tornar a la pàgina inicial
-            </a>
-
-            <a href="sala3_galeria_mons.html" class="btn btn-primary sala-nav-btn">
-                Sala 3 · Galeria de mons →
-            </a>
+        <div class="hero-text hero-text-sala">
+            <p class="hero-kicker">Sala 2 · Conceptes clau</p>
+            <h1>Factors d'habitabilitat</h1>
+            <p class="hero-lead">
+                La recerca de vida en altres mons comença identificant les condicions físiques i químiques que poden sostenir processos biològics. Aquesta sala presenta els elements essencials que defineixen un entorn potencialment habitable.
+            </p>
         </div>
+    </section>
 
-    </main>
+    <!-- Context -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Context</p>
+            <h2>Què vol dir que un món sigui habitable?</h2>
+        </header>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>
-            Astro-Síntesi · Projecte de divulgació científica ·
-            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
-        </p>
-        <p>
-            Yolanda Afán Asencio · UOC
+        <div class="sala-intro">
+            <p>
+                Comprendre l'habitabilitat d'un món implica analitzar com interactuen el seu clima, la seva geologia i la seva química. Els científics consideren especialment la presència d'aigua líquida, la disponibilitat d'una font d'energia, la composició atmosfèrica, l'estabilitat ambiental i la presència d'elements químics essencials com el carboni, l'hidrogen, el nitrogen, l'oxigen, el sofre i el fòsfor.
+            </p>
+            <p>
+                Aquests criteris, utilitzats en estudis planetaris i en missions com Cassini, Mars Science Laboratory o Europa Clipper, permeten identificar entorns on podrien donar-se reaccions prebiòtiques o metabòliques, fins i tot en absència de proves directes de vida.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contingut principal: Factors -->
+    <section class="section section-route-sala sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Continguts principals</p>
+            <h2>Temperatura, aigua, energia i atmosfera</h2>
+        </header>
+
+        <p class="sala-intro">
+            La idea d'"entorn habitable" no implica l'existència de vida, sinó la possibilitat que un conjunt de processos físics i químics puguin sostenir-la.
         </p>
 
-    </footer>
+        <ol class="route-list">
+            <!-- Factor 1: Temperatura -->
+            <li class="route-item">
+                <span class="route-label">Temperatura</span>
+                <h3>Zona habitable</h3>
+                <p>
+                    La temperatura determina si l'aigua pot existir en estat líquid, una condició indispensable per al metabolisme i la química de la vida tal com la coneixem. Els planetes i llunes que es troben dins o prop de la zona habitable d'una estrella poden mantenir rangs tèrmics compatibles amb aquest estat, tot i que factors addicionals —com atmosferes denses o fonts d'energia interna— poden ampliar aquest marge.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://science.nasa.gov/exoplanets/habitable-zone/" target="_blank" rel="noopener">NASA – Habitable Zone</a><br>
+                    <a href="https://arxiv.org/pdf/2408.09296.pdf" target="_blank" rel="noopener">Article: Analysis of Habitability and Stellar Habitable Zones</a>
+                </p>
+            </li>
+
+            <!-- Factor 2: Aigua -->
+            <li class="route-item">
+                <span class="route-label">Aigua</span>
+                <h3>Dissolvent universal</h3>
+                <p>
+                    L'aigua és el dissolvent universal de la bioquímica terrestre, perquè afavoreix la mobilitat i reactivitat de les molècules. Al sistema solar, l'aigua líquida pot aparèixer en superfícies transitòries (Mart), sota capes gruixudes de gel (Europa, Enceladus) o en aqüífers profunds.
+                </p>
+                <p>
+                    Les observacions d'Enceladus, realitzades per la missió Cassini, han confirmat plomalls rics en molècules orgàniques procedents d'un oceà interior, reforçant la idea que l'aigua subterrània pot mantenir-se fins i tot sense una superfície càlida.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://www.science.org/doi/pdf/10.1126/science.1232226" target="_blank" rel="noopener">Science – Exoplanet Habitability</a><br>
+                    <a href="https://arxiv.org/abs/1909.05218" target="_blank" rel="noopener">Article: Water vapour in K2-18 b</a>
+                </p>
+            </li>
+
+            <!-- Factor 3: Energia -->
+            <li class="route-item">
+                <span class="route-label">Energia</span>
+                <h3>Fonts energètiques</h3>
+                <p>
+                    Perquè la vida pugui iniciar-se i sostenir-se, necessita una font d'energia capaç d'impulsar reaccions químiques. L'energia pot provenir de la llum del Sol —com succeeix a la Terra— però també de fonts internes com la calor geotèrmica, la fricció mareal o les reaccions hidrotermals.
+                </p>
+                <p>
+                    A Europa i Enceladus, la interacció entre l'aigua i el nucli rocós genera processos energètics similars als que, als fons oceànics terrestres, mantenen ecosistemes independents de la llum solar.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://ntrs.nasa.gov/api/citations/20190026728/downloads/20190026728.pdf" target="_blank" rel="noopener">NASA: A Limited Habitable Zone for Complex Life</a><br>
+                    <a href="https://zenodo.org/records/15309145/files/Exoplanet_Habitability.pdf" target="_blank" rel="noopener">PDF: Analysis of Exoplanet Habitability</a>
+                </p>
+            </li>
+
+            <!-- Factor 4: Atmosfera -->
+            <li class="route-item">
+                <span class="route-label">Atmosfera</span>
+                <h3>Protecció i regulació</h3>
+                <p>
+                    Una atmosfera pot moderar la temperatura, protegir la superfície de la radiació i estabilitzar preses d'aigua líquida. Planetes com Venus, Mart o la Terra mostren com la composició atmosfèrica —pressió, gasos d'efecte hivernacle, densitat— modifica radicalment la seva habitabilitat potencial.
+                </p>
+                <p>
+                    Les atmosferes també poden conservar senyals químics d'interès astrobiològic, com el metà o l'oxigen, encara que la seva detecció requereix una interpretació estricta per evitar falsos positius.
+                </p>
+                <p>
+                    <strong>Recursos:</strong><br>
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0273117725004776" target="_blank" rel="noopener">Article: Quantitative study of habitability of exoplanets</a>
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Contingut interactiu / generatiu -->
+    <section class="section sala-layout">
+        <header class="sala-header">
+            <p class="sala-kicker">Explora</p>
+        </header>
+
+        <div class="sala-main">
+            <div class="sala-highlight">
+                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia"></div>
+                <p class="sala-placeholder">
+                    Contingut generatiu sobre factors d'habitabilitat
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegació entre salas -->
+    <nav class="sala-nav" aria-label="Navegació entre sales">
+        <a href="sala1_estem_sols.html" class="btn btn-primary sala-nav-btn">
+            ← Sala 1: Estem sols?
+        </a>
+        <a href="index.html" class="btn btn-outline sala-nav-btn">
+            Tornar a l'inici
+        </a>
+        <a href="sala3_galeria_mons.html" class="btn btn-primary sala-nav-btn">
+            Sala 3: Galeria de mons →
+        </a>
+    </nav>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+    <p>
+        Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+    </p>
+    <p>
+        Yolanda Afán Asencio · UOC
+    </p>
+</footer>
 </body>
-
 </html>
-
-

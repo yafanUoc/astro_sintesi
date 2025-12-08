@@ -247,6 +247,75 @@
 
 
 /* ============================================================================
+   GALERIA DE MONS (SALA 3) - Layout especial con imagen a la derecha
+   ============================================================================ */
+.world-gallery {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.world-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.world-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.world-content h3 {
+    margin: var(--spacing-sm) 0 var(--spacing-md);
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+.world-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+.world-content p:last-child {
+    margin-bottom: 0;
+}
+
+.world-content a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.world-content a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+.world-image {
+    min-height: 200px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    border: 1px solid var(--border-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Placeholder visual para las imágenes */
+.world-image::after {
+    content: '🪐';
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+
+/* ============================================================================
    RESPONSIVE
    ============================================================================ */
 @media (max-width: 768px) {
@@ -272,5 +341,15 @@
     .sala-image-slot {
         position: static;
         margin: var(--spacing-lg) auto 0;
+    }
+
+    /* Galeria de mons en móvil */
+    .world-item {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .world-image {
+        min-height: 150px;
     }
 }

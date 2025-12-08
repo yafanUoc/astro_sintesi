@@ -1,40 +1,33 @@
-// main.js
-// Script comú per a totes les pàgines de la web Astro-Síntesi.
-// De moment, s'encarrega principalment de marcar al menú quina pàgina està activa.
-
+// main.js - Versión mejorada
 document.addEventListener("DOMContentLoaded", () => {
-    /* 1. Marcar enllaç actiu al menú*/
+
+    // 1. Marcar enlace activo en el menú
+    const currentFile = window.location.pathname.split("/").pop() || "index.html";
     const links = document.querySelectorAll(".main-nav .nav-link");
 
-  // Obtenim el nom de l'arxiu actual (per exemple: "index.html" o "sala1_estem_sols.html")
-  const currentFile = window.location.pathname.split("/").pop() || "index.html";
+    links.forEach((link) => {
+        if (link.getAttribute("href") === currentFile) {
+            link.classList.add("nav-link--active");
+            link.setAttribute("aria-current", "page"); // Mejora accesibilidad
+        } else {
+            link.classList.remove("nav-link--active");
+            link.removeAttribute("aria-current");
+        }
+    });
 
-  links.forEach((link) => {
-    const href = link.getAttribute("href");
-
-    // Si l'enllaç coincideix amb el fitxer actual, marquem aquest element com actiu
-    if (href === currentFile) {
-      links.forEach((l) => l.classList.remove("nav-link--active"));
-      link.classList.add("nav-link--active");
-    }
-  });
-
-    /* 2. Enllaç Llegir més */
-    // Seleccionem tots els paràgrafs que poden desplegar més text
+    // 2. Funcionalidad "Leer más" (actualmente no se usa en index)
     const collapsibleParagraphs = document.querySelectorAll(".paragraph--collapsible");
 
     collapsibleParagraphs.forEach((paragraph) => {
-        // Busquem el botó/enllaç dins del mateix paràgraf
         const toggleBtn = paragraph.querySelector(".read-more-toggle");
-        if (!toggleBtn) return; // si no hi ha botó, no fem res
+        if (!toggleBtn) return;
 
-        toggleBtn.addEventListener("click", () => {
-            // Alternem la classe que controla si el text està expandit o no
+        toggleBtn.addEventListener("click", (e) => {
+            e.preventDefault();
             const isExpanded = paragraph.classList.toggle("is-expanded");
 
-            // Actualitzem el text del botó i l'atribut d'accessibilitat
             toggleBtn.textContent = isExpanded ? "...llegir menys" : "...llegir més";
-            toggleBtn.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+            toggleBtn.setAttribute("aria-expanded", isExpanded);
         });
     });
 });

@@ -6,243 +6,222 @@
     <title>Astro-Síntesi | Senyals de vida al Sistema Solar</title>
     <meta
             name="description"
-            content="Presentació de l'exposició Astro-Síntesi.
-            Recorregut divulgatiu previ per les salas y una primera visió del context."
+            content="Presentació de l'exposició Astro-Síntesi. Recorregut divulgatiu previ per les salas y una primera visió del context."
     />
-    <!-- ESTILS -->
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- JS -->
+    <!-- JavaScript -->
     <script defer src="js/main.js"></script>
 </head>
 
 <body>
-    <!-- NAVEGACIÓ -->
-    <header class="site-header">
-        <div class="logo-block">
-            <span class="logo-mark">A⋅S</span>
-            <div class="logo-text">
-                <span class="logo-title">Astro-Síntesi</span>
-                <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+<!-- ============================================
+     HEADER - Navegación principal
+     ============================================ -->
+<header class="site-header">
+    <div class="logo-block">
+        <span class="logo-mark">A⋅S</span>
+        <div class="logo-text">
+            <span class="logo-title">Astro-Síntesi</span>
+            <span class="logo-subtitle">Senyals de vida al Sistema Solar</span>
+        </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-link nav-link--active">Inici</a>
+        <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
+        <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
+        <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
+        <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
+        <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
+        <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
+    </nav>
+</header>
+
+<!-- ============================================
+     CONTENIDO PRINCIPAL
+     ============================================ -->
+<main class="page">
+
+    <!-- Hero / Introducción -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hero-kicker">Exposició temporal · Museu de la ciència</p>
+            <h1>Probabilitats de vida al sistema solar</h1>
+
+            <p class="hero-lead">
+                Astro-Síntesi ens ofereix un recorregut per l'astrobiologia, explorant les probabilitats de vida fora de la Terra. A partir d'investigacions científiques i dades reals podrem conèixer les condicions que es podrien donar per permetre la vida a diferents racons del sistema solar.
+            </p>
+
+            <!-- Acciones principales -->
+            <div class="hero-actions">
+                <a href="sala1_estem_sols.html" class="btn btn-primary">
+                    Inicia el recorregut
+                </a>
+                <a href="#recorrido" class="btn btn-outline">
+                    Veure les salas
+                </a>
             </div>
         </div>
-        <nav class="main-nav">
-            <a href="index.html" class="nav-link nav-link--active">Inici</a>
-            <a href="sala1_estem_sols.html" class="nav-link">Sala 1</a>
-            <a href="sala2_factors_habitabilitat.html" class="nav-link">Sala 2</a>
-            <a href="sala3_galeria_mons.html" class="nav-link">Sala 3</a>
-            <a href="sala4_laboratori_dades.html" class="nav-link">Sala 4</a>
-            <a href="sala5_immersio.html" class="nav-link">Sala 5</a>
-            <a href="sala6_reflexions.html" class="nav-link">Sala 6</a>
-        </nav>
-    </header>
+    </section>
 
-    <!-- CONTINGUT -->
-    <main class="page">
-        <!-- HEAD -->
-        <section class="hero">
+    <!-- Context actual -->
+    <section class="section section-context">
+        <header class="section-header">
+            <h2>Context actual</h2>
+        </header>
 
-                <div>
-                <p class="hero-kicker">Exposició temporal · Museu de la ciència</p>
-                <h1>Probabilitats de vida al sistema solar</h1>
-                </div>
-            <div class="hero-text">
-                <p class="hero-lead">
-                    Astro-Síntesi ens ofereix un recorregut per l'astrobiologia, explorant les probabilitats de
-                    vida fora de la Terra. <br>A partir d'investigacions científiques i dades reals podrem conèixer
-                    les condicions que es podrien donar per permetre la vida a diferents racons del sistema solar.
-                </p>
-                <!-- Buttons -->
-                <div class="hero-actions">
-                    <a href="sala1_estem_sols.html" class="btn btn-primary">
-                        Inicia el recorregut
-                    </a>
-                    <a href="#recorrido" class="btn btn-outline">
-                        Veure les salas
-                    </a>
-                </div>
-            </div>
-        </section>
+        <p class="paragraph--collapsible">
+            Durant les darreres dècades, l'astrobiologia ha evolucionat fins a convertir-se en un camp científic sòlid que combina química, física, biologia i geologia planetària per identificar indicadors d'habitabilitat fora de la Terra, que puguin acabar en processos biològics.
+        </p>
 
-        <!-- CONTEXT ACTUAL-->
-        <section class="section section-context">
-            <div class="section-header">
-                <h2>Context actual</h2>
-                <p class="paragraph--collapsible">
-                    Durant les darreres dècades, l’astrobiologia ha evolucionat fins a convertir-se en un camp
-                    científic sòlid que combina química, física, biologia i geologia planetària per identificar
-                    indicadors d’habitabilitat fora de la Terra, que puguin acabar en processos biològics.<br>
-
-                    <br>Un dels descobriments recents més rellevants prové d’<strong>Enceladus</strong>, lluna de Saturn,
-<!--                    <span class="more-text">-->
-                        on la missió Cassini va analitzar plomalls d’aigua i gel procedents del seu
-                        oceà subterrani. L’estudi publicat el 2025 per Khawaja et al.,
-                        <a href="https://www.nature.com/articles/s41550-025-02655-y" target="_blank">
-                            Khawaja et al.</a>, revela la presència d’una varietat ampliada de molècules orgàniques
-                        complexes generades en sistemes hidrotermals actius. Aquest tipus d’entorns, que combinen aigua
-                        líquida, energia i química rica en carboni, són coherents amb escenaris prebiòtics similars als
-                        que, a la Terra, van precedir l’origen de la vida.<br>
-
-                        <br>Aquest descobriment s’afegeix a desenes d’estudis i missions —com Galileo, Mars Science
-                        Laboratory o la recent Europa Clipper— que analitzen atmosferes, superfícies gelades, camps
-                        magnètics i molècules presents a altres mons. Encara que no disposem de dades que permetin
-                        assignar “probabilitats de vida” numèriques, sí que coneixem factors d’habitabilitat
-                        que apunten cap a entorns potencialment habitables.<br>
-<!--                    </span>-->
-<!--                    <button class="btn read-more-toggle" type="button" aria-expanded="false">-->
-<!--                        ...llegir més-->
-<!--                    </button>-->
-                </p>
-            </div>
-        </section>
-
-        <!-- CONTEXT CIENTÍFIC -->
-        <section class="section section-context" id="contexto">
-            <div class="section-header">
-                <h2>Context científic</h2>
-            </div>
-            <div class="context-grid">
-                <article class="card">
-                    <h3>Astrobiología</h3>
-                    <p>
-                        L’astrobiologia estudia les diferents condicions que poden permetre l’existència de vida,
-                        centrant-se en <strong>indicadors d’habitabilitat</strong>, com l’aigua líquida, fonts d’energia
-                        i presència de molècules orgàniques.
-                        Les missions espacials proporcionen dades essencials que permeten investigar i identificar
-                        quins mons del sistema podrien ser potencialment habitables.
-                    </p>
-                </article>
-                <article class="card">
-                    <h3>Interpretació científica</h3>
-                    <p>
-                        Les sondes espacials utilitzen instruments com <strong>espectròmetres de masses, magnetòmetres,
-                        sistemes d’anàlisi lumínica </strong> o mesures ambientals per inferir composicions químiques i
-                        processos geològics. Aquestes dades permeten reconstruir escenaris ambientals sense necessitat
-                        d’observar vida de manera directa.
-                    </p>
-                </article>
-                <article class="card">
-                    <h3>Oceans ocults</h3>
-                    <p>
-                        Diverses llunes del sistema solar, especialment <strong>Europa i Enceladus</strong>, amaguen
-                        oceans sota capes gruixudes de gel. El contacte entre aigua, roques i fonts d’energia interna
-                        podria generar reaccions similars a les que van donar origen a la vida al nostre planeta,
-                        convertint aquests mons en objectius prioritaris de la recerca astrobiològica.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-- RECORREGUT -->
-        <section class="section section-route" id="recorrido">
-            <div class="section-header">
-                <h2>Recorregut de l'exposició</h2>
-                <p>
-                    Aquesta web resumeix els continguts principals de cadascuna de les sis sales de l'exposició.
-                    Al museu, aquests materials s’amplien amb instal·lacions immersives, panells interactius,
-                    recursos audiovisuals i experiències sensorials.
-                </p><br>
-                <img src="images/pla_general.png"/>
-            </div>
-
-            <ol class="route-list">
-                <li class="route-item">
-
-                    <span class="route-label">Sala 1 </span>
-                    <a href="sala1_estem_sols.html" class="route-link">
-                    <h3>Estem sols?</h3>
-                    <p>
-                        Introducció a l'exploració del sistema solar i a la recerca de condicions de vida
-                        fora de la terra
-                     </p>
-                    </a>
-                </li>
-
-                <li class="route-item">
-                    <span class="route-label">Sala 2</span>
-                    <a href="sala2_factors_habitabilitat.html" class="route-link">
-                    <h3>Factors d’habitabilitat</h3>
-                    <p>
-                        Elements físics i químics que determinen si un entorn pot ser habitable, temperatura, aigua,
-                        energía, atmósfera, molècules orgàniques i camps magnétics.<br>
-                    </p>
-                    </a>
-                </li>
-
-                <li class="route-item">
-                    <span class="route-label">Sala 3</span>
-                    <a href="sala3_galeria_mons.html" class="route-link">
-                    <h3>Galeria de mons</h3>
-                    <p>
-                        Comparativa de llunes i planetes potencialment habitables i no habitables, i les seves
-                        condicions ambientals.
-                    </p>
-                    </a>
-                </li>
-
-                <li class="route-item">
-                    <span class="route-label">Sala 4</span>
-                    <a href="sala4_laboratori_dades.html" class="route-link">
-                    <h3>Laboratori de dades</h3>
-                    <p>
-                        Com les missions espacials registren, processen i interpreten dades reals.
-                    </p>
-                    </a>
-                </li>
-
-                <li class="route-item">
-                    <span class="route-label">Sala 5</span>
-                    <a href="sala5_immersio.html" class="route-link">
-                    <h3>Immersió</h3>
-                    <p>
-                        Experiència immersiva basada en la traducció de dades reals del sistema solar.
-                    </p>
-                    </a>
-                </li>
-
-                <li class="route-item">
-                    <span class="route-label">Sala 6</span>
-                    <a href="sala6_reflexions.html" class="route-link">
-                    <h3>Reflexions</h3>
-                    <p>
-                        Espai per a la síntesi, participació del públic i qüestions obertes sobre el futur de l’exploració.
-                    </p>
-                    </a>
-                </li>
-            </ol>
-        </section>
-
-        <!-- PROJECTE -->
-        <section class="section section-credits">
-            <div class="section-header">
-                <h2>Projecte</h2>
-            </div>
-            <p class="credits-text">
-                Astro-Síntesi combina investigació científica i disseny audiovisual generat amb el suport d’IA per
-                traduir dades complexes en continguts accessibles. Aquesta web actua com a introducció al recorregut
-                expositiu i com una invitació a explorar l’astrobiologia des d’una perspectiva crítica i informada.
-            </p>
-        </section>
-
-        <section>
         <p>
-            <a href="sala1_estem_sols.html" class="btn btn-primary">
+            Un dels descobriments recents més rellevants prové d'<strong>Enceladus</strong>, lluna de Saturn, on la missió Cassini va analitzar plomalls d'aigua i gel procedents del seu oceà subterrani. L'estudi publicat el 2025 per <a href="https://www.nature.com/articles/s41550-025-02655-y" target="_blank" rel="noopener">Khawaja et al.</a> revela la presència d'una varietat ampliada de molècules orgàniques complexes generades en sistemes hidrotermals actius. Aquest tipus d'entorns, que combinen aigua líquida, energia i química rica en carboni, són coherents amb escenaris prebiòtics similars als que, a la Terra, van precedir l'origen de la vida.
+        </p>
+
+        <p>
+            Aquest descobriment s'afegeix a desenes d'estudis i missions —com Galileo, Mars Science Laboratory o la recent Europa Clipper— que analitzen atmosferes, superfícies gelades, camps magnètics i molècules presents a altres mons. Encara que no disposem de dades que permetin assignar "probabilitats de vida" numèriques, sí que coneixem factors d'habitabilitat que apunten cap a entorns potencialment habitables.
+        </p>
+    </section>
+
+    <!-- Context científic -->
+    <section class="section section-context" id="contexto">
+        <header class="section-header">
+            <h2>Context científic</h2>
+        </header>
+
+        <div class="context-grid">
+            <article class="card">
+                <h3>Astrobiologia</h3>
+                <p>
+                    L'astrobiologia estudia les diferents condicions que poden permetre l'existència de vida, centrant-se en <strong>indicadors d'habitabilitat</strong>, com l'aigua líquida, fonts d'energia i presència de molècules orgàniques. Les missions espacials proporcionen dades essencials que permeten investigar i identificar quins mons del sistema podrien ser potencialment habitables.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Interpretació científica</h3>
+                <p>
+                    Les sondes espacials utilitzen instruments com <strong>espectròmetres de masses, magnetòmetres, sistemes d'anàlisi lumínica</strong> o mesures ambientals per inferir composicions químiques i processos geològics. Aquestes dades permeten reconstruir escenaris ambientals sense necessitat d'observar vida de manera directa.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Oceans ocults</h3>
+                <p>
+                    Diverses llunes del sistema solar, especialment <strong>Europa i Enceladus</strong>, amaguen oceans sota capes gruixudes de gel. El contacte entre aigua, roques i fonts d'energia interna podria generar reaccions similars a les que van donar origen a la vida al nostre planeta, convertint aquests mons en objectius prioritaris de la recerca astrobiològica.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Recorregut de l'exposició -->
+    <section class="section section-route" id="recorrido">
+        <header class="section-header">
+            <h2>Recorregut de l'exposició</h2>
+            <p>
+                Aquesta web resumeix els continguts principals de cadascuna de les sis sales de l'exposició. Al museu, aquests materials s'amplien amb instal·lacions immersives, panells interactius, recursos audiovisuals i experiències sensorials.
+            </p>
+        </header>
+
+        <figure>
+            <img src="images/pla_general.png" alt="Plànol general de l'exposició Astro-Síntesi" />
+        </figure>
+
+        <ol class="route-list">
+            <li class="route-item">
+                <span class="route-label">Sala 1</span>
+                <h3>
+                    <a href="sala1_estem_sols.html" class="route-link">Estem sols?</a>
+                </h3>
+                <p>
+                    Introducció a l'exploració del sistema solar i a la recerca de condicions de vida fora de la terra.
+                </p>
+            </li>
+
+            <li class="route-item">
+                <span class="route-label">Sala 2</span>
+                <h3>
+                    <a href="sala2_factors_habitabilitat.html" class="route-link">Factors d'habitabilitat</a>
+                </h3>
+                <p>
+                    Elements físics i químics que determinen si un entorn pot ser habitable: temperatura, aigua, energia, atmòsfera, molècules orgàniques i camps magnètics.
+                </p>
+            </li>
+
+            <li class="route-item">
+                <span class="route-label">Sala 3</span>
+                <h3>
+                    <a href="sala3_galeria_mons.html" class="route-link">Galeria de mons</a>
+                </h3>
+                <p>
+                    Comparativa de llunes i planetes potencialment habitables i no habitables, i les seves condicions ambientals.
+                </p>
+            </li>
+
+            <li class="route-item">
+                <span class="route-label">Sala 4</span>
+                <h3>
+                    <a href="sala4_laboratori_dades.html" class="route-link">Laboratori de dades</a>
+                </h3>
+                <p>
+                    Com les missions espacials registren, processen i interpreten dades reals.
+                </p>
+            </li>
+
+            <li class="route-item">
+                <span class="route-label">Sala 5</span>
+                <h3>
+                    <a href="sala5_immersio.html" class="route-link">Immersió</a>
+                </h3>
+                <p>
+                    Experiència immersiva basada en la traducció de dades reals del sistema solar.
+                </p>
+            </li>
+
+            <li class="route-item">
+                <span class="route-label">Sala 6</span>
+                <h3>
+                    <a href="sala6_reflexions.html" class="route-link">Reflexions</a>
+                </h3>
+                <p>
+                    Espai per a la síntesi, participació del públic i qüestions obertes sobre el futur de l'exploració.
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Créditos del proyecto -->
+    <section class="section section-credits">
+        <header class="section-header">
+            <h2>Projecte</h2>
+        </header>
+
+        <p class="credits-text">
+            Astro-Síntesi combina investigació científica i disseny audiovisual generat amb el suport d'IA per traduir dades complexes en continguts accessibles. Aquesta web actua com a introducció al recorregut expositiu i com una invitació a explorar l'astrobiologia des d'una perspectiva crítica i informada.
+        </p>
+    </section>
+
+    <!-- CTA final -->
+    <section class="section">
+        <a href="sala1_estem_sols.html" class="btn btn-primary">
             Inicia el recorregut
         </a>
-        </p>
-        </section>
-    </main>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <p>
-            Astro-Síntesi · Projecte de divulgació científica ·
-            Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
-        </p>
-        <p>
-            Yolanda Afán Asencio · UOC
-        </p>
+</main>
 
-    </footer>
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+    <p>
+        Astro-Síntesi · Projecte de divulgació científica · Dades i imatges basades en missions reals (NASA / ESA) i publicacions científiques.
+    </p>
+    <p>
+        Yolanda Afán Asencio · UOC
+    </p>
+</footer>
 </body>
 </html>

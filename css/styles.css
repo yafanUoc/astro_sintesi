@@ -342,12 +342,11 @@ p {
 }
 
 .section-route .route-list {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .section-route-sala .route-list {
-    padding: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .route-item {
@@ -389,6 +388,23 @@ p {
     color: var(--accent);
 }
 
+/* Enlaces dentro de route-item */
+.route-item a {
+    color: var(--accent);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.route-item a:hover {
+    color: #1e40af; /* Azul más oscuro */
+}
+
+/* Espaciado para la sección de recursos */
+.route-item p:has(strong) {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--border-soft);
+}
 
 /* ============================================================================
    CRÉDITOS (PORTADA)
