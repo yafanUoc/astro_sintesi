@@ -5,7 +5,7 @@
   },
   "hero": {
     "kicker": "Sala 4 · Dades i instruments",
-    "title": "Laboratori de dades",
+    "title": "Missions i dades",
     "lead": "Les missions espacials recullen partícules, mesuren camps magnètics i analitzen la llum que reflecteixen i emeten els planetes i les seves llunes. Aquestes dades revelen la composició, l'activitat i el potencial d'habitabilitat dels mons del Sistema Solar."
   },
   "sections": [
@@ -14,7 +14,7 @@
       "kicker": "Context",
       "title": "Dades i indicadors",
       "content": [
-        "L'estudi de l'habitabilitat planetària depèn de dades recollides per instruments altament especialitzats que operen en entorns extrems. Espectròmetres, magnetòmetres, detectors de partícules i càmeres d'alta sensibilitat analitzen la llum, el material ejectat, el camp magnètic o la superfície dels planetes i llunes.",
+        "L'estudi de l'habitabilitat planetària depèn de dades recollides per instruments altament especialitzats que operen en entorns extrems. Espectròmetres, magnetòmetres, detectors de partícules i càmeres d'alta sensibilitat analitzen tot l'espectre de llum— radiació electromagnètica —, el material ejectat, el camp magnètic o la superfície dels planetes i llunes.",
         "Aquestes mesures, transmeses com a valors numèrics, s'integren i interpreten mitjançant models físics i químics per reconstruir processos ambientals que no podem observar directament. És en aquesta interacció entre instrumentació i coneixement on neix la ciència que permet identificar indicadors d'habitabilitat."
       ]
     },
@@ -22,7 +22,7 @@
       "id": "main-content",
       "kicker": "Continguts principals",
       "title": "Missions i recollida de dades",
-      "intro": "Les dades que obtenim de l'exploració planetària són el resultat d'instruments que mesuren llum, partícules, camps magnètics i composició química. Aquestes mesures, convertides en valors numèrics, permeten reconstruir processos geològics, químics i ambientals en mons que no podem estudiar directament. Les missions espacials actuen així com laboratoris en moviment, revelant condicions que poden afavorir o excloure l'habitabilitat.",
+      "intro": "Les dades que obtenim de l'exploració planetària són el resultat d'instruments que mesuren radiació electromagnètica, partícules, camps magnètics i composició química. Aquestes mesures, convertides en valors numèrics, permeten reconstruir processos geològics, químics i ambientals en mons que no podem estudiar directament. Les missions espacials actuen així com laboratoris en moviment, revelant condicions que poden afavorir o excloure l'habitabilitat.",
       "missions": [
         {
           "label": "Cassini",
@@ -57,7 +57,7 @@
         {
           "label": "Juno",
           "title": "Analitzant el gegant Júpiter",
-          "content": "La sonda Juno analitza el camp magnètic, la gravetat i l'atmosfera profunda de Júpiter. Aquestes dades permeten entendre com un entorn tan extrem afecta les llunes pròximes, especialment les oceàniques. Les mesures revelen pressions, turbulències i composicions químiques que descarten l'habitabilitat directa però aporten informació essencial sobre la formació i l'evolució dels sistemes planetaris.",
+          "content": "La sonda Juno analitza el camp magnètic, la gravetat i l'atmosfera profunda de Júpiter. Aquestes dades permeten entendre com un entorn tan extrem afecta les llunes pròximes, especialment les que tenen oceans ocults. Les mesures revelen pressions, turbulències i composicions químiques que descarten l'habitabilitat directa però aporten informació essencial sobre la formació i l'evolució dels sistemes planetaris.",
           "resources": [
             {
               "text": "Article: Jupiter's atmospheric jet streams extend thousands of kilometres deep",
@@ -68,7 +68,7 @@
         {
           "label": "Europa Clipper",
           "title": "Explorant l'oceà d'Europa",
-          "content": "Europa Clipper, encara en fase de preparació científica, estudiarà l'estructura del gel d'Europa, la seva composició química i possibles plomalls de l'oceà subsuperficial. El seu objectiu és determinar si aquest oceà podria sostenir processos biològics, combinant dades de radar de penetració, espectrometria i detecció de molècules volàtils. Proporcionarà la visió més completa fins ara d'un dels mons més prometedors per a l'habitabilitat.",
+          "content": "Europa Clipper, encara en fase de preparació científica, estudiarà l'estructura del gel d'Europa, la seva composició química i possibles plomalls de l'oceà subsuperficial. El seu objectiu és determinar si aquest oceà podria sostenir processos biològics, combinant dades de radar actiu, espectrometria i detecció de molècules volàtils. Proporcionarà la visió més completa fins ara d'un dels mons més prometedors per a l'habitabilitat.",
           "resources": [
             {
               "text": "Article: Investigating Europa's Habitability with the Europa Clipper",

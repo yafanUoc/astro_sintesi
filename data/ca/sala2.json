@@ -6,7 +6,7 @@
   "hero": {
     "kicker": "Sala 2 · Conceptes clau",
     "title": "Factors d'habitabilitat",
-    "lead": "La recerca de vida en altres mons comença identificant les condicions físiques i químiques que poden sostenir processos biològics. Aquesta sala presenta els elements essencials que defineixen un entorn potencialment habitable."
+    "lead": "La recerca de vida en altres mons comença identificant les condicions físiques i químiques que poden suportar processos biològics. Aquesta sala presenta els elements essencials que defineixen un entorn potencialment habitable."
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "kicker": "Context",
       "title": "Què vol dir que un món sigui habitable?",
       "content": [
-        "Comprendre l'habitabilitat d'un món implica analitzar com interactuen el seu clima, la seva geologia i la seva química. Els científics consideren especialment la presència d'aigua líquida, la disponibilitat d'una font d'energia, la composició atmosfèrica, l'estabilitat ambiental i la presència d'elements químics essencials com el carboni, l'hidrogen, el nitrogen, l'oxigen, el sofre i el fòsfor.",
+        "Comprendre l'habitabilitat d'un món implica analitzar com interactuen el seu clima, la seva geologia i la seva química. Els científics consideren especialment important per a que la vida es pugui desenvolupar, la presència d'aigua líquida, la disponibilitat d'una font d'energia, la composició atmosfèrica, l'estabilitat ambiental i la presència d'elements químics essencials com el carboni, l'hidrogen, el nitrogen, l'oxigen, el sofre i el fòsfor.",
         "Aquests criteris, utilitzats en estudis planetaris i en missions com Cassini, Mars Science Laboratory o Europa Clipper, permeten identificar entorns on podrien donar-se reaccions prebiòtiques o metabòliques, fins i tot en absència de proves directes de vida."
       ]
     },
@@ -72,7 +72,7 @@
         {
           "label": "Atmosfera",
           "title": "Protecció i regulació",
-          "content": "Una atmosfera pot moderar la temperatura, protegir la superfície de la radiació i estabilitzar preses d'aigua líquida. Planetes com Venus, Mart o la Terra mostren com la composició atmosfèrica —pressió, gasos d'efecte hivernacle, densitat— modifica radicalment la seva habitabilitat potencial. Les atmosferes també poden conservar senyals químics d'interès astrobiològic, com el metà o l'oxigen, encara que la seva detecció requereix una interpretació estricta per evitar falsos positius.",
+          "content": "Una atmosfera pot moderar la temperatura, protegir la superfície de la radiació i estabilitzar l'aigua líquida. Planetes com Venus, Mart o la Terra mostren com la composició atmosfèrica —pressió, gasos d'efecte hivernacle, densitat— modifica radicalment la seva habitabilitat potencial. Les atmosferes també poden conservar senyals químics d'interès astrobiològic— indicadors de presència de vida —, com el metà o l'oxigen, encara que la seva detecció requereix una interpretació estricta per evitar falsos positius.",
           "resources": [
             {
               "text": "Article: Quantitative study of habitability of exoplanets",

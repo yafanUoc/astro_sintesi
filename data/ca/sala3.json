@@ -6,7 +6,7 @@
   "hero": {
     "kicker": "Sala 3 · Comparativa de mons",
     "title": "Galeria de mons",
-    "lead": "El Sistema Solar està format per mons diversos, amb atmosferes, superfícies i processos interns que revelen escenaris molt diferents d'habitabilitat. Aquesta sala compara alguns dels objectes més estudiats per comprendre quin paper hi juga la geologia, la química i l'energia en la possibilitat de vida."
+    "lead": "El Sistema Solar està format per mons diversos, amb atmosferes, superfícies i processos interns que revelen escenaris molt diferents d'habitabilitat. Aquesta sala compara alguns dels objectius més estudiats per comprendre quin paper hi juga la geologia, la química i l'energia en la possibilitat de vida."
   },
   "sections": [
     {
@@ -14,7 +14,7 @@
       "kicker": "Context",
       "title": "Una \"galeria\" basada en dades reals",
       "content": [
-        "L'estudi comparatiu de planetes i llunes permet identificar patrons d'habitabilitat i entendre per què alguns mons presenten condicions favorables a processos biològics mentre que d'altres són entorns extremadament hostils.",
+        "L'estudi comparatiu de planetes i llunes permet identificar patrons d'habitabilitat comuns i entendre perquè alguns mons presenten condicions favorables a processos biològics, mentre que d'altres són entorns extremadament hostils.",
         "Les dades recollides per missions com Cassini, Galileo, Mars Science Laboratory, Juno o Huygens han revelat oceans subterranis, atmosferes complexes, superfícies actives i camps magnètics intensos. Aquesta diversitat ens ofereix una visió més precisa de com poden evolucionar els ambients planetaris i quines característiques poden conduir, o impedir, l'aparició de vida."
       ]
     },
