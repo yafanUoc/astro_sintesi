@@ -1,124 +1,276 @@
-/*
-  Estils base comuns per a totes les sales d'Astro-Síntesi.
-  Aquí definim el layout general de les sales, la capçalera de sala (hero)
-  i les caixes de contingut principals, perquè cada sala només hagi
-  de definir els seus colors i petites variacions.
-*/
+/* ============================================================================
+   ESTILOS BASE PARA SALAS DE ASTRO-SÍNTESI
+   - Layout general de las salas
+   - Hero compartido por sala
+   - Contenido generativo
+   - Navegación inferior
+   - Temas de color específicos por sala (1-6)
+   ============================================================================ */
 
-/********************** HEAD de sala (hero) compartida */
+
+/* ============================================================================
+   VARIABLES DE SALA - Colores temáticos
+   ============================================================================ */
+:root {
+    /* Dimensiones comunes */
+    --hero-image-size: 120px;
+    --sala-image-size: 120px;
+    --sala-image-spacing: 160px;
+}
+
+
+/* ============================================================================
+   HERO DE SALA (COMPARTIDO)
+   ============================================================================ */
 .hero.hero-sala {
-  /* A diferència del hero de portada (grid), el de sala és una caixa única */
-  display: block;
+    display: block;
 }
 
 .hero-sala {
-  position: relative;
-  border-radius: var(--radius-lg);
-  margin-bottom: 1.5rem;
-  padding: 1.8rem 1.6rem;
-  overflow: hidden;
-  /* El color de fons i el color de text es defineixen a cada sala */
+    position: relative;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-lg);
+    padding: 1.8rem 1.6rem;
+    overflow: hidden;
 }
 
 .hero-text-sala {
-  max-width: 40rem;
-  /* Reservem espai a la dreta per al slot d’imatge del hero */
-  margin-right: 9rem;
+    max-width: 40rem;
+    margin-right: 9rem;
 }
 
 .hero-image-slot {
-  position: absolute;
-  top: 1.4rem;
-  right: 1.4rem;
-  width: 120px;
-  height: 120px;
-  border-radius: 16px;
-  border: 1px solid rgba(148, 163, 184, 0.6);
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(6px);
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    width: var(--hero-image-size);
+    height: var(--hero-image-size);
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
 }
 
-/*********************** Layout de seccions de sala (context + contingut) */
+
+/* ============================================================================
+   LAYOUT DE SECCIONES DE CADA SALA
+   ============================================================================ */
 .sala-layout {
-  margin-top: 2.5rem;
-    padding: 2rem;
+    margin-top: var(--spacing-2xl);
+    padding: var(--spacing-xl);
 }
 
 .sala-header {
-  margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .sala-kicker {
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
 }
 
 .sala-header h1,
 .sala-header h2 {
-  margin: 0.3rem 0 0.7rem;
-  font-size: 1.4rem;
+    margin: 0.3rem 0 0.7rem;
+    font-size: 1.4rem;
 }
 
 .sala-intro {
-  margin: 0;
-  max-width: 40rem;
-  color: var(--text-muted);
-  font-size: 0.95rem;
+    margin: 0;
+    max-width: 40rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 .sala-main {
-  margin-top: 1.5rem;
+    margin-top: var(--spacing-lg);
 }
 
-/* Contingut generatiu (per a infografies, gràfics, etc.) */
+
+/* ============================================================================
+   CONTENIDO GENERATIVO (COMÚN)
+   ============================================================================ */
 .sala-highlight {
-  min-height: 180px;
-  border-radius: 14px;
-  border: 1px dashed var(--border-soft);
-  position: relative;
-  padding: 1.2rem 1rem;
-  padding-right: 160px; /* espai reservat per a una imatge genèrica a la dreta */
-  background: radial-gradient(circle at top, #eef2ff, #ffffff);
+    min-height: 180px;
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--border-soft);
+    position: relative;
+    padding: 1.2rem var(--spacing-md);
+    padding-right: var(--sala-image-spacing);
+    background: radial-gradient(circle at top, #eef2ff, #ffffff);
 }
 
 .sala-image-slot {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 120px;
-  height: 120px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid var(--border-soft);
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    width: var(--sala-image-size);
+    height: var(--sala-image-size);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
 }
 
 .sala-placeholder {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  text-align: left;
-  max-width: 100%;
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--text-muted);
+    text-align: left;
+    max-width: 100%;
 }
 
-/********************* Navegació inferior */
+
+/* ============================================================================
+   NAVEGACIÓN INFERIOR DE SALA
+   ============================================================================ */
 .sala-nav {
-  margin-top: 1.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: space-between;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
 }
 
-.sala-nav-btn {
-  /* Utilitza la base de .btn; aquí podem afegir ajustos específics si cal */
+
+/* ============================================================================
+   TEMAS POR CADA SALA (1-6)
+   Sistema mejorado: reduce repetición con clases base y modificadores
+   ============================================================================ */
+
+/* Base común para todos los heros de sala */
+.hero-sala {
+    color: #e5e7eb;
 }
 
+.hero-sala .hero-lead {
+    color: #e5e7eb;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 1 - Azul oscuro
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala1 {
+    background: radial-gradient(circle at top, #e0ecff 0, var(--bg-main) 45%, #f9fafb 100%);
+}
+
+.body-sala1 .hero-sala {
+    background: linear-gradient(90deg, #020617, #0b1120 55%, #111827);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 2 - Verde esmeralda
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala2 {
+    background: radial-gradient(circle at top, #dcfce7 0, #ecfeff 35%, var(--bg-main) 70%, #f9fafb 100%);
+}
+
+.body-sala2 .hero-sala {
+    background: linear-gradient(90deg, #022c22, #064e3b 55%, #0f766e);
+}
+
+.body-sala2 .sala-highlight {
+    background: radial-gradient(circle at top, #ecfeff, #ffffff);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 3 - Índigo/Púrpura
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala3 {
+    background: radial-gradient(circle at top, #e0e7ff 0, #f5f3ff 35%, var(--bg-main) 70%, #f9fafb 100%);
+}
+
+.body-sala3 .hero-sala {
+    background: linear-gradient(90deg, #111827, #1f2937 55%, #312e81);
+}
+
+.body-sala3 .sala-highlight {
+    background: radial-gradient(circle at top, #e0f2fe, #ffffff);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 4 - Amarillo/Dorado
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala4 {
+    background: radial-gradient(circle at top, #fef9c3 0, #fffbeb 35%, var(--bg-main) 70%, #f9fafb 100%);
+}
+
+.body-sala4 .hero-sala {
+    background: linear-gradient(90deg, #0f172a, #1e293b 55%, #854d0e);
+}
+
+.body-sala4 .sala-highlight {
+    background: radial-gradient(circle at top, #fef9c3, #ffffff);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 5 - Oscuro completo (modo nocturno)
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala5 {
+    background: radial-gradient(circle at top, #0b1120 0, #020617 40%, #020617 100%);
+}
+
+.body-sala5 .hero-sala {
+    background: radial-gradient(circle at top left, var(--accent), #0f172a 55%, #020617);
+}
+
+.body-sala5 .sala-highlight {
+    background: radial-gradient(circle at top, #020617, #0b1120);
+}
+
+.body-sala5 .sala-placeholder {
+    color: #e5e7eb;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   SALA 6 - Rojo/Naranja
+   ───────────────────────────────────────────────────────────────────────── */
+.body-sala6 {
+    background: radial-gradient(circle at top, #fee2e2 0, #fffbeb 35%, var(--bg-main) 70%, #f9fafb 100%);
+}
+
+.body-sala6 .hero-sala {
+    background: linear-gradient(90deg, #7f1d1d, #7c2d12 55%, #1f2937);
+    color: #fef2f2;
+}
+
+.body-sala6 .hero-sala .hero-lead {
+    color: #fee2e2;
+}
+
+.body-sala6 .sala-highlight {
+    background: radial-gradient(circle at top, #fffbeb, #ffffff);
+}
+
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
 @media (max-width: 768px) {
-  .sala-nav {
-    justify-content: center;
-  }
+    .sala-nav {
+        justify-content: center;
+    }
+
+    .hero-text-sala {
+        margin-right: 0;
+    }
+
+    .hero-image-slot {
+        position: static;
+        margin-top: var(--spacing-lg);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sala-highlight {
+        padding-right: var(--spacing-md);
+    }
+
+    .sala-image-slot {
+        position: static;
+        margin: var(--spacing-lg) auto 0;
+    }
 }

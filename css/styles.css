@@ -1,28 +1,55 @@
+/* ============================================================================
+   VARIABLES CSS - Configuración centralizada del tema
+   ============================================================================ */
 :root {
+    /* Colores de fondo */
     --bg-main: #f5f6fa;
     --bg-section: #ffffff;
     --bg-header: #ffffff;
     --bg-footer: #0a1020;
 
+    /* Bordes */
     --border-soft: #dde1ea;
 
+    /* Colores de texto */
     --text-main: #111827;
     --text-muted: #4b5563;
     --text-contrast: #f9fafb;
 
+    /* Colores de acento */
     --accent: #1d4ed8;
     --accent-soft: rgba(37, 99, 235, 0.12);
 
+    /* Radios de borde */
+    --radius-sm: 10px;
+    --radius-md: 14px;
     --radius-lg: 18px;
     --radius-pill: 999px;
 
+    /* Sombras */
     --shadow-soft: 0 14px 35px rgba(15, 23, 42, 0.08);
 
-    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+    /* Tipografía */
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.85rem;
+    --font-size-base: 0.9rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.3rem;
+
+    /* Espaciado */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
 }
 
-/********************************** Reset y configuració base */
+
+/* ============================================================================
+   RESET Y BASE
+   ============================================================================ */
 *,
 *::before,
 *::after {
@@ -37,7 +64,7 @@ body {
 
 body {
     font-family: var(--font-sans);
-    background: radial-gradient(circle at top, #e5edff 0, #f5f6fa 40%, #f5f6fa 100%);
+    background: radial-gradient(circle at top, #e5edff 0, var(--bg-main) 40%, var(--bg-main) 100%);
     color: var(--text-main);
     line-height: 1.6;
 }
@@ -49,14 +76,15 @@ img {
 }
 
 p {
-    font-size: 1rem;
+    font-size: var(--font-size-md);
     color: var(--text-muted);
-    /*max-width: 50rem;*/
     text-align: justify;
 }
 
 
-/************************************* Head i navegació */
+/* ============================================================================
+   HEADER Y NAVEGACIÓN
+   ============================================================================ */
 .site-header {
     position: sticky;
     top: 0;
@@ -64,16 +92,17 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5vw;
+    padding: var(--spacing-md) 5vw;
     background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-soft);
 }
 
+/* Logo */
 .logo-block {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: var(--spacing-sm);
 }
 
 .logo-mark {
@@ -83,10 +112,10 @@ p {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: var(--radius-pill);
-    background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8);
+    background: radial-gradient(circle at 30% 20%, #60a5fa, var(--accent));
     color: var(--text-contrast);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: var(--font-size-base);
     letter-spacing: 0.06em;
 }
 
@@ -97,7 +126,7 @@ p {
 
 .logo-title {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: var(--font-size-md);
 }
 
 .logo-subtitle {
@@ -105,14 +134,15 @@ p {
     color: var(--text-muted);
 }
 
+/* Navegación */
 .main-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: var(--spacing-xs);
 }
 
 .nav-link {
-    font-size: 0.85rem;
+    font-size: var(--font-size-sm);
     text-decoration: none;
     color: var(--text-muted);
     padding: 0.4rem 0.8rem;
@@ -130,16 +160,22 @@ p {
     color: var(--text-contrast);
 }
 
-/****************************************** Layout general de página */
+
+/* ============================================================================
+   LAYOUT GENERAL
+   ============================================================================ */
 .page {
-    padding: 2rem 5vw 4rem 5vw;
+    padding: var(--spacing-xl) 5vw var(--spacing-2xl) 5vw;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-/***************************************** Seccions genèriques */
+
+/* ============================================================================
+   SECCIONES GENÉRICAS
+   ============================================================================ */
 .section {
-    margin-top: 2.5rem;
+    margin-top: var(--spacing-2xl);
     padding: 1.8rem 1.4rem;
     border-radius: var(--radius-lg);
     background: var(--bg-section);
@@ -149,8 +185,8 @@ p {
 
 .section-header h2 {
     margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-lg);
 }
 
 .section-header p {
@@ -159,18 +195,21 @@ p {
     max-width: 100%;
 }
 
-/***************************************** Hero genèric (portada) */
+
+/* ============================================================================
+   HERO (PORTADA)
+   ============================================================================ */
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-    gap: 2.5rem;
+    gap: var(--spacing-2xl);
     align-items: center;
-    padding: 2rem 1rem 2.5rem;
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-2xl);
 }
 
 .hero-text h1 {
     font-size: clamp(2rem, 3vw, 2.6rem);
-    margin: 0.25rem 0 0.75rem;
+    margin: 0.25rem 0 var(--spacing-sm);
 }
 
 .hero-kicker {
@@ -182,18 +221,17 @@ p {
 }
 
 .hero-lead {
-    font-size: 1rem;
+    font-size: var(--font-size-md);
     color: var(--text-muted);
     max-width: 36rem;
     text-align: justify;
 }
 
-/* Texto extra oculto por defecto */
+/* Texto colapsable */
 .paragraph--collapsible .more-text {
     display: none;
 }
 
-/* Cuando el párrafo está expandido, mostramos el texto extra */
 .paragraph--collapsible.is-expanded .more-text {
     display: inline;
 }
@@ -204,7 +242,7 @@ p {
     border: none;
     color: var(--accent);
     font: inherit;
-    border-radius: 10px;
+    border-radius: var(--radius-sm);
 }
 
 .read-more-toggle:hover {
@@ -212,24 +250,28 @@ p {
 }
 
 .hero-actions {
-    margin-top: 1.5rem;
+    margin-top: var(--spacing-lg);
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: var(--spacing-sm);
 }
 
-/********************************************* Botons */
+
+/* ============================================================================
+   BOTONES
+   ============================================================================ */
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.6rem 1.2rem;
     border-radius: var(--radius-pill);
-    font-size: 0.9rem;
+    font-size: var(--font-size-base);
     text-decoration: none;
     border: 1px solid transparent;
     cursor: pointer;
     white-space: nowrap;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -253,17 +295,12 @@ p {
 }
 
 
-/******************************************** Secció de context de la portada */
-.section-context .context-grid {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-}
-
+/* ============================================================================
+   TARJETAS (CARDS)
+   ============================================================================ */
 .card {
-    padding: 1rem 1rem 1.1rem;
-    border-radius: 14px;
+    padding: var(--spacing-md) var(--spacing-md) 1.1rem;
+    border-radius: var(--radius-md);
     border: 1px solid var(--border-soft);
     background: #ffffff;
 }
@@ -271,39 +308,52 @@ p {
 .card h3 {
     margin-top: 0;
     margin-bottom: 0.45rem;
-    font-size: 1rem;
+    font-size: var(--font-size-md);
 }
 
 .card p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: var(--font-size-base);
     color: var(--text-muted);
 }
 
-/******************************* Secció de recorregut de sales de la portada */
-.section-route .route-list {
+
+/* ============================================================================
+   SECCIÓN DE CONTEXTO (PORTADA)
+   ============================================================================ */
+.section-context .context-grid {
+    margin-top: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+}
+
+
+/* ============================================================================
+   SECCIÓN DE RECORRIDO DE SALAS (PORTADA)
+   ============================================================================ */
+.section-route .route-list,
+.section-route-sala .route-list {
     list-style: none;
-    margin: 1.5rem 0 0 0;
+    margin: var(--spacing-lg) 0 0 0;
     padding: 0;
     display: grid;
+    gap: var(--spacing-md);
+}
+
+.section-route .route-list {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1rem;
 }
 
 .section-route-sala .route-list {
-    list-style: none;
-    margin: 1.5rem 0 0 0;
     padding: 5px;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
 }
-
 
 .route-item {
     position: relative;
-    padding: 1rem 1rem 1.2rem;
-    border-radius: 14px;
+    padding: var(--spacing-md) var(--spacing-md) 1.2rem;
+    border-radius: var(--radius-md);
     border: 1px solid var(--border-soft);
     background: linear-gradient(135deg, #ffffff, #eef2ff);
 }
@@ -314,7 +364,7 @@ p {
     border-radius: var(--radius-pill);
     background: var(--accent-soft);
     color: var(--accent);
-    font-size: 0.75rem;
+    font-size: var(--font-size-xs);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -322,50 +372,59 @@ p {
 
 .route-item h3 {
     margin: 0.4rem 0;
-    font-size: 1rem;
+    font-size: var(--font-size-md);
 }
 
 .route-item p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: var(--font-size-base);
     color: var(--text-muted);
 }
 
 .route-link {
     display: inline-block;
-    margin-top: 0.75rem;
-    font-size: 0.85rem;
+    margin-top: var(--spacing-sm);
+    font-size: var(--font-size-sm);
     text-decoration: none;
     color: var(--accent);
 }
 
-/************************************ Crèdits de la portada */
+
+/* ============================================================================
+   CRÉDITOS (PORTADA)
+   ============================================================================ */
 .section-credits {
     text-align: left;
 }
 
 .credits-text {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-base);
     color: var(--text-muted);
 }
 
-/**************************************** Footer global */
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
 .site-footer {
     margin-top: 3rem;
-    padding: 1.5rem 5vw 2rem;
+    padding: var(--spacing-lg) 5vw var(--spacing-xl);
     background: var(--bg-footer);
     color: var(--text-contrast);
     font-size: 0.8rem;
     text-align: center;
 }
 
-/**************************************** Responsive */
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
 @media (max-width: 768px) {
     .site-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.75rem;
+        gap: var(--spacing-sm);
     }
 
     .hero {
@@ -373,6 +432,6 @@ p {
     }
 
     .page {
-        padding-top: 1.5rem;
+        padding-top: var(--spacing-lg);
     }
 }
