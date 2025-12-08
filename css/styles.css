@@ -31,19 +31,19 @@
 
     /* Tipografía */
     --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.85rem;
-    --font-size-base: 0.9rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.3rem;
+    --font-size-xs: 0.65rem;
+    --font-size-sm: 0.75rem;
+    --font-size-base: 0.8rem;
+    --font-size-md: 0.9rem;
+    --font-size-lg: 1.2rem;
 
     /* Espaciado */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 0.75rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 2.5rem;
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.65rem;
+    --spacing-md: 0.9rem;
+    --spacing-lg: 1.4rem;
+    --spacing-xl: 1.9rem;
+    --spacing-2xl: 2.4rem;
 }
 
 
@@ -160,62 +160,6 @@ p {
     background: var(--accent);
     color: var(--text-contrast);
 }
-
-/* Selector de idioma */
-.lang-selector {
-    display: flex;
-    gap: 0.25rem;
-    margin-left: var(--spacing-sm);
-    padding-left: var(--spacing-sm);
-    border-left: 1px solid var(--border-soft);
-}
-
-.lang-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.35rem;
-    min-width: 3.5rem;
-    height: 2rem;
-    padding: 0 0.6rem;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-sm);
-    background: var(--bg-section);
-    color: var(--text-muted);
-    font-size: var(--font-size-xs);
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.lang-btn__flag {
-    font-size: 1.1rem;
-    line-height: 1;
-}
-
-.lang-btn__text {
-    font-size: 0.7rem;
-}
-
-.lang-btn:hover {
-    background: var(--accent-soft);
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-.lang-btn--active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--text-contrast);
-}
-
-.lang-btn--active:hover {
-    background: var(--accent);
-    color: var(--text-contrast);
-    filter: brightness(1.05);
-}
-
 
 /* ============================================================================
    LAYOUT GENERAL
