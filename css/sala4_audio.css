@@ -1,0 +1,148 @@
+/* ============================================================================
+   REPRODUCTORS D'ÀUDIO - SALA 4
+   Estils per a la sonificació de dades de Cassini
+   ============================================================================ */
+
+.audio-gallery {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.audio-section {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    background: linear-gradient(135deg, #ffffff, #fffbeb);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.audio-section:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
+.audio-section-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.audio-label {
+    display: inline-flex;
+    padding: 0.2rem 0.8rem;
+    border-radius: var(--radius-pill);
+    background: rgba(133, 77, 14, 0.12);
+    color: #854d0e;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--spacing-sm);
+}
+
+.audio-section h3 {
+    margin: var(--spacing-sm) 0 var(--spacing-xs);
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+.audio-description {
+    margin: 0;
+    font-size: var(--font-size-base);
+    color: var(--text-muted);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.audio-players {
+    margin-top: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.audio-player-wrapper {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--border-soft);
+    transition: all 0.2s ease;
+}
+
+.audio-player-wrapper:hover {
+    background: #ffffff;
+    border-color: #854d0e;
+}
+
+.audio-player-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.audio-player-label::before {
+    content: '🎵';
+    font-size: 1rem;
+}
+
+.audio-player-wrapper.artistic .audio-player-label::before {
+    content: '🎨';
+}
+
+.audio-player-subtitle {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
+/* Estils personalitzats per l'element <audio> natiu */
+audio {
+    width: 100%;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(135deg, #fef9c3, #ffffff);
+    border-radius: var(--radius-sm);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: var(--text-main);
+}
+
+/* Nota informativa sobre els audis */
+.audio-info-note {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: rgba(254, 249, 195, 0.3);
+    border-left: 4px solid #854d0e;
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+}
+
+.audio-info-note strong {
+    color: var(--text-main);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .audio-players {
+        grid-template-columns: 1fr;
+    }
+
+    .audio-section {
+        padding: var(--spacing-md);
+    }
+}

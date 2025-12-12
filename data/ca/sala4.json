@@ -81,7 +81,68 @@
     {
       "id": "explore",
       "kicker": "Explora",
-      "placeholder": "Contingut generatiu sobre missions i dades espacials"
+      "title": "Sonificació de dades de Cassini",
+      "intro": "La sonificació és una tècnica que tradueix dades numèriques en so, convertint variacions en freqüència, amplitud i intensitat. Aquesta aproximació permet escoltar patrons que poden passar desapercebuts en gràfics visuals. A continuació, podeu escoltar representacions sonores de les dades recollides per tres instruments clau de la missió Cassini a Enceladus.",
+      "audioSections": [
+        {
+          "label": "INMS",
+          "title": "Espectròmetre de masses iònic i neutre",
+          "description": "L'INMS va mesurar la composició química dels plomalls d'Enceladus. Les dades registren la presència d'aigua, metà, amoníac i molècules orgàniques. La sonificació representa les variacions en l'abundància relativa de cada composant detectat.",
+          "audios": [
+            {
+              "type": "data",
+              "label": "Versió de dades",
+              "subtitle": "Mapatge directe de valors a freqüències",
+              "file": "audio/cassini_inms_data.mp3"
+            },
+            {
+              "type": "artistic",
+              "label": "Versió artística",
+              "subtitle": "Interpretació musical generada amb Suno",
+              "file": "audio/cassini_inms_artistic.mp3"
+            }
+          ]
+        },
+        {
+          "label": "MAG",
+          "title": "Magnetòmetre",
+          "description": "El MAG va registrar pertorbacions en el camp magnètic de Saturn causades per la interacció amb el material expulsat pels geisers d'Enceladus. Aquestes oscil·lacions indiquen l'activitat de l'oceà subsuperficial i la conducció elèctrica de l'aigua salada.",
+          "audios": [
+            {
+              "type": "data",
+              "label": "Versió de dades",
+              "subtitle": "Oscil·lacions magnètiques traduïdes a so",
+              "file": "audio/cassini_mag_data.mp3"
+            },
+            {
+              "type": "artistic",
+              "label": "Versió artística",
+              "subtitle": "Interpretació musical generada amb Suno",
+              "file": "audio/cassini_mag_artistic.mp3"
+            }
+          ]
+        },
+        {
+          "label": "CDA",
+          "title": "Analitzador de pols còsmica",
+          "description": "El CDA va detectar l'impacte de partícules de gel i minerals expulsades pels geisers. Cada impacte proporciona informació sobre la mida, velocitat i composició de les partícules. La sonificació reflecteix la freqüència i intensitat d'aquests esdeveniments.",
+          "audios": [
+            {
+              "type": "data",
+              "label": "Versió de dades",
+              "subtitle": "Impactes de partícules convertits en polsos sonors",
+              "file": "audio/cassini_cda_data.mp3"
+            },
+            {
+              "type": "artistic",
+              "label": "Versió artística",
+              "subtitle": "Interpretació musical generada amb Suno",
+              "file": "audio/cassini_cda_artistic.mp3"
+            }
+          ]
+        }
+      ],
+      "note": "Les versions de dades són representacions sonores directes dels valors mesurats pels instruments. Les versions artístiques són interpretacions musicals creades amb Suno basades en aquestes dades, amb l'objectiu de fer més accessible i evocadora la informació científica."
     }
   ],
   "navigation": {

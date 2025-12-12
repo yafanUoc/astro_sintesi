@@ -109,6 +109,11 @@ class ContentLoader {
                     this.renderMissions(section.missions);
                 }
 
+                // Secciones de audio (Sala 4)
+                if (section.audioSections) {
+                    this.renderAudioSections(section.audioSections, section.note);
+                }
+
                 // Placeholder (para secciones Explora)
                 if (section.placeholder) {
                     this.setText(`[data-section="${section.id}"] [data-content="placeholder"]`, section.placeholder);
@@ -254,6 +259,7 @@ class ContentLoader {
 
     /**
      * Renderiza los mundos (Sala 3)
+     * Actualitzat per incloure suport per a captions (peus de foto)
      */
     renderWorlds(worlds) {
         const container = document.querySelector('[data-content="worlds-gallery"]');
@@ -330,6 +336,60 @@ class ContentLoader {
             `;
             container.appendChild(li);
         });
+    }
+
+    /**
+     * Renderiza las secciones de audio (Sala 4)
+     * @param {Array} audioSections - Array de secciones con reproductores de audio
+     * @param {String} note - Nota informativa sobre los audios
+     */
+    renderAudioSections(audioSections, note) {
+        const container = document.querySelector('[data-content="audio-gallery"]');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        // Renderizar cada sección de audio
+        audioSections.forEach(section => {
+            const audioSection = document.createElement('div');
+            audioSection.className = 'audio-section';
+
+            // Header de la sección
+            const headerHTML = `
+                <div class="audio-section-header">
+                    <span class="audio-label">${section.label}</span>
+                    <h3>${section.title}</h3>
+                    <p class="audio-description">${section.description}</p>
+                </div>
+            `;
+
+            // Reproductores de audio
+            let playersHTML = '<div class="audio-players">';
+            section.audios.forEach(audio => {
+                playersHTML += `
+                    <div class="audio-player-wrapper ${audio.type}">
+                        <div class="audio-player-label">${audio.label}</div>
+                        <div class="audio-player-subtitle">${audio.subtitle}</div>
+                        <audio controls preload="metadata">
+                            <source src="${audio.file}" type="audio/mpeg">
+                            El teu navegador no suporta l'element d'àudio.
+                        </audio>
+                    </div>
+                `;
+            });
+            playersHTML += '</div>';
+
+            audioSection.innerHTML = headerHTML + playersHTML;
+            container.appendChild(audioSection);
+        });
+
+        // Añadir nota informativa al final
+        if (note) {
+            const noteElement = document.createElement('div');
+            noteElement.className = 'audio-info-note';
+            noteElement.innerHTML = `<strong>Nota:</strong> ${note}`;
+            container.appendChild(noteElement);
+        }
     }
 
     /**
