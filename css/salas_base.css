@@ -303,6 +303,7 @@
     background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
     border: 1px solid var(--border-soft);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -313,7 +314,21 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+/* Peus de foto per a les imatges */
+.image-caption {
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    text-align: right;
+    font-style: italic;
+    background: rgba(148, 163, 184, 0.08);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    line-height: 1.4;
 }
 
 /* Placeholder visual para las imágenes (si no hay imagen) */

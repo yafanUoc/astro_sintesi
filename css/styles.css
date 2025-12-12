@@ -81,6 +81,10 @@ p {
     text-align: justify;
 }
 
+.img_info {
+    font-size: var(--font-size-xs);
+}
+
 
 /* ============================================================================
    HEADER Y NAVEGACIÓN

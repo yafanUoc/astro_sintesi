@@ -274,9 +274,19 @@ class ContentLoader {
             }
 
             // Renderizar con imagen real si existe, o placeholder si no
-            const imageHTML = world.image
-                ? `<div class="world-image"><img src="${world.image}" alt="${world.label}" /></div>`
-                : `<div class="world-image" role="img" aria-label="Imatge de ${world.label}"></div>`;
+            // Incluir caption si la imagen tiene caption especificado
+            let imageHTML;
+            if (world.image) {
+                const captionHTML = world.caption
+                    ? `<p class="image-caption">${world.caption}</p>`
+                    : '';
+                imageHTML = `<div class="world-image">
+                    <img src="${world.image}" alt="${world.label}" />
+                    ${captionHTML}
+                </div>`;
+            } else {
+                imageHTML = `<div class="world-image" role="img" aria-label="Imatge de ${world.label}"></div>`;
+            }
 
             article.innerHTML = `
                 <div class="world-content">
