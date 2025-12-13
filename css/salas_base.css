@@ -13,7 +13,7 @@
    ============================================================================ */
 :root {
     /* Dimensiones comunes */
-    --hero-image-size: 300px;
+    --hero-image-size: 320px;
     --sala-image-size: 120px;
     --sala-image-spacing: 160px;
 }
@@ -204,18 +204,22 @@
 
 
 /* ============================================================================
-   HERO DE SALA (COMPARTIDO)
+   HERO DE SALA (COMPARTIDO) - ACTUALIZADO
    ============================================================================ */
 .hero.hero-sala {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-2xl);
 }
 
 .hero-sala {
     position: relative;
     border-radius: var(--radius-lg);
     margin-bottom: var(--spacing-lg);
-    padding: 1.8rem 1.6rem;
-    overflow: hidden;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    overflow: visible;
     /* Aplicar variables de sala */
     background: linear-gradient(90deg, var(--sala-hero-bg-start), var(--sala-hero-bg-mid) 55%, var(--sala-hero-bg-end));
     color: var(--sala-hero-text);
@@ -231,31 +235,44 @@
 }
 
 .hero-text-sala {
-    max-width: 40rem;
-    margin-right: 9rem;
+    flex: 1;
+    max-width: 600px;
 }
 
+/* ============================================================================
+   HERO IMAGE SLOT - ACTUALIZADO PARA IMÁGENES SIN MARCO
+   ============================================================================ */
 .hero-image-slot {
-    position: absolute;
-    top: 1.4rem;
-    right: 1.4rem;
+    flex-shrink: 0;
     width: var(--hero-image-size);
-    height: var(--hero-image-size);
-    border-radius: 16px;
-    border: 1px solid rgba(148, 163, 184, 0.6);
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(6px);
-    overflow: hidden;
+    height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
 }
 
-/* Imatge dins del hero-image-slot */
+/* Imatge dins del hero-image-slot - SIN MARCO */
 .hero-sala-image {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 16px 16px 0 0;
+    /* Eliminat el border-radius per permetre imatges PNG sense fons */
+}
+
+/* Caption de la imatge del hero */
+.hero-image-slot .image-caption {
+    width: 100%;
+    margin: var(--spacing-xs) 0 0 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    color: var(--sala-hero-text);
+    text-align: right;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    line-height: 1.4;
 }
 
 
@@ -460,17 +477,22 @@
         justify-content: center;
     }
 
+    /* Hero en mòbil - apilat verticalment */
+    .hero.hero-sala {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-lg);
+    }
+
     .hero-text-sala {
-        margin-right: 0;
+        max-width: 100%;
     }
 
     .hero-image-slot {
-        position: static;
         width: 100%;
-        max-width: 300px;
-        margin-top: var(--spacing-lg);
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .sala-highlight {
