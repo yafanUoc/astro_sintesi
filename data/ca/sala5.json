@@ -30,7 +30,16 @@
     {
       "id": "explore",
       "kicker": "Explora",
-      "placeholder": "Experiència audiovisual immersiva basada en dades del Sistema Solar"
+      "title": "Cúpula immersiva",
+      "intro": "L'exposició disposa d'una sala amb projecció de 360° on els visitants poden experimentar els paisatges audiovisuals generats a partir de les dades del Sistema Solar. Aquesta instal·lació combina visualitzacions científiques amb composicions sonores per crear una experiència sensorial completa.",
+      "immersive": {
+        "title": "Sala de projecció immersiva",
+        "description": "Espai audiovisual equipat amb projecció panoràmica de 360° i sistema de so envoltant que permet explorar els entorns del Sistema Solar a través de representacions basades en dades reals. Les visualitzacions integren informació de missions espacials convertida en patrons de llum, color i so que reflecteixen fenòmens com variacions magnètiques, activitat atmosfèrica o fluxos de partícules.",
+        "image": "images/sala_immersiva.png",
+        "caption": "Sala immersiva d'Astro-Síntesi",
+        "audioFile": "audio/sala_immersio.mp3"
+      },
+      "note": "En accedir a aquesta pàgina s'inicia automàticament una composició sonora generada a partir de dades del Sistema Solar. Aquesta experiència auditiva forma part de l'aproximació immersiva al contingut científic de l'exposició."
     }
   ],
   "navigation": {

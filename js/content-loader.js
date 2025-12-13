@@ -119,6 +119,11 @@ class ContentLoader {
                     this.renderAudioSections(section.audioSections, section.note);
                 }
 
+                // Contingut immersiu (Sala 5)
+                if (section.immersive) {
+                    this.renderImmersive(section.immersive, section.note);
+                }
+
                 // Placeholder (para secciones Explora)
                 if (section.placeholder) {
                     this.setText(`[data-section="${section.id}"] [data-content="placeholder"]`, section.placeholder);
@@ -330,7 +335,7 @@ class ContentLoader {
 
             // Badge d'habitabilitat
             const badgeClass = landscape.type === 'habitable' ? 'badge-habitable' : 'badge-non-habitable';
-            const badgeText = landscape.type === 'habitable' ? '' : 'No habitable';
+            const badgeText = landscape.type === 'habitable' ? 'Potencialment habitable' : 'No habitable';
 
             // Factors
             let factorsHTML = '';
@@ -351,7 +356,7 @@ class ContentLoader {
             card.innerHTML = `
                 <div class="landscape-image-container">
                     <img src="${landscape.image}" alt="${landscape.world}" class="landscape-image">
-<!--                    <div class="landscape-badge ${badgeClass}">${badgeText}</div>-->
+                    <div class="landscape-badge ${badgeClass}">${badgeText}</div>
                     ${captionHTML}
                 </div>
                 <div class="landscape-content">
@@ -456,6 +461,99 @@ class ContentLoader {
             noteElement.innerHTML = `<strong>Nota:</strong> ${note}`;
             container.appendChild(noteElement);
         }
+    }
+
+    /**
+     * Renderiza el contenido immersivo (Sala 5)
+     * @param {Object} immersive - Objecte amb informació de la sala immersiva
+     * @param {String} note - Nota informativa sobre l'àudio automàtic
+     */
+    renderImmersive(immersive, note) {
+        const container = document.querySelector('[data-content="immersive-presentation"]');
+        if (!container) return;
+
+        // Renderitzar la presentació de la cúpula
+        const captionHTML = immersive.caption
+            ? `<div class="immersive-caption">${immersive.caption}</div>`
+            : '';
+
+        container.innerHTML = `
+            <div class="immersive-content">
+                <h3 class="immersive-title">${immersive.title}</h3>
+                <p class="immersive-description">${immersive.description}</p>
+                <div class="audio-indicator">Àudio ambient reproduint-se</div>
+            </div>
+            <div class="immersive-image-container">
+                <img src="${immersive.image}" alt="${immersive.title}" class="immersive-image">
+                ${captionHTML}
+            </div>
+        `;
+
+        // Afegir nota informativa al final
+        if (note) {
+            const noteElement = document.createElement('div');
+            noteElement.className = 'audio-autoplay-note';
+            noteElement.innerHTML = `<strong>Nota:</strong> ${note}`;
+            container.appendChild(noteElement);
+        }
+
+        // Iniciar reproducció automàtica de l'àudio
+        if (immersive.audioFile) {
+            this.autoplayAudio(immersive.audioFile);
+        }
+    }
+
+    /**
+     * Reprodueix automàticament un àudio ambient
+     * @param {String} audioFile - Ruta de l'arxiu d'àudio
+     */
+    autoplayAudio(audioFile) {
+        // Crear element d'àudio
+        const audio = new Audio(audioFile);
+        audio.loop = true; // Reproducció en bucle
+        audio.volume = 0.5; // Volum al 50%
+
+        // Intentar reproducció automàtica
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise
+                .then(() => {
+                    console.log('✅ Àudio immersiu reproduint-se automàticament');
+                })
+                .catch(error => {
+                    console.log('⚠️ Reproducció automàtica bloquejada pel navegador:', error);
+                    // Afegir botó manual si la reproducció automàtica falla
+                    this.addManualPlayButton(audio);
+                });
+        }
+
+        // Guardar referència per poder aturar l'àudio si cal
+        window.immersiveAudio = audio;
+    }
+
+    /**
+     * Afegeix un botó manual per reproduir l'àudio si la reproducció automàtica falla
+     * @param {Audio} audio - Element d'àudio
+     */
+    addManualPlayButton(audio) {
+        const indicator = document.querySelector('.audio-indicator');
+        if (!indicator) return;
+
+        indicator.innerHTML = '';
+        indicator.style.cursor = 'pointer';
+        indicator.innerHTML = '🔇 Clica per activar l\'àudio ambient';
+
+        indicator.addEventListener('click', () => {
+            audio.play()
+                .then(() => {
+                    indicator.innerHTML = '🔊 Àudio ambient reproduint-se';
+                    indicator.style.cursor = 'default';
+                })
+                .catch(error => {
+                    console.error('Error reproduint àudio:', error);
+                });
+        }, { once: true });
     }
 
     /**
