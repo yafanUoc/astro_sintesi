@@ -85,7 +85,41 @@
     {
       "id": "explore",
       "kicker": "Explora",
-      "placeholder": "Contingut generatiu sobre factors d'habitabilitat"
+      "title": "Paisatges d'habitabilitat: dos móns oposats",
+      "intro": "La comparació visual entre entorns planetaris amb condicions extremes permet comprendre millor els límits de l'habitabilitat. Enceladus i Io representen dos escenaris radicalment diferents: un amb potencial astrobiològic documentat i l'altre amb condicions que exclourien qualsevol forma de vida coneguda.",
+      "landscapes": [
+        {
+          "type": "habitable",
+          "world": " ",
+          "title": "Enceladus: oceà subsuperficial actiu",
+          "subtitle": "Lluna de Saturn amb activitat hidrotermal",
+          "description": "La missió Cassini va detectar plomalls d'aigua expulsats des del pol sud d'Enceladus que contenen hidrogen molecular, sals minerals i molècules orgàniques complexes. Aquests indicadors suggereixen reaccions hidrotermals actives al fons d'un oceà global mantingut líquid per l'escalfament mareal generat per Saturn. Les condicions detectades —aigua, química orgànica i energia— corresponen als requisits mínims per a processos bioquímics.",
+          "image": "images/enceladus_landscape.png",
+          "caption": "Imatge generada amb Sora",
+          "factors": [
+            "Aigua líquida subsuperficial",
+            "Activitat hidrotermal",
+            "Molècules orgàniques",
+            "Font d'energia interna"
+          ]
+        },
+        {
+          "type": "non-habitable",
+          "world": " ",
+          "title": "Io: vulcanisme extrem i radiació intensa",
+          "subtitle": "Lluna de Júpiter amb l'activitat volcànica més intensa del Sistema Solar",
+          "description": "La deformació constant provocada per les forces de marea de Júpiter genera una calor interna extrema que alimenta més de 400 volcans actius a Io. La seva superfície, composta per diòxid de sofre i silicats fundits, assoleix temperatures superiors a 1.600 °C. L'absència total d'aigua, combinada amb la radiació letal del cinturó magnètic de Júpiter i l'activitat volcànica persistent, impedeixen qualsevol procés biològic conegut.",
+          "image": "images/io_landscape.png",
+          "caption": "Imatge generada amb Sora",
+          "factors": [
+            "Absència d'aigua",
+            "Temperatures extremes (>1.600°C)",
+            "Radiació letal de Júpiter",
+            "Activitat volcànica constant"
+          ]
+        }
+      ],
+      "note": "Aquestes representacions visuals estan basades en dades reals recollides per les missions Cassini (Enceladus) i Galileo/Juno (Io). Les imatges generades amb IA sintetitzen les característiques geològiques i atmosfèriques documentades científicament per facilitar la comprensió dels contrastos entre entorns potencialment habitables i clarament inhòspits."
     }
   ],
   "navigation": {

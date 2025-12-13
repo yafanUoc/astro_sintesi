@@ -12,6 +12,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/salas_base.css" />
+    <link rel="stylesheet" href="css/sala2_landscapes.css" />
 
     <!-- JavaScript -->
     <script defer src="js/content-loader.js"></script>
@@ -89,19 +90,21 @@
         </ol>
     </section>
 
-    <!-- Contingut interactiu / generatiu -->
+    <!-- Contingut interactiu / generatiu - PAISATGES COMPARATIUS -->
     <section class="section sala-layout" data-section="explore">
         <header class="sala-header">
             <p class="sala-kicker" data-content="kicker">Explora</p>
+            <h2 data-content="title">Carregant...</h2>
         </header>
 
-        <div class="sala-main">
-            <div class="sala-highlight">
-                <div class="sala-image-slot" role="img" aria-label="Espai reservat per a contingut multimèdia"></div>
-                <p class="sala-placeholder" data-content="placeholder">
-                    Carregant...
-                </p>
-            </div>
+        <p class="sala-intro" data-content="intro">
+            Carregant...
+        </p>
+
+        <!-- Galeria de paisatges -->
+        <div class="landscapes-comparison" data-content="landscapes-gallery">
+            <!-- Els paisatges es carregaran dinàmicament des del JSON -->
+            <p>Carregant paisatges...</p>
         </div>
     </section>
 

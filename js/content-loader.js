@@ -104,6 +104,11 @@ class ContentLoader {
                     this.renderWorlds(section.worlds);
                 }
 
+                // Paisatges comparatius (Sala 2)
+                if (section.landscapes) {
+                    this.renderLandscapes(section.landscapes, section.note);
+                }
+
                 // Misiones (Sala 4)
                 if (section.missions) {
                     this.renderMissions(section.missions);
@@ -305,6 +310,67 @@ class ContentLoader {
             `;
             container.appendChild(article);
         });
+    }
+
+    /**
+     * Renderiza los paisajes comparativos (Sala 2)
+     * @param {Array} landscapes - Array de paisatges amb informació d'habitabilitat
+     * @param {String} note - Nota informativa sobre les imatges
+     */
+    renderLandscapes(landscapes, note) {
+        const container = document.querySelector('[data-content="landscapes-gallery"]');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        // Renderitzar cada paisatge
+        landscapes.forEach(landscape => {
+            const card = document.createElement('div');
+            card.className = `landscape-card ${landscape.type === 'habitable' ? '' : 'non-habitable'}`;
+
+            // Badge d'habitabilitat
+            const badgeClass = landscape.type === 'habitable' ? 'badge-habitable' : 'badge-non-habitable';
+            const badgeText = landscape.type === 'habitable' ? '' : 'No habitable';
+
+            // Factors
+            let factorsHTML = '';
+            if (landscape.factors && landscape.factors.length > 0) {
+                factorsHTML = '<div class="landscape-factors">';
+                landscape.factors.forEach(factor => {
+                    const factorClass = landscape.type === 'habitable' ? 'positive' : 'negative';
+                    factorsHTML += `<span class="factor-tag ${factorClass}">${factor}</span>`;
+                });
+                factorsHTML += '</div>';
+            }
+
+            // Caption de la imatge
+            const captionHTML = landscape.caption
+                ? `<div class="landscape-caption">${landscape.caption}</div>`
+                : '';
+
+            card.innerHTML = `
+                <div class="landscape-image-container">
+                    <img src="${landscape.image}" alt="${landscape.world}" class="landscape-image">
+<!--                    <div class="landscape-badge ${badgeClass}">${badgeText}</div>-->
+                    ${captionHTML}
+                </div>
+                <div class="landscape-content">
+                    <h3 class="landscape-title">${landscape.title}</h3>
+                    <p class="landscape-description">${landscape.description}</p>
+                    ${factorsHTML}
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
+
+        // Afegir nota informativa al final
+        if (note) {
+            const noteElement = document.createElement('div');
+            noteElement.className = 'landscapes-note';
+            noteElement.innerHTML = `<strong>Nota:</strong> ${note}`;
+            container.appendChild(noteElement);
+        }
     }
 
     /**
