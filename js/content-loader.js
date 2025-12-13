@@ -216,14 +216,20 @@ class ContentLoader {
                 salasContainer.innerHTML = '';
                 sections.recorregut.salas.forEach(sala => {
                     const li = document.createElement('li');
-                    li.className = 'route-item';
+                    li.className = 'route-item route-item--clickable';
+                    li.setAttribute('data-href', sala.url);
                     li.innerHTML = `
                         <span class="route-label">Sala ${sala.number}</span>
-                        <h3>
-                            <a href="${sala.url}" class="route-link">${sala.title}</a>
-                        </h3>
+                        <h3>${sala.title}</h3>
                         <p>${sala.description}</p>
                     `;
+
+                    // Fer tota la targeta clicable
+                    li.style.cursor = 'pointer';
+                    li.addEventListener('click', () => {
+                        window.location.href = sala.url;
+                    });
+
                     salasContainer.appendChild(li);
                 });
             }
