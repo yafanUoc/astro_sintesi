@@ -2,22 +2,22 @@
    VARIABLES CSS - Configuración centralizada del tema
    ============================================================================ */
 :root {
-    /* Colores de fondo */
+    /* Colores de fondo GENERALES (no afectan a salas) */
     --bg-main: #f5f6fa;
     --bg-section: #ffffff;
     --bg-header: #ffffff;
-    --bg-footer: #0a1020;
+    --bg-footer: #292a30;
 
     /* Bordes */
     --border-soft: #dde1ea;
 
-    /* Colores de texto */
+    /* Colores de texto GENERALES */
     --text-main: #111827;
     --text-muted: #4b5563;
     --text-contrast: #f9fafb;
 
-    /* Colores de acento */
-    --accent: #1d4ed8;
+    /* Colores de acento (menú y navegación - NO cambian por sala) */
+    --accent: #122f81;
     --accent-soft: rgba(37, 99, 235, 0.12);
 
     /* Radios de borde */
@@ -60,6 +60,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -166,12 +169,14 @@ p {
 }
 
 /* ============================================================================
-   LAYOUT GENERAL
+   LAYOUT GENERAL - Wrapper para mantener footer abajo
    ============================================================================ */
 .page {
+    flex: 1;
     padding: var(--spacing-xl) 5vw var(--spacing-2xl) 5vw;
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -424,10 +429,10 @@ p {
 
 
 /* ============================================================================
-   FOOTER
+   FOOTER - Siempre visible al final
    ============================================================================ */
 .site-footer {
-    margin-top: 3rem;
+    margin-top: auto;
     padding: var(--spacing-lg) 5vw var(--spacing-xl);
     background: var(--bg-footer);
     color: var(--text-contrast);
