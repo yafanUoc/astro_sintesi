@@ -13,7 +13,7 @@
    ============================================================================ */
 :root {
     /* Dimensiones comunes */
-    --hero-image-size: 120px;
+    --hero-image-size: 300px;
     --sala-image-size: 120px;
     --sala-image-spacing: 160px;
 }
@@ -245,6 +245,17 @@
     border: 1px solid rgba(148, 163, 184, 0.6);
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(6px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imatge dins del hero-image-slot */
+.hero-sala-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px 16px 0 0;
 }
 
 
@@ -405,7 +416,7 @@
     border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
-/* Peus de foto per a les imatges */
+/* Peus de foto per a les imatges - Estil estandarditzat */
 .image-caption {
     width: 100%;
     margin: 0;
@@ -414,7 +425,21 @@
     color: var(--text-muted);
     text-align: right;
     font-style: italic;
-    background: rgba(148, 163, 184, 0.08);
+    background: rgba(148, 163, 184, 0.1); /* 90% transparència */
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    line-height: 1.4;
+}
+
+/* Aplicar també a .img_info per compatibilitat */
+.img_info {
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    text-align: right;
+    font-style: italic;
+    background: rgba(148, 163, 184, 0.1); /* 90% transparència */
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     line-height: 1.4;
 }
@@ -441,6 +466,8 @@
 
     .hero-image-slot {
         position: static;
+        width: 100%;
+        max-width: 300px;
         margin-top: var(--spacing-lg);
         margin-left: auto;
         margin-right: auto;

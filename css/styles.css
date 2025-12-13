@@ -216,9 +216,10 @@ p {
     padding: var(--spacing-xl) var(--spacing-md) var(--spacing-2xl);
 }
 
-/* Contenedor de la imagen del Sistema Solar */
+/* Contenedor de la animación del Sistema Solar */
 .hero-visual {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 400px;
@@ -458,12 +459,15 @@ p {
    FOOTER - Siempre visible al final
    ============================================================================ */
 .site-footer {
+    position: sticky;
+    bottom: 0;
     margin-top: auto;
     padding: var(--spacing-lg) 5vw var(--spacing-xl);
     background: var(--bg-footer);
     color: var(--text-contrast);
     font-size: 0.8rem;
     text-align: center;
+    z-index: 10;
 }
 
 
@@ -496,7 +500,6 @@ p {
         order: -1;
         min-height: 300px;
     }
-
 
     .page {
         padding-top: var(--spacing-lg);

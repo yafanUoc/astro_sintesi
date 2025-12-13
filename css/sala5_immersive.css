@@ -39,7 +39,6 @@
 .immersive-image-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
     overflow: hidden;
     border-radius: var(--radius-md);
     background: linear-gradient(135deg, #1e293b, #0f172a);
