@@ -33,15 +33,19 @@
     --sala-bg-page-dark: #92a3bd;
 
     /* Hero */
-    --sala-hero-bg-start: #020617;
-    --sala-hero-bg-mid: #0b1120;
-    --sala-hero-bg-end: #111827;
+    --sala-hero-bg-start: #0e1015;
+    --sala-hero-bg-mid: #284965;
+    --sala-hero-bg-end: #4b7fad;
     --sala-hero-text: #e5e7eb;
 
     /* Bloque "Explora" (sala-highlight) */
     --sala-highlight-bg-start: #eef2ff;
     --sala-highlight-bg-end: #ffffff;
     --sala-highlight-text: var(--text-muted);
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -59,15 +63,19 @@
     --sala-bg-page-dark: #92a3bd;
 
     /* Hero */
-    --sala-hero-bg-start: #112712;
-    --sala-hero-bg-mid: #2b371f;
-    --sala-hero-bg-end: #367321;
-    --sala-hero-text: #e5e7eb;
+    --sala-hero-bg-start: #1f2937;
+    --sala-hero-bg-mid: #1c397a;
+    --sala-hero-bg-end: #3f6ccd;
+    --sala-hero-text: #fef2f2;
 
     /* Bloque "Explora" (sala-highlight) */
     --sala-highlight-bg-start: #ecfeff;
     --sala-highlight-bg-end: #ffffff;
     --sala-highlight-text: var(--text-muted);
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -94,6 +102,10 @@
     --sala-highlight-bg-start: #e0f2fe;
     --sala-highlight-bg-end: #ffffff;
     --sala-highlight-text: var(--text-muted);
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -117,9 +129,13 @@
     --sala-hero-text: #e5e7eb;
 
     /* Bloque "Explora" (sala-highlight) */
-    --sala-highlight-bg-start: #fef9c3;
+    --sala-highlight-bg-start: #f4c99a;
     --sala-highlight-bg-end: #ffffff;
     --sala-highlight-text: var(--text-muted);
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -146,6 +162,10 @@
     --sala-highlight-bg-start: #020617;
     --sala-highlight-bg-end: #0b1120;
     --sala-highlight-text: #e5e7eb;
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -163,15 +183,19 @@
     --sala-bg-page-dark: #92a3bd;
 
     /* Hero */
-    --sala-hero-bg-start: #1f2937;
-    --sala-hero-bg-mid: #1c397a;
-    --sala-hero-bg-end: #3f6ccd;
-    --sala-hero-text: #fef2f2;
+    --sala-hero-bg-start: #112712;
+    --sala-hero-bg-mid: #2b371f;
+    --sala-hero-bg-end: #367321;
+    --sala-hero-text: #e5e7eb;
 
     /* Bloque "Explora" (sala-highlight) */
     --sala-highlight-bg-start: #fffbeb;
     --sala-highlight-bg-end: #ffffff;
     --sala-highlight-text: var(--text-muted);
+
+    .hero-kicker {
+        color: #92a3bd;
+    }
 }
 
 
@@ -251,26 +275,28 @@
     align-items: center;
     justify-content: center;
     padding: var(--spacing-md);
+    border-radius: var(--radius-pill);
 }
 
 /* Imatge dins del hero-image-slot - SIN MARCO */
 .hero-sala-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
+    border-radius: var(--radius-lg);
     /* Eliminat el border-radius per permetre imatges PNG sense fons */
 }
 
 /* Caption de la imatge del hero */
 .hero-image-slot .image-caption {
-    width: 100%;
+    width: 80%;
     margin: var(--spacing-xs) 0 0 0;
     padding: var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-xs);
     color: var(--sala-hero-text);
     text-align: right;
     font-style: italic;
-    background: rgba(255, 255, 255, 0.1);
+    /*background: rgba(255, 255, 255, 0.1);*/
     border-radius: var(--radius-sm);
     line-height: 1.4;
 }

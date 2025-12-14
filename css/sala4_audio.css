@@ -90,7 +90,7 @@
 }
 
 .audio-player-wrapper.artistic .audio-player-label::before {
-    content: '🎨';
+    content: '🎵';
 }
 
 .audio-player-subtitle {

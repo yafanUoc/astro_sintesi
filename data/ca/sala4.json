@@ -4,8 +4,8 @@
     "description": "Sala 4 de l'exposició Astro-Síntesi: com recollim i interpretem les dades de les missions espacials."
   },
   "hero": {
-    "kicker": "Sala 4 · Dades i instruments",
-    "title": "Missions i dades",
+    "kicker": "Sala 4 · Dades i missions",
+    "title": "Laboratori de dades",
     "lead": "Les missions espacials recullen partícules, mesuren camps magnètics i analitzen la llum que reflecteixen i emeten els planetes i les seves llunes. Aquestes dades revelen la composició, l'activitat i el potencial d'habitabilitat dels mons del Sistema Solar."
   },
   "sections": [
