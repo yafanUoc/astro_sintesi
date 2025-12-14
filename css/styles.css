@@ -462,7 +462,7 @@ p {
     position: sticky;
     bottom: 0;
     margin-top: auto;
-    padding: var(--spacing-lg) 5vw var(--spacing-xl);
+    padding: var(--spacing-sm) 5vw var(--spacing-sm);
     background: var(--bg-footer);
     color: var(--text-contrast);
     font-size: 0.8rem;
