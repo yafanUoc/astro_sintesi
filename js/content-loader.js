@@ -80,6 +80,18 @@ class ContentLoader {
                 if (section.intro) {
                     this.setText(`[data-section="${section.id}"] [data-content="intro"]`, section.intro);
                 }
+                // URL de la font de dades (Sala 4 - Explore)
+                if (section.url) {
+                    const dataSourceContainer = sectionEl.querySelector('[data-content="data-source"]');
+                    if (dataSourceContainer) {
+                        dataSourceContainer.innerHTML = `
+                            <p class="data-source-note">
+                                <strong>Font de les dades:</strong> Totes les sonificacions es basen en dades originals de la missió Cassini disponibles al 
+                                <a href="${section.url}" target="_blank" rel="noopener noreferrer">Planetary Data System (PDS)</a>.
+                            </p>
+                        `;
+                    }
+                }
 
                 // Contenido (párrafos múltiples)
                 if (section.content) {
@@ -431,12 +443,19 @@ class ContentLoader {
             const audioSection = document.createElement('div');
             audioSection.className = 'audio-section';
 
+            // Procesar la descripción: separar por \n\n y convertir a párrafos
+            let descriptionHTML = '';
+            if (section.description) {
+                const paragraphs = section.description.split('\n\n');
+                descriptionHTML = paragraphs.map(p => `<p>${p}</p>`).join('');
+            }
+
             // Header de la sección
             const headerHTML = `
                 <div class="audio-section-header">
                     <span class="audio-label">${section.label}</span>
                     <h3>${section.title}</h3>
-                    <p class="audio-description">${section.description}</p>
+                    <div class="audio-description">${descriptionHTML}</div>
                 </div>
             `;
 

@@ -83,11 +83,12 @@
       "kicker": "Explora",
       "title": "Sonificació de dades de Cassini",
       "intro": "La sonificació és una tècnica que tradueix dades numèriques en so, convertint variacions en freqüència, amplitud i intensitat. Aquesta aproximació permet escoltar patrons que poden passar desapercebuts en gràfics visuals. A continuació, podeu escoltar representacions sonores de les dades recollides per tres instruments clau de la missió Cassini a Enceladus.",
+      "url": "https://pds-ppi.igpp.ucla.edu/search/default.jsp",
       "audioSections": [
         {
           "label": "INMS",
           "title": "Espectròmetre de masses iònic i neutre",
-          "description": "L'INMS va mesurar la composició química dels plomalls d'Enceladus. Les dades registren la presència d'aigua, metà, amoníac i molècules orgàniques. La sonificació representa les variacions en l'abundància relativa de cada composant detectat.",
+          "description": "L'INMS va mesurar la composició química dels plomalls d'Enceladus. Les dades registren la presència d'<strong>aigua, metà, amoníac i molècules orgàniques</strong>. La sonificació representa les variacions en l'abundància relativa de cada composant detectat.\n\nAquesta sonificació es basa en les dades de l'Ion and Neutral Mass Spectrometer (INMS) de la missió Cassini, que va mesurar l'abundància relativa de molècules presents als plomalls d'Enceladus. <strong>Els valors numèrics de concentració es van normalitzar i es van traduir a paràmetres sonors continus</strong>: la freqüència representa el tipus d'espècie química (més greu per a molècules lleugeres i més aguda per a compostos complexos), mentre que l'amplitud i la densitat sonora reflecteixen les variacions d'abundància detectades durant els sobrevols. El resultat permet percebre com canvia la composició química del plomall al llarg del temps.",
           "audios": [
             {
               "type": "data",
@@ -106,7 +107,7 @@
         {
           "label": "MAG",
           "title": "Magnetòmetre",
-          "description": "El MAG va registrar pertorbacions en el camp magnètic de Saturn causades per la interacció amb el material expulsat pels geisers d'Enceladus. Aquestes oscil·lacions indiquen l'activitat de l'oceà subsuperficial i la conducció elèctrica de l'aigua salada.",
+          "description": "El MAG va registrar pertorbacions en el camp magnètic de Saturn causades per la interacció amb el material expulsat pels geisers d'Enceladus. Aquestes <strong>oscil·lacions indiquen l'activitat de l'oceà subsuperficial</strong> i la conducció elèctrica de l'aigua salada.\n\nAquesta peça sonora utilitza dades del Magnetometer (MAG) de Cassini, que va registrar fluctuacions en el camp magnètic de Saturn en interactuar amb el material expulsat per Enceladus. <strong>Les variacions en la intensitat i direcció del camp magnètic es van mapejar a oscil·lacions sonores lentes</strong>: els canvis suaus es tradueixen en drones estables, mentre que les pertorbacions més intenses generen modulacions audibles en freqüència i textura. Aquesta sonificació permet escoltar indirectament la interacció electromagnètica entre l'oceà subsuperficial d'Enceladus i l'entorn magnetosfèric de Saturn.",
           "audios": [
             {
               "type": "data",
@@ -125,7 +126,7 @@
         {
           "label": "CDA",
           "title": "Analitzador de pols còsmica",
-          "description": "El CDA va detectar l'impacte de partícules de gel i minerals expulsades pels geisers. Cada impacte proporciona informació sobre la mida, velocitat i composició de les partícules. La sonificació reflecteix la freqüència i intensitat d'aquests esdeveniments.",
+          "description": "El CDA va detectar l'impacte de partícules de gel i minerals expulsades pels geisers. Cada impacte proporciona informació sobre la <strong>mida, velocitat i composició de les partícules</strong>. La sonificació reflecteix la freqüència i intensitat d'aquests esdeveniments.\n\nLa tercera sonificació parteix de les dades del Cosmic Dust Analyzer (CDA), encarregat de detectar i caracteritzar partícules microscòpiques de gel i pols procedents dels plomalls. <strong>Cada impacte registrat es va transformar en esdeveniments sonors discrets integrats en un paisatge ambiental continu</strong>. La taxa d'impactes controla la densitat sonora, mentre que l'energia de les partícules influeix en la brillantor i la intensitat del so. Aquesta traducció sonora fa perceptible el flux de material expulsat des de l'interior d'Enceladus cap a l'espai circumdant.",
           "audios": [
             {
               "type": "data",
