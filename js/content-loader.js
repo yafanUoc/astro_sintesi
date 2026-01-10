@@ -376,9 +376,10 @@ class ContentLoader {
                 ? `<div class="landscape-caption">${landscape.caption}</div>`
                 : '';
 
+            // ⭐ CAMBIO IMPORTANTE: Añadida clase "lightbox-image" a la imagen
             card.innerHTML = `
                 <div class="landscape-image-container">
-                    <img src="${landscape.image}" alt="${landscape.world}" class="landscape-image">
+                    <img src="${landscape.image}" alt="${landscape.world}" class="landscape-image lightbox-image" />
                     <div class="landscape-badge ${badgeClass}">${badgeText}</div>
                     ${captionHTML}
                 </div>

@@ -1,0 +1,218 @@
+/* ============================================================================
+   LIGHTBOX - Sistema de visualización ampliada de imágenes
+   Aplicable a cualquier imagen con la clase .lightbox-image
+   ============================================================================ */
+
+/* Overlay oscuro de fondo */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    cursor: zoom-out;
+}
+
+/* Estado activo del lightbox */
+.lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contenedor de la imagen ampliada */
+.lightbox-container {
+    position: relative;
+    max-width: 95vw;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+/* Imagen ampliada */
+.lightbox-image-display {
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    animation: lightbox-zoom-in 0.3s ease;
+}
+
+/* Animación de entrada */
+@keyframes lightbox-zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Caption de la imagen ampliada */
+.lightbox-caption {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-main);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    text-align: center;
+    max-width: 90vw;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de cerrar */
+.lightbox-close {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
+
+.lightbox-close:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-close::before {
+    content: '×';
+    font-weight: 300;
+    line-height: 1;
+}
+
+/* Indicador de zoom en las imágenes clicables */
+.lightbox-image {
+    cursor: zoom-in;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.lightbox-image:hover {
+    opacity: 0.9;
+}
+
+/* Icono de zoom en hover (opcional) */
+.lightbox-image::after {
+    content: '🔍';
+    position: absolute;
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lightbox-image:hover::after {
+    opacity: 1;
+}
+
+/* Ayuda de teclado */
+.lightbox-help {
+    position: absolute;
+    bottom: var(--spacing-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-pill);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    animation: lightbox-fade-in 0.5s ease 0.3s both;
+}
+
+@keyframes lightbox-fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Deshabilitar scroll del body cuando el lightbox está activo */
+body.lightbox-active {
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lightbox-close {
+        top: var(--spacing-md);
+        right: var(--spacing-md);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .lightbox-image-display {
+        max-height: 80vh;
+    }
+
+    .lightbox-caption {
+        font-size: 0.8rem;
+        margin-top: var(--spacing-sm);
+    }
+
+    .lightbox-help {
+        font-size: 0.7rem;
+        bottom: var(--spacing-sm);
+    }
+
+    /* Ocultar icono de zoom en móvil */
+    .lightbox-image::after {
+        display: none;
+    }
+}
+
+/* Accesibilidad - Focus visible */
+.lightbox-close:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Mejora para imágenes en tarjetas de paisajes (Sala 2) */
+.landscape-image.lightbox-image {
+    cursor: zoom-in;
+}
+
+.landscape-image.lightbox-image:hover {
+    opacity: 0.95;
+    filter: brightness(1.05);
+}
