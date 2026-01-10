@@ -76,7 +76,58 @@
             }
           ]
         }
-      ]
+      ],
+      "timeline": {
+        "title": "Cronologia de missions",
+        "missions": [
+          {
+            "name": "Cassini",
+            "year": "1997-2017",
+            "launch": "15 octubre 1997",
+            "arrival": "1 juliol 2004",
+            "end": "15 setembre 2017",
+            "status": "completed",
+            "statusLabel": "Completada",
+            "destination": "Saturno",
+            "highlight": "13 anys orbitant Saturno",
+            "tooltip": "Cassini va explorar Saturno durant 13 anys, descobrint oceans subsuperficials a Enceladus i revelant compostos orgànics complexes als seus plomalls."
+          },
+          {
+            "name": "Curiosity",
+            "year": "2011-Actiu",
+            "launch": "26 novembre 2011",
+            "arrival": "6 agost 2012",
+            "status": "active",
+            "statusLabel": "Activa",
+            "destination": "Mart",
+            "highlight": "+13 anys operant",
+            "tooltip": "El rover Curiosity continua explorant Mart després de més de 13 anys, analitzant roques i confirmant que el planeta va tenir condicions habitables en el passat."
+          },
+          {
+            "name": "Juno",
+            "year": "2011-2025",
+            "launch": "5 agost 2011",
+            "arrival": "5 juliol 2016",
+            "end": "Setembre 2025 (previst)",
+            "status": "active",
+            "statusLabel": "Activa",
+            "destination": "Júpiter",
+            "highlight": "Primera sonda solar a Júpiter",
+            "tooltip": "Juno orbita Júpiter des de 2016, estudiant la seva atmosfera, camp magnètic i composició. És la primera missió amb paneles solars que arriba tan lluny del Sol."
+          },
+          {
+            "name": "Europa Clipper",
+            "year": "2024-2030",
+            "launch": "14 octubre 2024",
+            "arrival": "11 abril 2030 (previst)",
+            "status": "in-transit",
+            "statusLabel": "En trànsit",
+            "destination": "Europa (Júpiter)",
+            "highlight": "~50 sobrevols d'Europa",
+            "tooltip": "Llançada el 2024, Europa Clipper arribarà a Júpiter el 2030 per estudiar l'oceà subsuperficial d'Europa mitjançant desenes de sobrevols propers."
+          }
+        ]
+      }
     },
     {
       "id": "explore",

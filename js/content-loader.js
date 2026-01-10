@@ -126,6 +126,11 @@ class ContentLoader {
                     this.renderMissions(section.missions);
                 }
 
+                // Timeline de misiones (Sala 4)
+                if (section.timeline) {
+                    this.renderTimeline(section.timeline);
+                }
+
                 // Secciones de audio (Sala 4)
                 if (section.audioSections) {
                     this.renderAudioSections(section.audioSections, section.note);
@@ -425,6 +430,82 @@ class ContentLoader {
             `;
             container.appendChild(li);
         });
+    }
+
+    renderTimeline(timeline) {
+        const container = document.querySelector('[data-content="missions-timeline"]');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        // Crear estructura del timeline
+        const timelineWrapper = document.createElement('div');
+        timelineWrapper.className = 'missions-timeline';
+
+        // Header del timeline
+        const header = document.createElement('div');
+        header.className = 'timeline-header';
+        header.innerHTML = `<h3>${timeline.title}</h3>`;
+        timelineWrapper.appendChild(header);
+
+        // Container del timeline
+        const timelineContainer = document.createElement('div');
+        timelineContainer.className = 'timeline-container';
+
+        // Línea horizontal
+        const timelineLine = document.createElement('div');
+        timelineLine.className = 'timeline-line';
+        timelineContainer.appendChild(timelineLine);
+
+        // Track de eventos
+        const timelineTrack = document.createElement('div');
+        timelineTrack.className = 'timeline-track';
+
+        // Renderizar cada misión
+        timeline.missions.forEach(mission => {
+            const event = document.createElement('div');
+            event.className = 'timeline-event';
+            event.setAttribute('data-status', mission.status);
+
+            // Marcador circular
+            const marker = document.createElement('div');
+            marker.className = 'timeline-marker';
+            event.appendChild(marker);
+
+            // Información visible
+            const info = document.createElement('div');
+            info.className = 'timeline-info';
+            info.innerHTML = `
+                <div class="timeline-mission-name">${mission.name}</div>
+                <div class="timeline-year">${mission.year}</div>
+                <div class="timeline-status">${mission.statusLabel}</div>
+            `;
+            event.appendChild(info);
+
+            // Tooltip con información detallada
+            const tooltip = document.createElement('div');
+            tooltip.className = 'timeline-tooltip';
+
+            let datesHTML = `<strong>Llançament:</strong> ${mission.launch}<br>`;
+            datesHTML += `<strong>Arribada:</strong> ${mission.arrival}`;
+            if (mission.end) {
+                datesHTML += `<br><strong>Finalització:</strong> ${mission.end}`;
+            }
+
+            tooltip.innerHTML = `
+                <div class="tooltip-title">${mission.name} → ${mission.destination}</div>
+                <div class="tooltip-dates">${datesHTML}</div>
+                <div class="tooltip-description">${mission.tooltip}</div>
+                <div class="tooltip-highlight">[ ${mission.highlight} ]</div>
+            `;
+            event.appendChild(tooltip);
+
+            timelineTrack.appendChild(event);
+        });
+
+        timelineContainer.appendChild(timelineTrack);
+        timelineWrapper.appendChild(timelineContainer);
+        container.appendChild(timelineWrapper);
     }
 
     /**
