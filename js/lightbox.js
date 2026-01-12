@@ -1,14 +1,17 @@
 /**
- * Lightbox - Sistema de visualización ampliada de imágenes
+ * Lightbox - Sistema de visualización ampliada de imágenes y videos
  * Autor: Astro-Síntesi
  *
- * USO: Añadir la clase "lightbox-image" a cualquier <img> para hacerla clicable
+ * USO:
+ * - Añadir clase "lightbox-image" a <img> para hacerlas clicables
+ * - Añadir clase "lightbox-video" a <video> para hacerlos clicables
  */
 
 class Lightbox {
     constructor() {
         this.overlay = null;
         this.isOpen = false;
+        this.currentType = null; // 'image' o 'video'
         this.init();
     }
 
@@ -36,9 +39,12 @@ class Lightbox {
                 <button class="lightbox-close" aria-label="Tancar visualització ampliada"></button>
                 <div class="lightbox-container">
                     <img class="lightbox-image-display" id="lightbox-image" src="" alt="" />
+                    <video class="lightbox-video-display" id="lightbox-video" controls loop>
+                        <source src="" type="video/mp4">
+                    </video>
                     <div class="lightbox-caption" id="lightbox-caption"></div>
                 </div>
-                <div class="lightbox-help">Prem ESC per tancar · Clica fora de la imatge per sortir</div>
+                <div class="lightbox-help">Prem ESC per tancar · Clica fora per sortir</div>
             </div>
         `;
 
@@ -48,50 +54,58 @@ class Lightbox {
     }
 
     /**
-     * Adjunta event listeners a todas las imágenes con clase lightbox-image
+     * Adjunta event listeners a todas las imágenes y videos con clase lightbox
      */
     attachEventListeners() {
         // Seleccionar todas las imágenes con clase lightbox-image
         const images = document.querySelectorAll('.lightbox-image');
-
         images.forEach(img => {
-            // Añadir cursor pointer
             img.style.cursor = 'zoom-in';
-
-            // Click en la imagen para abrir lightbox
             img.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.open(img);
+                this.open(img, 'image');
             });
-
-            // Accesibilidad: Enter para abrir
             img.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') {
                     e.preventDefault();
-                    this.open(img);
+                    this.open(img, 'image');
                 }
             });
-
-            // Hacer la imagen focusable
             if (!img.hasAttribute('tabindex')) {
                 img.setAttribute('tabindex', '0');
             }
         });
 
+        // Seleccionar todos los videos con clase lightbox-video
+        const videos = document.querySelectorAll('.lightbox-video');
+        videos.forEach(video => {
+            video.style.cursor = 'zoom-in';
+            video.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.open(video, 'video');
+            });
+            video.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    this.open(video, 'video');
+                }
+            });
+            if (!video.hasAttribute('tabindex')) {
+                video.setAttribute('tabindex', '0');
+            }
+        });
+
         // Eventos del lightbox
         if (this.overlay) {
-            // Click en el botón de cerrar
             const closeBtn = this.overlay.querySelector('.lightbox-close');
             closeBtn.addEventListener('click', () => this.close());
 
-            // Click en el overlay (fuera de la imagen) para cerrar
             this.overlay.addEventListener('click', (e) => {
                 if (e.target === this.overlay) {
                     this.close();
                 }
             });
 
-            // Tecla ESC para cerrar
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && this.isOpen) {
                     this.close();
@@ -101,43 +115,46 @@ class Lightbox {
     }
 
     /**
-     * Abre el lightbox con la imagen especificada
-     * @param {HTMLImageElement} imgElement - Elemento de imagen a mostrar
+     * Abre el lightbox con la imagen o video especificado
+     * @param {HTMLElement} element - Elemento de imagen o video a mostrar
+     * @param {string} type - Tipo de elemento: 'image' o 'video'
      */
-    open(imgElement) {
+    open(element, type) {
         if (!this.overlay) return;
 
+        this.currentType = type;
         const lightboxImg = document.getElementById('lightbox-image');
+        const lightboxVideo = document.getElementById('lightbox-video');
         const lightboxCaption = document.getElementById('lightbox-caption');
 
-        // Establecer la imagen y su alt text
-        lightboxImg.src = imgElement.src;
-        lightboxImg.alt = imgElement.alt || 'Imatge ampliada';
+        // Ocultar ambos elementos primero
+        lightboxImg.style.display = 'none';
+        lightboxVideo.style.display = 'none';
 
-        // Establecer el caption si existe
-        // Buscar caption en diferentes ubicaciones posibles
-        let captionText = '';
+        if (type === 'image') {
+            // Mostrar imagen
+            lightboxImg.src = element.src;
+            lightboxImg.alt = element.alt || 'Imatge ampliada';
+            lightboxImg.style.display = 'block';
+        } else if (type === 'video') {
+            // Mostrar video
+            const videoSource = lightboxVideo.querySelector('source');
+            videoSource.src = element.querySelector('source').src;
+            videoSource.type = element.querySelector('source').type;
+            lightboxVideo.load();
+            lightboxVideo.style.display = 'block';
 
-        // Opción 1: Atributo data-caption
-        if (imgElement.hasAttribute('data-caption')) {
-            captionText = imgElement.getAttribute('data-caption');
-        }
-        // Opción 2: Alt text de la imagen
-        else if (imgElement.alt) {
-            captionText = imgElement.alt;
-        }
-        // Opción 3: Caption hermano (siguiente elemento con clase image-caption o landscape-caption)
-        else {
-            const parentContainer = imgElement.closest('.landscape-image-container, .world-image, .hero-image-slot');
-            if (parentContainer) {
-                const caption = parentContainer.querySelector('.landscape-caption, .image-caption');
-                if (caption) {
-                    captionText = caption.textContent.trim();
-                }
-            }
+            // Reproducir el video automáticamente al abrir
+            setTimeout(() => {
+                lightboxVideo.play().catch(err => {
+                    console.log('No es pot reproduir automàticament el vídeo:', err);
+                });
+            }, 100);
         }
 
-        // Mostrar u ocultar caption
+        // Establecer el caption
+        let captionText = this.getCaption(element);
+
         if (captionText) {
             lightboxCaption.textContent = captionText;
             lightboxCaption.style.display = 'block';
@@ -150,10 +167,43 @@ class Lightbox {
         document.body.classList.add('lightbox-active');
         this.isOpen = true;
 
-        // Focus en el botón de cerrar para accesibilidad
         setTimeout(() => {
             this.overlay.querySelector('.lightbox-close').focus();
         }, 100);
+    }
+
+    /**
+     * Obtiene el caption de un elemento
+     * @param {HTMLElement} element - Elemento del que extraer el caption
+     * @returns {string} - Texto del caption
+     */
+    getCaption(element) {
+        let captionText = '';
+
+        // Opción 1: Atributo data-caption
+        if (element.hasAttribute('data-caption')) {
+            captionText = element.getAttribute('data-caption');
+        }
+        // Opción 2: Alt text (solo para imágenes)
+        else if (element.tagName === 'IMG' && element.alt) {
+            captionText = element.alt;
+        }
+        // Opción 3: Aria-label (para videos)
+        else if (element.hasAttribute('aria-label')) {
+            captionText = element.getAttribute('aria-label');
+        }
+        // Opción 4: Caption hermano
+        else {
+            const parentContainer = element.closest('.landscape-image-container, .world-image, .hero-image-slot, .enceladus-video-container');
+            if (parentContainer) {
+                const caption = parentContainer.querySelector('.landscape-caption, .image-caption, .video-caption, .img_info');
+                if (caption) {
+                    captionText = caption.textContent.trim();
+                }
+            }
+        }
+
+        return captionText;
     }
 
     /**
@@ -162,14 +212,22 @@ class Lightbox {
     close() {
         if (!this.overlay) return;
 
+        // Pausar el video si está reproduciéndose
+        if (this.currentType === 'video') {
+            const lightboxVideo = document.getElementById('lightbox-video');
+            lightboxVideo.pause();
+            lightboxVideo.currentTime = 0;
+        }
+
         this.overlay.classList.remove('active');
         document.body.classList.remove('lightbox-active');
         this.isOpen = false;
+        this.currentType = null;
     }
 
     /**
-     * Actualiza el lightbox para detectar nuevas imágenes
-     * Útil cuando se cargan imágenes dinámicamente
+     * Actualiza el lightbox para detectar nuevas imágenes y videos
+     * Útil cuando se cargan elementos dinámicamente
      */
     refresh() {
         this.attachEventListeners();
@@ -183,13 +241,11 @@ const lightbox = new Lightbox();
 window.lightbox = lightbox;
 
 // Refrescar el lightbox después de que se cargue el contenido dinámico
-// (esperar a que ContentLoader haya terminado de renderizar)
 if (window.ContentLoader) {
     const originalInit = window.ContentLoader.prototype.init;
     window.ContentLoader.prototype.init = function(...args) {
         const result = originalInit.apply(this, args);
 
-        // Esperar un poco para que las imágenes se rendericen
         setTimeout(() => {
             if (window.lightbox) {
                 window.lightbox.refresh();
@@ -200,4 +256,4 @@ if (window.ContentLoader) {
     };
 }
 
-console.log('✅ Lightbox inicialitzat correctament');
+console.log('✅ Lightbox inicialitzat correctament (imatges i vídeos)');
