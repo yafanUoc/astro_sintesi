@@ -475,6 +475,11 @@ p {
     z-index: 10;
 }
 
+.site-footer,
+.site-footer p {
+    color: #959494 !important;
+    text-align: center;
+}
 
 /* ============================================================================
    RESPONSIVE
