@@ -105,40 +105,45 @@ p {
     border-bottom: 1px solid var(--border-soft);
 }
 
-/* Logo */
+/* Logo - ACTUALIZADO PARA IMAGEN */
 .logo-block {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
 }
 
-.logo-mark {
-    display: inline-flex;
+.logo-block a {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius-pill);
-    background: radial-gradient(circle at 30% 20%, #60a5fa, var(--accent));
-    color: var(--text-contrast);
-    font-weight: 700;
-    font-size: var(--font-size-base);
-    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.site-logo {
+    height: 45px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.site-logo:hover {
+    opacity: 0.85;
+}
+
+/* Estilos antiguos del logo (ocultos, mantenidos por compatibilidad) */
+.logo-mark {
+    display: none;
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 .logo-title {
-    font-weight: 600;
-    font-size: var(--font-size-md);
+    display: none;
 }
 
 .logo-subtitle {
-    font-size: 0.78rem;
-    color: var(--text-muted);
+    display: none;
 }
 
 /* Navegación */
@@ -479,6 +484,11 @@ p {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-sm);
+    }
+
+    /* Logo más pequeño en móvil */
+    .site-logo {
+        height: 35px;
     }
 
     .main-nav {
