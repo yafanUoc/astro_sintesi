@@ -477,8 +477,9 @@ p {
 
 .site-footer,
 .site-footer p {
-    color: #959494 !important;
+    color: #959494;
     text-align: center;
+    font-size: var(--font-size-xs);
 }
 
 /* ============================================================================
